@@ -14,6 +14,8 @@ import javax.swing.ImageIcon;
 import java.io.File;
 import java.io.IOException;
 
+/** @author Cristian Felipe Patiño Cáceres */
+
 public class RecursosService {
 
     private GraficosAvanzadosService sGraficosAvanzados;
@@ -63,7 +65,9 @@ public class RecursosService {
     public void generarFuentes(){
         try {
             GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-            ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("ProyectoInterfazGrafica/resources/fonts/LUZRO.ttf")));
+            ge.registerFont(Font.createFont(
+                Font.TRUETYPE_FONT, new File("ProyectoInterfazGrafica/resources/fonts/LUZRO.ttf")
+            ));
         } catch (IOException|FontFormatException e) {
             System.out.println(e);
         }
