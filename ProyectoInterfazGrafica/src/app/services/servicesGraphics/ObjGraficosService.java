@@ -4,6 +4,7 @@ import java.awt.Component;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Font;
+
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
@@ -17,6 +18,8 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.border.Border;
+
+/** @author Cristian Felipe Patiño Cáceres */
 
 public class ObjGraficosService {
     private JPanel panel;
@@ -38,8 +41,8 @@ public class ObjGraficosService {
         int x, int y, int ancho, int alto, Color colorFondo, Border borde
     ){
         panel = new JPanel(); 
-        panel.setSize(ancho, alto);
         panel.setLocation(x, y);
+        panel.setSize(ancho, alto);
         panel.setLayout(null);
         panel.setBackground(colorFondo);
         panel.setBorder(borde);
@@ -50,8 +53,8 @@ public class ObjGraficosService {
         Component componente, int x, int y, int ancho, int alto, Color color, Border borde
     ){
         panelScroll=new JScrollPane(componente);
-        panelScroll.setSize(ancho, alto); 
         panelScroll.setLocation(x, y);
+        panelScroll.setSize(ancho, alto); 
         panelScroll.getViewport().setBackground(color);
         panelScroll.setBorder(borde);
         return panelScroll;
@@ -59,11 +62,11 @@ public class ObjGraficosService {
 
     public JButton construirJButton(
         String texto, int x, int y, int ancho, int alto, Cursor cursor, ImageIcon imagen, Font fuente, 
-        Color colorFondo, Color colorFuente,Border borde, String direccion, boolean esSolido
+        Color colorFondo, Color colorFuente, Border borde, String direccion, boolean esSolido
     ){
         button= new JButton(texto);
-        button.setSize(ancho, alto);
         button.setLocation(x, y);
+        button.setSize(ancho, alto);
         button.setFocusable(false);
         button.setCursor(cursor);
         button.setFont(fuente);
@@ -89,8 +92,8 @@ public class ObjGraficosService {
         String texto, int x, int y, int ancho, int alto, Cursor cursor, Font fuente, Color colorFuente
     ){
         radioButton= new JRadioButton(texto);
-        radioButton.setSize(ancho, alto);
         radioButton.setLocation(x, y);
+        radioButton.setSize(ancho, alto);
         radioButton.setFocusable(false);
         radioButton.setBackground(null);
         radioButton.setCursor(cursor);
@@ -100,11 +103,11 @@ public class ObjGraficosService {
     }
 
     public JCheckBox construirJCheckBox(
-        String texto, int x, int y, int ancho, int alto, Cursor cursor, Font fuente,Color colorFuente
+        String texto, int x, int y, int ancho, int alto, Cursor cursor, Font fuente, Color colorFuente
     ){
         check= new JCheckBox(texto);
-        check.setSize(ancho, alto);
         check.setLocation(x, y);
+        check.setSize(ancho, alto);
         check.setFocusable(false);
         check.setBackground(null);
         check.setCursor(cursor);
@@ -118,8 +121,8 @@ public class ObjGraficosService {
         Color colorFondo, Font fuente, String direccion
     ){        
         label= new JLabel(texto);
-        label.setSize(ancho, alto);
         label.setLocation(x, y);
+        label.setSize(ancho, alto);
         label.setForeground(colorFuente);
         label.setFont(fuente);
         label.setIcon(imagen);
@@ -145,8 +148,8 @@ public class ObjGraficosService {
         Color colorCaret, Font fuente, Border borde, String direccion
     ){        
         textField = new JTextField();
-        textField.setSize(ancho, alto);
         textField.setLocation(x, y);
+        textField.setSize(ancho, alto);
         textField.setText(texto);
         textField.setForeground(colorFuente);
         textField.setBackground(colorFondo);
@@ -171,8 +174,8 @@ public class ObjGraficosService {
         Color colorCaret, Font fuente, Border borde, String direccion
     ){        
         passwordField = new JPasswordField();
-        passwordField.setSize(ancho, alto);
         passwordField.setLocation(x, y);
+        passwordField.setSize(ancho, alto);
         passwordField.setText(texto);
         passwordField.setForeground(colorFuente);
         passwordField.setBackground(colorFondo);
@@ -196,8 +199,8 @@ public class ObjGraficosService {
         Color colorCaret, Font fuente, Border borde
     ){        
         textArea = new JTextArea();
-        textArea.setSize(ancho, alto);
         textArea.setLocation(x, y);
+        textArea.setSize(ancho, alto);
         textArea.setText(texto);
         textArea.setFont(fuente);
         textArea.setForeground(colorFuente);
@@ -208,15 +211,14 @@ public class ObjGraficosService {
     }
 
     public JComboBox<String> construirJComboBox(
-        String cadena, int x, int y, int ancho, int alto,Color colorFondo, Color colorFuente, String direccion
+        String cadena, int x, int y, int ancho, int alto, Color colorFondo, Color colorFuente, String direccion
     ){
         comboBox=new JComboBox<String>();
-        comboBox.setSize(ancho, alto);
         comboBox.setLocation(x, y);
-        String [] arregloCadena = cadena.split("_");
-        for(int i=0; i<arregloCadena.length; i++){
-            comboBox.addItem(arregloCadena[i]);
-        } 
+        comboBox.setSize(ancho, alto);
+        for(String item : cadena.split("_")){
+            comboBox.addItem(item);
+        }
         comboBox.setBackground(colorFondo);
         comboBox.setForeground(colorFuente);
         switch(direccion){
@@ -231,7 +233,6 @@ public class ObjGraficosService {
         }
         return comboBox;
     }
-
 
     public static ObjGraficosService getService(){
         if(servicio == null)
