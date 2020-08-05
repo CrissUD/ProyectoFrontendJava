@@ -43,8 +43,8 @@ public class TarjetaTemplate extends JPanel{
         this.add(lImagen);
 
         this.lTitulo = sObjGraficos.construirJLabel(
-            titulo, -15, 120, 180, 30, null, null, sRecursos.getColorAzul(), 
-            null, sRecursos.getFontTitulo(), null, "c"
+            titulo, 15, 120, 180, 30, null, null, sRecursos.getColorAzul(), 
+            null, sRecursos.getFontTitulo(), null, "l"
         );
         this.add(lTitulo);
 
