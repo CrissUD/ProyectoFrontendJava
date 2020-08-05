@@ -109,6 +109,7 @@ public class AmigosComponent implements ActionListener, MouseListener, FocusList
         amigosTemplate.getTOficio().setText(placeholdes[2]);
         amigosTemplate.getTTelefono().setText(placeholdes[3]);
         amigosTemplate.getTEmail().setText(placeholdes[4]);
+        amigosTemplate.getTabla().setSelectionMode(-1);
     }
 
     public void mostrarRegistrosTabla(){
