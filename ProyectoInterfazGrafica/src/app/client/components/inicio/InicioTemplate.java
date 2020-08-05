@@ -84,12 +84,12 @@ public class InicioTemplate extends JPanel{
     }
 
     public void crearObjetosDecoradores(){
-        this.iTarjeta1 = new ImageIcon("ProyectoInterfazGrafica/resources/images/tarjeta1.jpg");
-        this.iTarjeta2 = new ImageIcon("ProyectoInterfazGrafica/resources/images/tarjeta2.jpg");
-        this.iTarjeta3 = new ImageIcon("ProyectoInterfazGrafica/resources/images/tarjeta3.jpg");
-        this.iTarjeta4 = new ImageIcon("ProyectoInterfazGrafica/resources/images/tarjeta4.jpg");
-        this.iTarjeta5 = new ImageIcon("ProyectoInterfazGrafica/resources/images/tarjeta5.jpg");
-        this.iTarjeta6 = new ImageIcon("ProyectoInterfazGrafica/resources/images/tarjeta6.jpg");
+        this.iTarjeta1 = new ImageIcon("ProyectoInterfazGrafica/resources/images/tarjetas/tarjeta1.jpg");
+        this.iTarjeta2 = new ImageIcon("ProyectoInterfazGrafica/resources/images/tarjetas/tarjeta2.jpg");
+        this.iTarjeta3 = new ImageIcon("ProyectoInterfazGrafica/resources/images/tarjetas/tarjeta3.jpg");
+        this.iTarjeta4 = new ImageIcon("ProyectoInterfazGrafica/resources/images/tarjetas/tarjeta4.jpg");
+        this.iTarjeta5 = new ImageIcon("ProyectoInterfazGrafica/resources/images/tarjetas/tarjeta5.jpg");
+        this.iTarjeta6 = new ImageIcon("ProyectoInterfazGrafica/resources/images/tarjetas/tarjeta6.jpg");
         this.iDerecha = new ImageIcon("ProyectoInterfazGrafica/resources/images/derecha.png");
         this.iIzquierda = new ImageIcon("ProyectoInterfazGrafica/resources/images/izquierda.png");
     }
