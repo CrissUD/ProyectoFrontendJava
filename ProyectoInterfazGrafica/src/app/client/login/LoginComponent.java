@@ -4,14 +4,15 @@ import app.client.vistaPrincipal.VistaPrincipalComponent;
 import app.services.servicesLogic.UsuarioService;
 
 import javax.swing.JButton;
+import javax.swing.JTextField;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
 
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
+import java.awt.event.ActionEvent;
 import java.awt.event.MouseListener;
+import java.awt.event.MouseEvent;
 
 public class LoginComponent implements ActionListener, MouseListener {
 
@@ -19,13 +20,15 @@ public class LoginComponent implements ActionListener, MouseListener {
     private VistaPrincipalComponent vistaPrincipal;
     private UsuarioService sUsuario;
     private JButton boton;
+    private JTextField text;
     private JLabel label;
+    private String[] placeholdes = {"Nombre Usuario", "Clave Usuario"};
     private int estado = 1, estadoAnterior = 0, direccion = -1;
     private Timer timer;
 
     public LoginComponent() {
         sUsuario = UsuarioService.getService();
-        this.timer=new Timer(1, this);
+        this.timer = new Timer(1, this);
         this.loginTemplate = new LoginTemplate(this);
     }
 
@@ -33,7 +36,7 @@ public class LoginComponent implements ActionListener, MouseListener {
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() instanceof JButton){
             this.estadoAnterior = estado;
-            loginTemplate.getBOpcion(estadoAnterior).setIcon(loginTemplate.getIPunto());
+            loginTemplate.getBOpcion(estadoAnterior).setIcon(loginTemplate.getIPunto1());
             if (e.getSource() == loginTemplate.getBOpcion(1)){
                 this.estado = 1;
                 this.direccion = -1;
@@ -58,43 +61,22 @@ public class LoginComponent implements ActionListener, MouseListener {
             System.exit(0);
         if (e.getSource() == loginTemplate.getBRegistrarse()) 
             JOptionPane.showMessageDialog(null, "Boton Registro", "Advertencia", 1);
-        
-        if (e.getSource() == loginTemplate.getTNombreUsuario()) {
-            // BORRA EL PLACEHOLDER
-            if (loginTemplate.getTNombreUsuario().getText().equals("Nombre Usuario"))
-                loginTemplate.getTNombreUsuario().setText("");
-            // CAMBIA EL COLOR A GRIS DEL JPASSWORLDFIELD SI ESTA VACIÓ
-            if (new String(loginTemplate.getTClaveUsuario().getPassword()).equals("")) {
-                loginTemplate.getTClaveUsuario().setBorder(loginTemplate.getRecursosService().getBorderInferiorGris());
-                loginTemplate.getTClaveUsuario().setForeground(loginTemplate.getRecursosService().getColorGrisOscuro());
-            }
-            // CAMBIA EL COLOR A AZUL DEL JTEXTFIELD
-            loginTemplate.getTNombreUsuario().setBorder(loginTemplate.getRecursosService().getBorderInferiorAzul());
-            loginTemplate.getTNombreUsuario().setForeground(loginTemplate.getRecursosService().getColorAzul());
-        }
-        if (e.getSource() == loginTemplate.getTClaveUsuario()) {
-            // BORRA EL PLACEHOLDER
-            if (new String(loginTemplate.getTClaveUsuario().getPassword()).equals("clave Usuario"))
-                loginTemplate.getTClaveUsuario().setText("");
-            // CAMBIA EL COLOR A GRIS DEL JTEXTFIELD SI ESTA VACIÓ
-            if (loginTemplate.getTNombreUsuario().getText().equals("")) {
-                loginTemplate.getTNombreUsuario().setBorder(loginTemplate.getRecursosService().getBorderInferiorGris());
-                loginTemplate.getTNombreUsuario()
-                        .setForeground(loginTemplate.getRecursosService().getColorGrisOscuro());
-            }
-            // CAMBIA EL COLOR A AZUL DEL JPASSWORLDFIELD
-            loginTemplate.getTClaveUsuario().setBorder(loginTemplate.getRecursosService().getBorderInferiorAzul());
-            loginTemplate.getTClaveUsuario().setForeground(loginTemplate.getRecursosService().getColorAzul());
+        if (e.getSource() instanceof  JTextField){
+            text = ((JTextField) e.getSource());
+            label = loginTemplate.getLabels(text);
+            label.setIcon(loginTemplate.getIBlue(label));
+            text.setForeground(loginTemplate.getRecursosService().getColorAzul());
+            text.setBorder(loginTemplate.getRecursosService().getBorderInferiorAzul());
+            if(text.getText().equals(placeholdes[0]) || text.getText().equals(placeholdes[1]))
+                text.setText("");
         }
     }
 
     @Override
-    public void mousePressed(MouseEvent e) {
-    }
+    public void mousePressed(MouseEvent e) {}
 
     @Override
-    public void mouseReleased(MouseEvent e) {
-    }
+    public void mouseReleased(MouseEvent e) {}
 
     @Override
     public void mouseEntered(MouseEvent e) {
@@ -104,7 +86,7 @@ public class LoginComponent implements ActionListener, MouseListener {
         }
         if (e.getSource() instanceof JLabel) {
             label = ((JLabel) e.getSource());
-            label.setForeground(loginTemplate.getRecursosService().getColorMorado());
+            label.setIcon(loginTemplate.getIOrange(label));
         }
     }
 
@@ -116,7 +98,7 @@ public class LoginComponent implements ActionListener, MouseListener {
         }
         if (e.getSource() instanceof JLabel) {
             label = ((JLabel) e.getSource());
-            label.setForeground(loginTemplate.getRecursosService().getColorAzul());
+            label.setIcon(loginTemplate.getIWhite(label));
         }
     }
 
