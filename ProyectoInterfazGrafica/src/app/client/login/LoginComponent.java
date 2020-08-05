@@ -132,7 +132,7 @@ public class LoginComponent implements ActionListener, MouseListener {
         this.getLoginTemplate().getTNombreUsuario().setForeground(
             this.getLoginTemplate().getRecursosService().getColorGrisOscuro()
         );
-        this.getLoginTemplate().getTClaveUsuario().setText("clave Usuario");
+        this.getLoginTemplate().getTClaveUsuario().setText("Clave Usuario");
         this.getLoginTemplate().getTClaveUsuario().setBorder(
             this.getLoginTemplate().getRecursosService().getBorderInferiorGris()
         );
