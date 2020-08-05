@@ -2,15 +2,15 @@ package app.client.login;
 
 import java.awt.Color;
 import java.awt.Image;
-import javax.swing.ImageIcon;
-import javax.swing.JPanel;
-import javax.swing.JPasswordField;
-import javax.swing.JTextField;
 
 import app.services.servicesGraphics.GraficosAvanzadosService;
 import app.services.servicesGraphics.ObjGraficosService;
 import app.services.servicesGraphics.RecursosService;
 
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
@@ -127,7 +127,7 @@ public class LoginTemplate extends JFrame {
         //BOTÓN REGISTRARSE-----------------------------------------------------------------------
         bRegistrarse = sObjGraficos.construirJButton(
             "Registrarse", 240, 460, 145, 35, sRecursos.getCMano(), null, null,
-                sRecursos.getColorAzul(), Color.WHITE, sRecursos.getBordeRedondeado(), "c", true
+            sRecursos.getColorAzul(), Color.WHITE, sRecursos.getBordeRedondeado(), "c", true
         );
         bRegistrarse.addMouseListener(loginComponent);
         pDerecha.add(bRegistrarse);
@@ -137,8 +137,8 @@ public class LoginTemplate extends JFrame {
             sRecursos.getICerrar().getImage().getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
         );
         bCerrar = sObjGraficos.construirJButton(
-            null, 350, 10, 45, 30, sRecursos.getCMano(), iDimAux, null, 
-            null, null, null, "c", false
+            null, 350, 10, 45, 30, sRecursos.getCMano(), 
+            iDimAux, null, null, null, null, "c", false
         );
         bCerrar.addMouseListener(loginComponent);
         pDerecha.add(bCerrar);
@@ -148,8 +148,8 @@ public class LoginTemplate extends JFrame {
         );
         //BOTÓN OPCIÓN 1-----------------------------------------------------------------------------
         bOpcion1 = sObjGraficos.construirJButton(
-            null, 10, 220, 30, 20, sRecursos.getCMano(), iDimAux, null,
-            null, null, null, "c", false
+            null, 10, 220, 30, 20, sRecursos.getCMano(),
+            iDimAux, null, null, null, null, "c", false
         );
         bOpcion1.addActionListener(loginComponent);
         pIzquierda.add(bOpcion1);
@@ -159,16 +159,16 @@ public class LoginTemplate extends JFrame {
         );
         //BOTÓN OPCIÓN 2-----------------------------------------------------------------------------
         bOpcion2 = sObjGraficos.construirJButton(
-            null, 10, 250, 30, 20, sRecursos.getCMano(), iDimAux, null,
-            null, null, null, "c", false
+            null, 10, 250, 30, 20, sRecursos.getCMano(),
+            iDimAux, null, null, null, null, "c", false
         );
         bOpcion2.addActionListener(loginComponent);
         pIzquierda.add(bOpcion2);
 
         //BOTÓN OPCIÓN 3-----------------------------------------------------------------------------
         bOpcion3 = sObjGraficos.construirJButton(
-            null, 10, 280, 30, 20, sRecursos.getCMano(), iDimAux, null,
-            null, null, null, "c", false
+            null, 10, 280, 30, 20, sRecursos.getCMano(),
+            iDimAux, null, null, null, null, "c", false
         );
         bOpcion3.addActionListener(loginComponent);
         pIzquierda.add(bOpcion3);
@@ -180,15 +180,15 @@ public class LoginTemplate extends JFrame {
             iLogo.getImage().getScaledInstance(40, 40, Image.SCALE_AREA_AVERAGING)
         );
         lLogo = sObjGraficos.construirJLabel(
-                null, 50, 20, 40, 40, sRecursos.getCMano(), 
-                iDimAux, null, null, null, null, "c"
+            null, 50, 20, 40, 40, sRecursos.getCMano(), 
+            iDimAux, null, null, null, null, "c"
         );
         pIzquierda.add(lLogo);
 
         //LABEL TITULO APP-----------------------------------------------------------------------------
         lTituloApp = sObjGraficos.construirJLabel(
-                "Login de Usuario", 100, 20, 220, 30, null, null, Color.WHITE,
-                null, sRecursos.getFontTPrincipal(), null, "c"
+            "Login de Usuario", 100, 20, 220, 30, null, null, Color.WHITE,
+            null, sRecursos.getFontTPrincipal(), null, "c"
         );
         pIzquierda.add(lTituloApp);
 
@@ -197,8 +197,8 @@ public class LoginTemplate extends JFrame {
             iSvg1.getImage().getScaledInstance(500, 345, Image.SCALE_AREA_AVERAGING)
         );
         lSvg = sObjGraficos.construirJLabel(
-                null, 0, 0, 500, 345, null, iDimAux, 
-                null, null, null, null, "c"
+            null, 0, 0, 500, 345, null, iDimAux, 
+            null, null, null, null, "c"
         );
         pSvg.add(lSvg);
 
@@ -207,8 +207,8 @@ public class LoginTemplate extends JFrame {
             iSvg2.getImage().getScaledInstance(500, 345, Image.SCALE_AREA_AVERAGING)
         );
         lSvg2 = sObjGraficos.construirJLabel(
-                null, 600, 0, 500, 345, null, iDimAux, 
-                null, null, null, null, "c"
+            null, 600, 0, 500, 345, null, iDimAux, 
+            null, null, null, null, "c"
         );
         pSvg.add(lSvg2);
 
@@ -217,8 +217,8 @@ public class LoginTemplate extends JFrame {
             iSvg3.getImage().getScaledInstance(500, 345, Image.SCALE_AREA_AVERAGING)
         );
         lSvg3 = sObjGraficos.construirJLabel(
-                null, 1200, 0, 500, 345, null, iDimAux,
-                null, null, null, null, "c"
+            null, 1200, 0, 500, 345, null, iDimAux,
+            null, null, null, null, "c"
         );
         pSvg.add(lSvg3);
 
@@ -248,8 +248,8 @@ public class LoginTemplate extends JFrame {
             iUsuario1.getImage().getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
         );
         lUsuario = sObjGraficos.construirJLabel(
-                null, 40, 140, 30, 30, null, iDimAux, 
-                null, null, null, null, "c"
+            null, 40, 140, 30, 30, null, iDimAux, 
+            null, null, null, null, "c"
         );
         pDerecha.add(lUsuario);
 
@@ -258,8 +258,8 @@ public class LoginTemplate extends JFrame {
             iClave1.getImage().getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
         );
         lClave = sObjGraficos.construirJLabel(
-                null, 40, 270, 30, 30, null, iDimAux,
-                null, null, null, null, "c"
+            null, 40, 270, 30, 30, null, iDimAux,
+            null, null, null, null, "c"
         );
         pDerecha.add(lClave);
 
@@ -268,8 +268,8 @@ public class LoginTemplate extends JFrame {
             iFacebook1.getImage().getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
         );
         lFacebook = sObjGraficos.construirJLabel(
-                null, 20, 460, 30, 30, sRecursos.getCMano(),
-                iDimAux, null, null, null, null, "c"
+            null, 20, 460, 30, 30, sRecursos.getCMano(),
+            iDimAux, null, null, null, null, "c"
         );
         lFacebook.addMouseListener(this.loginComponent);
         pIzquierda.add(lFacebook);
@@ -279,8 +279,8 @@ public class LoginTemplate extends JFrame {
             iTwitter1.getImage().getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
         );
         lTwitter = sObjGraficos.construirJLabel(
-                null, 60, 460, 30, 30, sRecursos.getCMano(),
-                iDimAux, null, null, null, null, "c"
+            null, 60, 460, 30, 30, sRecursos.getCMano(),
+            iDimAux, null, null, null, null, "c"
         );
         lTwitter.addMouseListener(this.loginComponent);
         pIzquierda.add(lTwitter);
@@ -290,8 +290,8 @@ public class LoginTemplate extends JFrame {
             iYoutube1.getImage().getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
         );
         lYoutube = sObjGraficos.construirJLabel(
-                null, 100, 460, 30, 30, sRecursos.getCMano(),
-                iDimAux, null, null, null, null, "c"
+            null, 100, 460, 30, 30, sRecursos.getCMano(),
+            iDimAux, null, null, null, null, "c"
         );
         lYoutube.addMouseListener(this.loginComponent);
         pIzquierda.add(lYoutube);
@@ -301,8 +301,8 @@ public class LoginTemplate extends JFrame {
             iFondo.getImage().getScaledInstance(600, 600, Image.SCALE_AREA_AVERAGING)
         );
         lFondo = sObjGraficos.construirJLabel(
-                null, 0, 0, 600, 600, null, iDimAux, 
-                null, null, null, null, "c"
+            null, 0, 0, 600, 600, null, iDimAux, 
+            null, null, null, null, "c"
         );
         pIzquierda.add(lFondo);
     }
@@ -332,14 +332,14 @@ public class LoginTemplate extends JFrame {
 
     public void crearJCheckBoxes(){
         checkSi = sObjGraficos.construirJCheckBox(
-                "Si", (pDerecha.getWidth() - 45) / 2 - 15, 375, 45, 25,
-                sRecursos.getCMano(), null, null
+            "Si", (pDerecha.getWidth() - 45) / 2 - 15, 375, 45, 25,
+            sRecursos.getCMano(), null, null
         );
         pDerecha.add(checkSi);
 
         checkNo = sObjGraficos.construirJCheckBox(
-                "No", (pDerecha.getWidth() + 45) / 2 - 15, 375, 45, 25,
-                sRecursos.getCMano(), null, null
+            "No", (pDerecha.getWidth() + 45) / 2 - 15, 375, 45, 25,
+            sRecursos.getCMano(), null, null
         );
         pDerecha.add(checkNo);
 

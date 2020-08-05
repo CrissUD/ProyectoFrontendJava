@@ -1,6 +1,7 @@
 package app.client.components.perfil;
 
 import java.awt.Color;
+
 import javax.swing.JPanel;
 
 public class PerfilTemplate extends JPanel{

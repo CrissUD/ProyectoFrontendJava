@@ -21,22 +21,22 @@ public class ConfiguracionesComponent implements MouseListener, MouseMotionListe
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        this.configuracionesTemplate.getLPOnClickXValor().setText(e.getX()+"");
-        this.configuracionesTemplate.getLPOnClickYValor().setText(e.getY()+"");
+        this.configuracionesTemplate.getLPOnClickXValor().setText(e.getX() + "");
+        this.configuracionesTemplate.getLPOnClickYValor().setText(e.getY() + "");
     }
 
     @Override
     public void mousePressed(MouseEvent e) {
-        this.configuracionesTemplate.getLPInicialXValor().setText(e.getX()+"");
-        this.configuracionesTemplate.getLPInicialYValor().setText(e.getY()+"");
+        this.configuracionesTemplate.getLPInicialXValor().setText(e.getX() + "");
+        this.configuracionesTemplate.getLPInicialYValor().setText(e.getY() + "");
         this.posicionInicialX = e.getX();
         this.posicionInicialY = e.getY();
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
-        this.configuracionesTemplate.getLPFinalXValor().setText(e.getX()+"");
-        this.configuracionesTemplate.getLPFinalYValor().setText(e.getY()+"");
+        this.configuracionesTemplate.getLPFinalXValor().setText(e.getX() + "");
+        this.configuracionesTemplate.getLPFinalYValor().setText(e.getY() + "");
     }
 
     @Override
@@ -57,8 +57,8 @@ public class ConfiguracionesComponent implements MouseListener, MouseMotionListe
 
     @Override
     public void mouseMoved(MouseEvent e) {
-        this.configuracionesTemplate.getLPActualXValor().setText(e.getX()+"");
-        this.configuracionesTemplate.getLPActualYValor().setText(e.getY()+"");
+        this.configuracionesTemplate.getLPActualXValor().setText(e.getX() + "");
+        this.configuracionesTemplate.getLPActualYValor().setText(e.getY() + "");
     }
 
     @Override

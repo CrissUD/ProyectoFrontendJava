@@ -31,7 +31,7 @@ public class BarraTituloTemplate extends JPanel{
     public BarraTituloTemplate(BarraTituloComponent barraTituloComponent){
 
         this.barraTituloComponent = barraTituloComponent;
-        this.sObjGraficos= ObjGraficosService.getService();
+        this.sObjGraficos = ObjGraficosService.getService();
         this.sRecursos = RecursosService.getService();
 
         this.crearObjetosDecoradores();
@@ -48,7 +48,7 @@ public class BarraTituloTemplate extends JPanel{
 
     public void crearObjetosDecoradores(){
         iLogoApp = new ImageIcon("ProyectoInterfazGrafica/resources/images/logo_app.png");
-        fontTituloBarra= new Font("Britannic Bold", Font.PLAIN, 24);
+        fontTituloBarra = new Font("Britannic Bold", Font.PLAIN, 24);
     }
     
     public void crearJButtons(){

@@ -31,13 +31,13 @@ public class TarjetaTemplate extends JPanel{
 
         this.tarjetaComponent = tarjetaComponent;
         this.tarjetaComponent.getClass();
-        sObjGraficos= ObjGraficosService.getService();
+        sObjGraficos = ObjGraficosService.getService();
         sRecursos = RecursosService.getService();
 
         iDimAux = new ImageIcon(
             iImagen.getImage().getScaledInstance(246, 110, Image.SCALE_AREA_AVERAGING)
         );
-        lImagen= sObjGraficos.construirJLabel(
+        lImagen = sObjGraficos.construirJLabel(
             null, 5, 5, 246, 110, sRecursos.getCMano(), iDimAux, null, null, null, null, "c"
         );
         this.add(lImagen);
@@ -48,7 +48,7 @@ public class TarjetaTemplate extends JPanel{
         );
         this.add(lTitulo);
 
-        lParrafo= sObjGraficos.construirJLabel(
+        lParrafo = sObjGraficos.construirJLabel(
             "<html><div align='justify'>"+parrafo+"</div></html>", 20, 120, 206, 120, null, 
             null, sRecursos.getColorGrisOscuro(), null, sRecursos.getFontPequeña(), null, "c"
         );

@@ -73,6 +73,6 @@ public class InicioComponent implements ActionListener {
                     inicioTemplate.getPTarjetas().getX() + direccion, inicioTemplate.getPTarjetas().getY()
                 );
         }
-        inicioTemplate.repaint();
+        inicioTemplate.repaint(0, 0, 850, 250);
     }
 }

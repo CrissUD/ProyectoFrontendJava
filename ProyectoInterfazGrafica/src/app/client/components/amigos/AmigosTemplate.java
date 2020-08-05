@@ -1,6 +1,7 @@
 package app.client.components.amigos;
 
 import java.awt.Dimension;
+
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -41,7 +42,7 @@ public class AmigosTemplate extends JPanel{
     private JTable tabla;
     private JTableHeader header;
     private DefaultTableModel modelo;
-    private String [] cabecera={"id", "Nombre", "Teléfono", "Email"};
+    private String [] cabecera = {"id", "Nombre", "Teléfono", "Email"};
 
     public AmigosTemplate(AmigosComponent amigosComponent) {
 
@@ -161,7 +162,7 @@ public class AmigosTemplate extends JPanel{
         pOpciones.add(bModificar);
 
         // BOTÓN ELIMINAR--------------------------------------------------------------------
-        bEliminar= sObjGraficos.construirJButton(
+        bEliminar = sObjGraficos.construirJButton(
             "Eliminar", 440, 145, 120, 35, sRecursos.getCMano(), null, sRecursos.getFontBotones(), 
             sRecursos.getColorAzul(), Color.WHITE, null, "c", true
         );

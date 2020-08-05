@@ -27,7 +27,7 @@ public class VistaPrincipalComponent {
 
     public VistaPrincipalComponent(LoginComponent loginComponent){
         this.loginComponent = loginComponent;
-        this.vistaPrincipalTemplate= new VistaPrincipalTemplate(this);
+        this.vistaPrincipalTemplate = new VistaPrincipalTemplate(this);
         this.barraTituloComponent = new BarraTituloComponent(this);
         this.navegacionUsuarioComponent = new NavegacionUsuarioComponent(this);
         this.inicioComponent = new InicioComponent();

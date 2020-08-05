@@ -34,7 +34,7 @@ public class NavegacionUsuarioTemplate extends JPanel{
 
     public NavegacionUsuarioTemplate(NavegacionUsuarioComponent navegacionUsuarioComponent){
         this.navegacionUsuarioComponent = navegacionUsuarioComponent;
-        this.sObjGraficos= ObjGraficosService.getService();
+        this.sObjGraficos = ObjGraficosService.getService();
         this.sRecursos = RecursosService.getService();
 
         this.crearObjetosDecoradores();

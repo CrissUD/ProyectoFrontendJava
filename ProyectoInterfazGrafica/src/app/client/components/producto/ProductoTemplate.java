@@ -88,7 +88,8 @@ public class ProductoTemplate extends JPanel{
 
         iEstrella = new ImageIcon("ProyectoInterfazGrafica/resources/images/estrella.png");
         iDimAux = new ImageIcon(iEstrella.getImage().getScaledInstance(
-            25, 25, Image.SCALE_AREA_AVERAGING)
+                25, 25, Image.SCALE_AREA_AVERAGING
+            )
         );
         lEstrella = sObjGraficos.construirJLabel(
             null, 0, 0, 0, 0, null, iDimAux, null, null, null, null, "c"

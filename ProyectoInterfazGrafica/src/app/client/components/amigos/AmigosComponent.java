@@ -103,7 +103,7 @@ public class AmigosComponent implements ActionListener, MouseListener, FocusList
     }
 
     public void restaurarValores(){
-        amigosTemplate.getLIdValor().setText(sAmigos.devolverCantidadAmigos()+"");
+        amigosTemplate.getLIdValor().setText(sAmigos.devolverCantidadAmigos() + "");
         amigosTemplate.getTNombre().setText(placeholdes[0]);
         amigosTemplate.getTEdad().setText(placeholdes[1]);
         amigosTemplate.getTOficio().setText(placeholdes[2]);
@@ -112,11 +112,11 @@ public class AmigosComponent implements ActionListener, MouseListener, FocusList
     }
 
     public void mostrarRegistrosTabla(){
-        for(int i=0; i<sAmigos.devolverCantidadAmigos(); i++){
+        for(int i = 0; i < sAmigos.devolverCantidadAmigos(); i++){
             amigo = sAmigos.devolverAmigo(i);
             this.agregarRegistro(amigo);
         }
-        amigosTemplate.getLIdValor().setText(sAmigos.devolverCantidadAmigos()+"");
+        amigosTemplate.getLIdValor().setText(sAmigos.devolverCantidadAmigos() + "");
         amigosTemplate.getBMostrar().setEnabled(false);
     }
 
@@ -159,7 +159,7 @@ public class AmigosComponent implements ActionListener, MouseListener, FocusList
 
     public void eliminarRegistroTabla(){
         int fSeleccionada = amigosTemplate.getTabla().getSelectedRow();
-        if(fSeleccionada!= -1)
+        if(fSeleccionada != -1)
             amigosTemplate.getModelo().removeRow(fSeleccionada);
         else
             JOptionPane.showMessageDialog(null,"seleccione una fila","Error",JOptionPane.ERROR_MESSAGE);
