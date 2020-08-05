@@ -100,7 +100,8 @@ public class InicioTemplate extends JPanel{
         );
 
         bIzquierda = sObjGraficos.construirJButton(
-            null, 0, 125, 20, 20, sRecursos.getCMano(), iDimAux, null, null, null, null, "c", false
+                null, 0, 125, 20, 20, sRecursos.getCMano(), iDimAux,
+                null, null, null, null, "c", false
         );
         bIzquierda.addActionListener(inicioComponent);
         this.add(bIzquierda);
@@ -110,7 +111,8 @@ public class InicioTemplate extends JPanel{
         );
 
         bDerecha = sObjGraficos.construirJButton(
-            null, 830, 125, 20, 20, sRecursos.getCMano(), iDimAux, null, null, null, null, "c", false
+                null, 830, 125, 20, 20, sRecursos.getCMano(), iDimAux,
+                null, null, null, null, "c", false
         );
         bDerecha.addActionListener(inicioComponent);
         this.add(bDerecha);
@@ -183,16 +185,17 @@ public class InicioTemplate extends JPanel{
         );
         this.pAcciones.add(lAcciones);
 
-        int numeroAccion=0;
+        int numeroAccion = 0, fila = 0;
         Accion accion = inicioComponent.obtenerAccion(numeroAccion);
         while(accion != null){
             AccionTemplate pAccion= new AccionComponent(
                 accion.getImagenAccion(), accion.getNombreAccion(), accion.getDescripcionAccion()
             ).getAccionTemplate();
-            if(numeroAccion <=2)
-                pAccion.setLocation(15 + numeroAccion * pAccion.getWidth() + numeroAccion * 15 , 50);
-            else
-                pAccion.setLocation(15 + (numeroAccion - 3) * pAccion.getWidth() + (numeroAccion - 3) * 15 , 190);
+            pAccion.setLocation(
+                    15 + (numeroAccion % 3) * pAccion.getWidth() + (numeroAccion % 3) * 15 , 50 + (140 * fila)
+            );
+            if(numeroAccion  % 3 == 2)
+                fila ++;
             this.pAcciones.add(pAccion);
             numeroAccion ++;
             accion = inicioComponent.obtenerAccion(numeroAccion);
