@@ -36,9 +36,9 @@ public class ProductosTemplate extends JPanel{
         gbc = new GridBagConstraints();
 
         lTitulo = sObjGraficos.construirJLabel(
-            "Cursos en Linea", 0, 0, 0, 0, null, sRecursos.getColorAzul(), null, sRecursos.getFontTProducto(), "c"
+            "Cursos en Linea", 0, 0, 0, 0, null, null, sRecursos.getColorAzul(), null, 
+            sRecursos.getFontTProducto(), sRecursos.getBorderInferiorAzul(), "c"
         );
-        lTitulo.setBorder(sRecursos.getBorderInferiorAzul());
         
         gbc.gridx = 0;
         gbc.gridy = 0;

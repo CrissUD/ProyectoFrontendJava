@@ -37,19 +37,19 @@ public class AccionTemplate extends JPanel {
             imagen.getImage().getScaledInstance(45, 45, Image.SCALE_AREA_AVERAGING)
         );
         this.lImagen = sObjGraficos.construirJLabel(
-            null, (250-60)/2, 15, 45, 45, iDimAux, null, null, null, "c"
+            null, (250-60)/2, 15, 45, 45, null, iDimAux, null, null, null, null, "c"
         );
         this.add(lImagen);
 
         this.lTitulo = sObjGraficos.construirJLabel(
-            titulo, (250-220)/2, 60, 220, 30, null, sRecursos.getColorGrisOscuro(), 
-            null, sRecursos.getFontTitulo(), "c"
+            titulo, (250-220)/2, 60, 220, 30, null, null, sRecursos.getColorGrisOscuro(), 
+            null, sRecursos.getFontTitulo(), null, "c"
         );
         this.add(lTitulo);
 
         this.lParrafo = sObjGraficos.construirJLabel(
             "<html><div align='center'>"+parrafo+"</div></html>", (250-230)/2, 85, 230, 50, null, 
-            sRecursos.getColorGrisOscuro(), null, sRecursos.getFontPequeña(), "c"
+            null, sRecursos.getColorGrisOscuro(), null, sRecursos.getFontPequeña(), null, "c"
         );
         this.add(lParrafo);
 

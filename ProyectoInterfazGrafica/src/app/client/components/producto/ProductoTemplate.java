@@ -56,40 +56,49 @@ public class ProductoTemplate extends JPanel{
     public void crearJLabels(){
         
         lTitulo = sObjGraficos.construirJLabel(
-            producto.getNombreProducto(), 0, 0, 0, 0, null, sRecursos.getColorAzul(),
-            null, sRecursos.getFontTitulo(), "l"
+            producto.getNombreProducto(), 0, 0, 0, 0, null, null, sRecursos.getColorAzul(),
+            null, sRecursos.getFontTitulo(), null, "l"
         );
         modificarGbc(0, 0, 3, 1, 0, 10, 10, 0, 0, 0, 0, 0, 0, 0);
         this.add(lTitulo, gbc);
             
-        iDimAux = new ImageIcon(producto.getImagen().getImage().getScaledInstance(250, 148, Image.SCALE_AREA_AVERAGING));
-        lImagen = sObjGraficos.construirJLabel(null, 0, 0, 0, 0, iDimAux, null, null, null, "c");
+        iDimAux = new ImageIcon(producto.getImagen().getImage().getScaledInstance(
+            250, 148, Image.SCALE_AREA_AVERAGING
+        ));
+        lImagen = sObjGraficos.construirJLabel(
+            null, 0, 0, 0, 0, sRecursos.getCMano(), iDimAux, null, null, null, null, "c"
+        );
         lImagen.setBorder(sRecursos.getBordeRedondeado());
         modificarGbc(0, 1, 3, 1, 2, 10, 10, 3, 10, 3, 0, 0, 0, 0);
         this.add(lImagen, gbc);
 
         lParrafo = sObjGraficos.construirJLabel(
             "<html><div align='justify'>" + producto.getDescripcion() + "</div></html>", 0, 0, 0, 0, 
-            null, sRecursos.getColorGrisOscuro(), null, sRecursos.getFontPequeña(), "l"
+            null, null, sRecursos.getColorGrisOscuro(), null, sRecursos.getFontPequeña(), null, "l"
         );
         modificarGbc(0, 2, 3, 1, 2, 10, 10, 15, 10, 15, 0, 0, 0, 0);
         this.add(lParrafo, gbc);
 
         lCampo = sObjGraficos.construirJLabel(
-            producto.getCampo(), 0, 0, 0, 0, null, sRecursos.getColorAzulMarino(), sRecursos.getColorAzulClaro(), sRecursos.getFontBotones(), "c"
+            producto.getCampo(), 0, 0, 0, 0, null, null, sRecursos.getColorAzulMarino(), 
+            sRecursos.getColorAzulClaro(), sRecursos.getFontBotones(), null, "c"
         );
         modificarGbc(0, 3, 1, 1, 0, 10, 10, 5, 15, 5, 10, 10, 0, 0);
         this.add(lCampo, gbc);
 
         iEstrella = new ImageIcon("ProyectoInterfazGrafica/resources/images/estrella.png");
-        iDimAux = new ImageIcon(iEstrella.getImage().getScaledInstance(25, 25, Image.SCALE_AREA_AVERAGING));
-        lEstrella = sObjGraficos.construirJLabel(null, 0, 0, 0, 0, iDimAux, null, null, null, "c");
+        iDimAux = new ImageIcon(iEstrella.getImage().getScaledInstance(
+            25, 25, Image.SCALE_AREA_AVERAGING)
+        );
+        lEstrella = sObjGraficos.construirJLabel(
+            null, 0, 0, 0, 0, null, iDimAux, null, null, null, null, "c"
+        );
         modificarGbc(1, 3, 1, 1, 0, 13, 10, 5, 15, 5, 0, 0, 1, 0);
         this.add(lEstrella, gbc);
 
         lPuntuacion = sObjGraficos.construirJLabel(
-            producto.getPuntuacion() + "/ 5", 0, 0, 0, 0, null, sRecursos.getColorAzulMarino(), 
-            null, sRecursos.getFontBotones(), "l"
+            producto.getPuntuacion() + "/ 5", 0, 0, 0, 0, null, null, 
+            sRecursos.getColorAzulMarino(), null, sRecursos.getFontBotones(), null, "l"
         );
         modificarGbc(2, 3, 1, 1, 0, 16, 10, 10, 15, 0, 0, 0, 0, 0);
         this.add(lPuntuacion, gbc);

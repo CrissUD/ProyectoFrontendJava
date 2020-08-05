@@ -111,8 +111,8 @@ public class AmigosTemplate extends JPanel{
     public void crearContenidoPOpciones(){
         // LABEL TITULO--------------------------------------------------------------------
         lTitulo = sObjGraficos.construirJLabel(
-            "Edición de Contactos", 20, 10, 200, 30, null, sRecursos.getColorGrisOscuro(), 
-            null, sRecursos.getFontTitulo(), "c"
+            "Edición de Contactos", 20, 10, 200, 30, null, null,  
+            sRecursos.getColorGrisOscuro(), null, sRecursos.getFontTitulo(), null, "c"
         );
         pOpciones.add(lTitulo);
 
@@ -173,37 +173,37 @@ public class AmigosTemplate extends JPanel{
     public void crearContenidoPDatos(){
         // LABEL INSTRUCCIONES ----------------------------------------------------------------
         lInstrucciones = sObjGraficos.construirJLabel(
-            "<html>Datos de los contactos<html>", 20, 10, 120, 50, null, 
-            sRecursos.getColorGrisOscuro(), null, sRecursos.getFontTitulo(), "l"
+            "<html>Datos de los contactos<html>", 20, 10, 120, 50, null, null, 
+            sRecursos.getColorGrisOscuro(), null, sRecursos.getFontTitulo(), null, "l"
         );
         pDatos.add(lInstrucciones);
 
         // LABEL ESLOGAN ----------------------------------------------------------------
         lEslogan = sObjGraficos.construirJLabel(
             "<html>A continuación puede ver y editar la información del Contacto<html>", 
-            20, 50, 180, 90, null, sRecursos.getColorGrisOscuro(), null, 
-            sRecursos.getFontPequeña(), "l"
+            20, 50, 180, 90, null, null, sRecursos.getColorGrisOscuro(), null, 
+            sRecursos.getFontPequeña(), null, "l"
         );
         pDatos.add(lEslogan);
 
         // LABEL ID ----------------------------------------------------------------
         lId = sObjGraficos.construirJLabel(
-            "Id Contacto:", 20, 140, 160, 30, null, 
-            sRecursos.getColorAzulOscuro(), null, sRecursos.getFontPequeña(), "l"
+            "Id Contacto:", 20, 140, 160, 30, null, null, 
+            sRecursos.getColorAzulOscuro(), null, sRecursos.getFontPequeña(), null, "l"
         );
         pDatos.add(lId);
 
         // LABEL ID CONTENIDO ----------------------------------------------------------
         lIdValor = sObjGraficos.construirJLabel(
-            "0", 120, 140, 160, 30, null, sRecursos.getColorAzulOscuro(), 
-            null, sRecursos.getFontPequeña(), "l"
+            "0", 120, 140, 160, 30, null, null, sRecursos.getColorAzulOscuro(), 
+            null, sRecursos.getFontPequeña(), null, "l"
         );
         pDatos.add(lIdValor);
 
         // LABEL NOMBRE ----------------------------------------------------------------
         lNombre = sObjGraficos.construirJLabel(
-            "Nombre Contacto:", 20, 180, 160, 30, null, 
-            sRecursos.getColorAzulOscuro(), null, sRecursos.getFontPequeña(), "l"
+            "Nombre Contacto:", 20, 180, 160, 30, null, null, 
+            sRecursos.getColorAzulOscuro(), null, sRecursos.getFontPequeña(), null, "l"
         );
         pDatos.add(lNombre);
 
@@ -217,8 +217,8 @@ public class AmigosTemplate extends JPanel{
 
         // LABEL EDAD ----------------------------------------------------------------
         lEdad = sObjGraficos.construirJLabel(
-            "Edad Contacto:", 20, 265, 160, 30, null, 
-            sRecursos.getColorAzulOscuro(), null, sRecursos.getFontPequeña(), "l"
+            "Edad Contacto:", 20, 265, 160, 30, null, null,
+            sRecursos.getColorAzulOscuro(), null, sRecursos.getFontPequeña(), null, "l"
         );
         pDatos.add(lEdad);
 
@@ -232,8 +232,8 @@ public class AmigosTemplate extends JPanel{
         
         // LABEL OFICIO ----------------------------------------------------------------
         lOficio = sObjGraficos.construirJLabel(
-            "Oficio Contacto:", 20, 350, 160, 30, null, 
-            sRecursos.getColorAzulOscuro(), null, sRecursos.getFontPequeña(), "l"
+            "Oficio Contacto:", 20, 350, 160, 30, null, null,
+            sRecursos.getColorAzulOscuro(), null, sRecursos.getFontPequeña(), null, "l"
         );
         pDatos.add(lOficio);
 
@@ -247,8 +247,8 @@ public class AmigosTemplate extends JPanel{
         
         // LABEL TELEFONO ----------------------------------------------------------------
         lTelefono = sObjGraficos.construirJLabel(
-            "Telefono Contacto:", 20, 425, 160, 30, null, 
-            sRecursos.getColorAzulOscuro(), null, sRecursos.getFontPequeña(), "l"
+            "Telefono Contacto:", 20, 425, 160, 30, null, null,
+            sRecursos.getColorAzulOscuro(), null, sRecursos.getFontPequeña(), null, "l"
         );
         pDatos.add(lTelefono);
 
@@ -262,8 +262,8 @@ public class AmigosTemplate extends JPanel{
 
         // LABEL EMAIL ----------------------------------------------------------------
         lEmail = sObjGraficos.construirJLabel(
-            "Email Contacto:", 20, 510, 160, 30, null, 
-            sRecursos.getColorAzulOscuro(), null, sRecursos.getFontPequeña(), "l"
+            "Email Contacto:", 20, 510, 160, 30, null, null,
+            sRecursos.getColorAzulOscuro(), null, sRecursos.getFontPequeña(), null,"l"
         );
         pDatos.add(lEmail);
 

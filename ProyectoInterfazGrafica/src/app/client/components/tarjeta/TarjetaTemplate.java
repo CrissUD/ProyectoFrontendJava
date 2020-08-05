@@ -37,16 +37,20 @@ public class TarjetaTemplate extends JPanel{
         iDimAux = new ImageIcon(
             iImagen.getImage().getScaledInstance(246, 110, Image.SCALE_AREA_AVERAGING)
         );
-        lImagen= sObjGraficos.construirJLabel(null, 5, 5, 246, 110, iDimAux, null, null, null, "c");
+        lImagen= sObjGraficos.construirJLabel(
+            null, 5, 5, 246, 110, sRecursos.getCMano(), iDimAux, null, null, null, null, "c"
+        );
         this.add(lImagen);
 
         this.lTitulo = sObjGraficos.construirJLabel(
-            titulo, -15, 120, 180, 30, null, sRecursos.getColorAzul(), null, sRecursos.getFontTitulo(), "c"
+            titulo, -15, 120, 180, 30, null, null, sRecursos.getColorAzul(), 
+            null, sRecursos.getFontTitulo(), null, "c"
         );
         this.add(lTitulo);
 
         lParrafo= sObjGraficos.construirJLabel(
-            "<html><div align='justify'>"+parrafo+"</div></html>", 20, 120, 206, 120, null, sRecursos.getColorGrisOscuro(), null, sRecursos.getFontPequeña(), "c"
+            "<html><div align='justify'>"+parrafo+"</div></html>", 20, 120, 206, 120, null, 
+            null, sRecursos.getColorGrisOscuro(), null, sRecursos.getFontPequeña(), null, "c"
         );
         this.add(lParrafo);
 

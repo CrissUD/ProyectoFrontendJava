@@ -79,13 +79,13 @@ public class BarraTituloTemplate extends JPanel{
             iLogoApp.getImage().getScaledInstance(50, 50, Image.SCALE_AREA_AVERAGING)
         );
         lLogoApp = sObjGraficos.construirJLabel(
-            null, 20, 0, 50, 50, iDimAux, null, null, null, "c"
+            null, 20, 0, 50, 50, null, iDimAux, null, null, null, null, "c"
         );
         this.add(lLogoApp);
 
         lTituloApp = sObjGraficos.construirJLabel(
-            "ProductList", 40, 5, 200, 40, null, sRecursos.getColorAzul(), 
-            null, fontTituloBarra, "c"
+            "ProductList", 40, 5, 200, 40, null, null, sRecursos.getColorAzul(), 
+            null, fontTituloBarra, null, "c"
         );
         this.add(lTituloApp);
     }

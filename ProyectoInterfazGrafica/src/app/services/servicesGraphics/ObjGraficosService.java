@@ -117,15 +117,17 @@ public class ObjGraficosService {
     }
 
     public JLabel construirJLabel(
-        String texto, int x, int y, int ancho, int alto, ImageIcon imagen, Color colorFuente, 
-        Color colorFondo, Font fuente, String direccion
+        String texto, int x, int y, int ancho, int alto, Cursor cursor, ImageIcon imagen, 
+        Color colorFuente, Color colorFondo, Font fuente, Border borde, String direccion
     ){        
         label= new JLabel(texto);
         label.setLocation(x, y);
         label.setSize(ancho, alto);
         label.setForeground(colorFuente);
         label.setFont(fuente);
+        label.setCursor(cursor);
         label.setIcon(imagen);
+        label.setBorder(borde);
         if(colorFondo!=null){
             label.setOpaque(true);
             label.setBackground(colorFondo);
@@ -195,8 +197,8 @@ public class ObjGraficosService {
     }
 
     public JTextArea construirJTextArea(
-        String texto, int x, int y, int ancho, int alto, Color colorFondo, Color colorFuente, 
-        Color colorCaret, Font fuente, Border borde
+        String texto, int x, int y, int ancho, int alto, Color colorFondo, 
+        Color colorFuente, Color colorCaret, Font fuente, Border borde
     ){        
         textArea = new JTextArea();
         textArea.setLocation(x, y);

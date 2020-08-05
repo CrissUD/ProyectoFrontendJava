@@ -77,8 +77,8 @@ public class NavegacionUsuarioTemplate extends JPanel{
             iInicio.getImage().getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
         );
         this.bInicio = sObjGraficos.construirJButton(
-            "      Inicio", 30, 30, 200, 40, sRecursos.getCMano(), 
-            iDimAux, sRecursos.getFontBotones(), null, Color.WHITE, borderVacio, "l", false
+            "      Inicio", 30, 30, 200, 40, sRecursos.getCMano(), iDimAux,
+            sRecursos.getFontBotones(), null, Color.WHITE, borderVacio, "l", false
         );
         this.bInicio.addActionListener(navegacionUsuarioComponent);
         this.bInicio.addMouseListener(navegacionUsuarioComponent);
@@ -89,8 +89,8 @@ public class NavegacionUsuarioTemplate extends JPanel{
             iPerfil.getImage().getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
         );
         this.bPerfil = sObjGraficos.construirJButton(
-            "      Perfil", 30, 80, 200, 40, sRecursos.getCMano(), 
-            iDimAux, sRecursos.getFontBotones(), null, Color.WHITE, borderVacio, "l", false
+            "      Perfil", 30, 80, 200, 40, sRecursos.getCMano(), iDimAux,
+            sRecursos.getFontBotones(), null, Color.WHITE, borderVacio, "l", false
         );
         this.bPerfil.addActionListener(navegacionUsuarioComponent);
         this.bPerfil.addMouseListener(navegacionUsuarioComponent);
@@ -101,8 +101,8 @@ public class NavegacionUsuarioTemplate extends JPanel{
             iAmigos.getImage().getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
         );
         this.bAmigos = sObjGraficos.construirJButton(
-            "      Amigos", 30, 130, 200, 40, sRecursos.getCMano(), 
-            iDimAux, sRecursos.getFontBotones(), null, Color.WHITE, borderVacio, "l", false
+            "      Amigos", 30, 130, 200, 40, sRecursos.getCMano(), iDimAux,
+            sRecursos.getFontBotones(), null, Color.WHITE, borderVacio, "l", false
         );
         this.bAmigos.addActionListener(navegacionUsuarioComponent);
         this.bAmigos.addMouseListener(navegacionUsuarioComponent);
@@ -113,8 +113,8 @@ public class NavegacionUsuarioTemplate extends JPanel{
             iProductos.getImage().getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
         );
         this.bProductos = sObjGraficos.construirJButton(
-            "      Productos", 30, 180, 200, 40, sRecursos.getCMano(), 
-            iDimAux, sRecursos.getFontBotones(), null, Color.WHITE, borderVacio, "l", false
+            "      Productos", 30, 180, 200, 40, sRecursos.getCMano(), iDimAux,
+            sRecursos.getFontBotones(), null, Color.WHITE, borderVacio, "l", false
         );
         this.bProductos.addActionListener(navegacionUsuarioComponent);
         this.bProductos.addMouseListener(navegacionUsuarioComponent);
@@ -125,8 +125,8 @@ public class NavegacionUsuarioTemplate extends JPanel{
             iConfiguracion.getImage().getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
         );
         this.bConfiguracion = sObjGraficos.construirJButton(
-            "      Configuraciones", 30, 230, 200, 40, sRecursos.getCMano(), 
-            iDimAux, sRecursos.getFontBotones(), null, Color.WHITE, borderVacio, "l", false
+            "      Configuraciones", 30, 230, 200, 40, sRecursos.getCMano(), iDimAux, 
+            sRecursos.getFontBotones(), null, Color.WHITE, borderVacio, "l", false
         );
         this.bConfiguracion.addActionListener(navegacionUsuarioComponent);
         this.bConfiguracion.addMouseListener(navegacionUsuarioComponent);
@@ -137,8 +137,8 @@ public class NavegacionUsuarioTemplate extends JPanel{
             iCerrarSesion.getImage().getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
         );
         this.bCerrarSesion = sObjGraficos.construirJButton(
-            "      Cerrar Sesión", 30, 280, 200, 40, sRecursos.getCMano(), 
-            iDimAux, sRecursos.getFontBotones(), null, Color.WHITE, borderVacio, "l", false
+            "      Cerrar Sesión", 30, 280, 200, 40, sRecursos.getCMano(), iDimAux,
+            sRecursos.getFontBotones(), null, Color.WHITE, borderVacio, "l", false
         );
         this.bCerrarSesion.addActionListener(navegacionUsuarioComponent);
         this.bCerrarSesion.addMouseListener(navegacionUsuarioComponent);
@@ -152,14 +152,15 @@ public class NavegacionUsuarioTemplate extends JPanel{
             iIconoUsuario.getImage().getScaledInstance(40, 40, Image.SCALE_AREA_AVERAGING)
         );
         this.lIconoUsuario = sObjGraficos.construirJLabel(
-            null, 10, 20, 40, 40, iDimAux, null, null, null, "c"
+            null, 10, 20, 40, 40, null, iDimAux, null, null, null, null, "c"
         );
         this.pSuperior.add(lIconoUsuario);
 
         // LABEL NOMBRE USUARIO--------------------------------------------------------------------
         this.lNombreUsuario = sObjGraficos.construirJLabel(
-            navegacionUsuarioComponent.getUsuario().getNombreUsuario(), (this.pSuperior.getWidth()-200)/2, 20, 
-            200, 40, null, Color.WHITE, null, sRecursos.getFontTitulo(), "c"
+            navegacionUsuarioComponent.getUsuario().getNombreUsuario(), 
+            (this.pSuperior.getWidth() - 200) / 2, 20, 200, 40, null, null, 
+            Color.WHITE, null, sRecursos.getFontTitulo(), null, "c"
         );
         this.pSuperior.add(lNombreUsuario);
 
@@ -170,17 +171,17 @@ public class NavegacionUsuarioTemplate extends JPanel{
             )
         );
         this.lImagenUsuario = sObjGraficos.construirJLabel(
-                null, (this.pSuperior.getWidth()-180)/2, 75, 180, 180,
-                iDimAux, null, null, null, "c"
+            null, (this.pSuperior.getWidth() - 180) / 2, 75, 180, 180,
+            null, iDimAux, null, null, null, null, "c"
         );
         lImagenUsuario.setBorder(sRecursos.getBordeCircular());
         this.pSuperior.add(lImagenUsuario);
 
         // LABEL ESLOGAN--------------------------------------------------------------------
         this.lEslogan = sObjGraficos.construirJLabel(
-                "<html><div align='center'> Nuestros clientes son <br/>lo mas importante</div></html>",
-                (this.pSuperior.getWidth()-180)/2, 265, 180, 40, null, Color.WHITE,
-                null, sRecursos.getFontPequeña(), "c"
+            "<html><div align='center'> Nuestros clientes son <br/>lo mas importante</div></html>",
+            (this.pSuperior.getWidth() - 180) / 2, 265, 180, 40, null, null, 
+            Color.WHITE, null, sRecursos.getFontPequeña(), null, "c"
         );
         this.pSuperior.add(lEslogan);
     }
