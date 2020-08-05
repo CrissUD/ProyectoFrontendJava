@@ -1,0 +1,10 @@
+0,Karol Garcia,22 años,Enfermera,319-461-8875,karol101@gmail.com
+1,Sandra Gonzales,34 años,Vendedora,310-340-3882,SandraG@hotmail.com
+2,Mark Parra,20 años,Estudiante,-,markparra98@gmail.com
+3,Cindy Daza,38 años,Maestra,687-55-45,-
+4,John Florez,25 años,Policía,320-836-48-24,johnF32@hotmail.com
+5,Nicolas Moreno,23 años,Estudiante,-,nicolaswwe@hotmail.com
+6,Brian Salgado,39 años,Doctor,321-475-69-22,-
+7,Mario Casas,17 años,Estudiante,322-980-55-41,marioc80@gmail.com
+8,Jairo Ruiz,29 años,Artista,-,-
+9,Gabriela Valbuena,23 años,Estudiante,320-350-12-58,gllb@gmail.com

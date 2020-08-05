@@ -1,0 +1,6 @@
+Clases,Clases a la comunidad que complementan el pensum común.,ProyectoInterfazGrafica/resources/images/clases.png
+Clases Virtuales,Cursos virtuales como medio de enseñanza.,ProyectoInterfazGrafica/resources/images/pantalla.png
+Generación de ideas,Desarrollo de ideas con tecnologías actuales.,ProyectoInterfazGrafica/resources/images/ideas.png
+Notificaciones,Notificación el estado de tus cursos y actividades.,ProyectoInterfazGrafica/resources/images/celular.png
+Estadísticas,Gestión de participación en nuestros cursos.,ProyectoInterfazGrafica/resources/images/estadisticas.png
+Dirección,Damos direcciónamiento a nuestros estudiantes.,ProyectoInterfazGrafica/resources/images/direccion.png

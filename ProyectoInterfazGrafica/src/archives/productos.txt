@@ -1,0 +1,12 @@
+1,Java,Aprende el lenguaje de programación con mayor demanda laboral en grandes empresas de todo el mundo.,Frontend,4.9,ProyectoInterfazGrafica/resources/images/productos/java.png
+2,CssAvanzado,Aprende a profundidad los diversos módulos que tiene CSS3 para darle estilos a tu página web.,Frontend,4.5,ProyectoInterfazGrafica/resources/images/productos/cssAvanzado.png
+3,JavaScript,Aprende el lenguaje de programación más importante de la web sin conocimientos previos.,Desarrollo,4.8,ProyectoInterfazGrafica/resources/images/productos/javaScript.png
+4,Kotlin,Programa para Android con un sintaxis más sencilla y compatibilidad total con Java.,Android,4.4,ProyectoInterfazGrafica/resources/images/productos/kotlin.png
+5,React Js,Programa tus aplicaciones web con la librería frontend que usa Facebook e Instagram.,Frontend,4.6,ProyectoInterfazGrafica/resources/images/productos/reactJS.png
+6,TypeScript,Lleva JavaScript al siguiente nivel con tipado estático nuevas características y programación.,Desarrollo,4.5,ProyectoInterfazGrafica/resources/images/productos/typeScript.png
+7,Premier Pro,Aprende edición de video realiza montajes y composiciones visuales.,Diseño,4.7,ProyectoInterfazGrafica/resources/images/productos/adobePremier.png
+8,After Effects,Aprende a crear gráficos animados y efectos visuales para video.,Diseño,4.6,ProyectoInterfazGrafica/resources/images/productos/afterEffects.png
+9,Angular Js,Aprende el framework frontend con más demanda del mercado.,Frontend,4.8,ProyectoInterfazGrafica/resources/images/productos/angularJS.png
+10,Vue Js,Aprende el framework progresivo de JS que te da la flexibilidad para todo tipo de proyectos.,Frontend,4.4,ProyectoInterfazGrafica/resources/images/productos/vueJS.png
+11,Google Cloud,Aprende a trabajar en una de las plataformas de Cloud Computing más usadas en el mundo.,Backend,4.5,ProyectoInterfazGrafica/resources/images/productos/googleCloud.png
+12,GraphQL,Aprende a solicitar datos al servidor sin modificar el backend ni el Frontend con este intermediario.,Backend,4.3,ProyectoInterfazGrafica/resources/images/productos/graphQL.png

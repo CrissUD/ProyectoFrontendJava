@@ -1,0 +1,5 @@
+CrissUD,123456,Administrador,ProyectoInterfazGrafica/resources/images/perfiles/perfil1.png
+SantiagoDP,987654,Cajero,ProyectoInterfazGrafica/resources/images/perfiles/perfil2.png
+SandraMCC,101232,Cajero,ProyectoInterfazGrafica/resources/images/perfiles/perfil3.png
+CarlaFG,456123,Cliente,ProyectoInterfazGrafica/resources/images/perfiles/perfil4.png
+Daniela987,111222,Cliente,ProyectoInterfazGrafica/resources/images/perfiles/perfil5.png
