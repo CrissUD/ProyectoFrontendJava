@@ -18,6 +18,7 @@ public class VistaPrincipalTemplate extends JFrame {
 
     private JPanel pNavegacion, pBarra, pPrincipal;
     private JScrollPane psProductos;
+    private int estado = 0;
 
     public VistaPrincipalTemplate(VistaPrincipalComponent vistaPrincipalComponent) {
         super("Vista Principal");
@@ -55,7 +56,14 @@ public class VistaPrincipalTemplate extends JFrame {
             7, 10, sRecursos.getColorGrisClaro(), sRecursos.getColorAzul(), sRecursos.getColorAzulOscuro())
         );
         this.pPrincipal.add(psProductos);
-        this.psProductos.getVerticalScrollBar().setValue(2);
+        if (estado == 1){
+            estado = 0;
+            this.psProductos.getVerticalScrollBar().setValue(estado + 2);
+        }
+        else{
+            estado = 1;
+            this.psProductos.getVerticalScrollBar().setValue(estado);
+        }
     }
 
     public JPanel getPNavegacion() {
