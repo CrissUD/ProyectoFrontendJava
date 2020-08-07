@@ -5,8 +5,8 @@ import javax.swing.JPanel;
 
 import app.client.components.producto.ProductoComponent;
 import app.client.components.producto.ProductoTemplate;
-import app.services.servicesGraphics.ObjGraficosService;
-import app.services.servicesGraphics.RecursosService;
+import app.services.graphicServices.ObjGraficosService;
+import app.services.graphicServices.RecursosService;
 import models.Producto;
 
 import java.awt.GridBagConstraints;

@@ -1,4 +1,4 @@
-package app.services.servicesLogic;
+package app.services.logicServices;
 
 import logic.ControlUsuarios;
 import models.Usuario;

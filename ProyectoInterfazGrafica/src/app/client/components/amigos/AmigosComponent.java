@@ -15,8 +15,8 @@ import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
 
-import app.services.servicesLogic.AmigoService;
-import app.services.servicesGraphics.RecursosService;
+import app.services.logicServices.AmigoService;
+import app.services.graphicServices.RecursosService;
 import models.Amigo;
 
 public class AmigosComponent implements ActionListener, MouseListener, FocusListener {

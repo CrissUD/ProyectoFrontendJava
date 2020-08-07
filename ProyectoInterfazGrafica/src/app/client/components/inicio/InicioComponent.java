@@ -1,6 +1,6 @@
 package app.client.components.inicio;
 
-import app.services.servicesLogic.AccionService;
+import app.services.logicServices.AccionService;
 import models.Accion;
 
 import java.awt.event.ActionEvent;

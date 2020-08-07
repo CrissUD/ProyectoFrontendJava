@@ -10,8 +10,8 @@ import java.awt.GridBagLayout;
 import java.awt.Image;
 import java.awt.Dimension;
 
-import app.services.servicesGraphics.ObjGraficosService;
-import app.services.servicesGraphics.RecursosService;
+import app.services.graphicServices.ObjGraficosService;
+import app.services.graphicServices.RecursosService;
 import models.Producto;
 
 public class ProductoTemplate extends JPanel{

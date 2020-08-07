@@ -11,8 +11,8 @@ import javax.swing.JPanel;
 import app.client.components.accion.AccionComponent;
 import app.client.components.accion.AccionTemplate;
 import app.client.components.tarjeta.TarjetaComponent;
-import app.services.servicesGraphics.ObjGraficosService;
-import app.services.servicesGraphics.RecursosService;
+import app.services.graphicServices.ObjGraficosService;
+import app.services.graphicServices.RecursosService;
 import models.Accion;
 
 public class InicioTemplate extends JPanel{

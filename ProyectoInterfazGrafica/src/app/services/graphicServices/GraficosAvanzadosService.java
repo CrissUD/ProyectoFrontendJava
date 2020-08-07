@@ -1,4 +1,4 @@
-package app.services.servicesGraphics;
+package app.services.graphicServices;
 
 import java.awt.Dimension;
 import java.awt.Color;

@@ -3,9 +3,9 @@ package app.client.login;
 import java.awt.Color;
 import java.awt.Image;
 
-import app.services.servicesGraphics.GraficosAvanzadosService;
-import app.services.servicesGraphics.ObjGraficosService;
-import app.services.servicesGraphics.RecursosService;
+import app.services.graphicServices.GraficosAvanzadosService;
+import app.services.graphicServices.ObjGraficosService;
+import app.services.graphicServices.RecursosService;
 
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;

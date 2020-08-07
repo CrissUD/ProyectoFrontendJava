@@ -15,7 +15,7 @@ import java.awt.event.MouseEvent;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 
-import app.services.servicesGraphics.RecursosService;
+import app.services.graphicServices.RecursosService;
 
 public class LienzoTemplate extends Canvas{
     

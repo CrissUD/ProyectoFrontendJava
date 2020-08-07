@@ -1,4 +1,4 @@
-package app.services.servicesGraphics;
+package app.services.graphicServices;
 
 import java.awt.Color;
 import java.awt.Cursor;

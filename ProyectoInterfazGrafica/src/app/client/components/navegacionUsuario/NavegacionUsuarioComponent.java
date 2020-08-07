@@ -1,8 +1,8 @@
 package app.client.components.navegacionUsuario;
 
 import app.client.vistaPrincipal.VistaPrincipalComponent;
-import app.services.servicesLogic.UsuarioService;
-import app.services.servicesGraphics.RecursosService;
+import app.services.logicServices.UsuarioService;
+import app.services.graphicServices.RecursosService;
 import models.Usuario;
 
 import javax.swing.JButton;

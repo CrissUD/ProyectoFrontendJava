@@ -1,6 +1,6 @@
 package app.client.components.productos;
 
-import app.services.servicesLogic.ProductoService;
+import app.services.logicServices.ProductoService;
 import models.Producto;
 
 public class ProductosComponent{
