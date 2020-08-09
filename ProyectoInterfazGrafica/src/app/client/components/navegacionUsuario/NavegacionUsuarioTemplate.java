@@ -160,7 +160,7 @@ public class NavegacionUsuarioTemplate extends JPanel{
         this.lNombreUsuario = sObjGraficos.construirJLabel(
             navegacionUsuarioComponent.getUsuario().getNombreUsuario(), 
             (this.pSuperior.getWidth() - 200) / 2, 20, 200, 40, null, null, 
-            Color.WHITE, null, sRecursos.getFontTitulo(), null, "c"
+            sRecursos.getFontTitulo(), null, Color.WHITE, null, "c"
         );
         this.pSuperior.add(lNombreUsuario);
 
@@ -181,7 +181,7 @@ public class NavegacionUsuarioTemplate extends JPanel{
         this.lEslogan = sObjGraficos.construirJLabel(
             "<html><div align='center'> Nuestros clientes son <br/>lo mas importante</div></html>",
             (this.pSuperior.getWidth() - 180) / 2, 265, 180, 40, null, null, 
-            Color.WHITE, null, sRecursos.getFontPequeña(), null, "c"
+            sRecursos.getFontPequeña(), null, Color.WHITE, null, "c"
         );
         this.pSuperior.add(lEslogan);
     }

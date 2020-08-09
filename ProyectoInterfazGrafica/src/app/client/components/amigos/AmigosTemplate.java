@@ -112,15 +112,15 @@ public class AmigosTemplate extends JPanel{
     public void crearContenidoPOpciones(){
         // LABEL TITULO--------------------------------------------------------------------
         lTitulo = sObjGraficos.construirJLabel(
-            "Edición de Contactos", 20, 10, 200, 30, null, null,  
-            sRecursos.getColorGrisOscuro(), null, sRecursos.getFontTitulo(), null, "c"
+            "Edición de Contactos", 20, 10, 200, 30, null, null, sRecursos.getFontTitulo(),
+            null, sRecursos.getColorGrisOscuro(), null, "c"
         );
         pOpciones.add(lTitulo);
 
         // TEXTFIELD CONSULTA--------------------------------------------------------------------
         tConsulta = sObjGraficos.construirJTextField(
-            "Filtrar...", 30, 60, 380, 40, colorGris , sRecursos.getColorGrisOscuro(), 
-            sRecursos.getColorGrisOscuro(), sRecursos.getFontBotones(), null, "c"
+            "Filtrar...", 30, 60, 380, 40, sRecursos.getFontBotones(), colorGris , 
+            sRecursos.getColorGrisOscuro(), sRecursos.getColorGrisOscuro(), null, "c"
         );
         tConsulta.addFocusListener(amigosComponent);
         pOpciones.add(tConsulta);
@@ -175,103 +175,103 @@ public class AmigosTemplate extends JPanel{
         // LABEL INSTRUCCIONES ----------------------------------------------------------------
         lInstrucciones = sObjGraficos.construirJLabel(
             "<html>Datos de los contactos<html>", 20, 10, 120, 50, null, null, 
-            sRecursos.getColorGrisOscuro(), null, sRecursos.getFontTitulo(), null, "l"
+            sRecursos.getFontTitulo(), null, sRecursos.getColorGrisOscuro(), null, "l"
         );
         pDatos.add(lInstrucciones);
 
         // LABEL ESLOGAN ----------------------------------------------------------------
         lEslogan = sObjGraficos.construirJLabel(
             "<html>A continuación puede ver y editar la información del Contacto<html>", 
-            20, 50, 180, 90, null, null, sRecursos.getColorGrisOscuro(), null, 
-            sRecursos.getFontPequeña(), null, "l"
+            20, 50, 180, 90, null, null, sRecursos.getFontPequeña(), null, sRecursos.getColorGrisOscuro(), 
+            null, "l"
         );
         pDatos.add(lEslogan);
 
         // LABEL ID ----------------------------------------------------------------
         lId = sObjGraficos.construirJLabel(
-            "Id Contacto:", 20, 140, 160, 30, null, null, 
-            sRecursos.getColorAzulOscuro(), null, sRecursos.getFontPequeña(), null, "l"
+            "Id Contacto:", 20, 140, 160, 30, null, null, sRecursos.getFontPequeña(),
+            null, sRecursos.getColorAzulOscuro(), null, "l"
         );
         pDatos.add(lId);
 
         // LABEL ID CONTENIDO ----------------------------------------------------------
         lIdValor = sObjGraficos.construirJLabel(
-            "0", 120, 140, 160, 30, null, null, sRecursos.getColorAzulOscuro(), 
-            null, sRecursos.getFontPequeña(), null, "l"
+            "0", 120, 140, 160, 30, null, null, sRecursos.getFontPequeña(),
+            null, sRecursos.getColorAzulOscuro(), null, "l"
         );
         pDatos.add(lIdValor);
 
         // LABEL NOMBRE ----------------------------------------------------------------
         lNombre = sObjGraficos.construirJLabel(
-            "Nombre Contacto:", 20, 180, 160, 30, null, null, 
-            sRecursos.getColorAzulOscuro(), null, sRecursos.getFontPequeña(), null, "l"
+            "Nombre Contacto:", 20, 180, 160, 30, null, null, sRecursos.getFontPequeña(),
+            null, sRecursos.getColorAzulOscuro(), null, "l"
         );
         pDatos.add(lNombre);
 
         // TEXTFIELD NOMBRE ----------------------------------------------------------------
         tNombre = sObjGraficos.construirJTextField(
-            "Nombre", 30, 215, 180, 30, colorGris, sRecursos.getColorGrisOscuro(),
-            sRecursos.getColorGrisOscuro(), sRecursos.getFontPequeña(), null, "c"
+            "Nombre", 30, 215, 180, 30, sRecursos.getFontPequeña(), colorGris,
+            sRecursos.getColorGrisOscuro(), sRecursos.getColorGrisOscuro(), null, "c"
         );
         tNombre.addFocusListener(amigosComponent);
         pDatos.add(tNombre);
 
         // LABEL EDAD ----------------------------------------------------------------
         lEdad = sObjGraficos.construirJLabel(
-            "Edad Contacto:", 20, 265, 160, 30, null, null,
-            sRecursos.getColorAzulOscuro(), null, sRecursos.getFontPequeña(), null, "l"
+            "Edad Contacto:", 20, 265, 160, 30, null, null, sRecursos.getFontPequeña(),
+            null, sRecursos.getColorAzulOscuro(), null, "l"
         );
         pDatos.add(lEdad);
 
         // TEXTFIELD NOMBRE ----------------------------------------------------------------
         tEdad = sObjGraficos.construirJTextField(
-            "Edad", 30, 300, 180, 30, colorGris, sRecursos.getColorGrisOscuro(),
-            sRecursos.getColorGrisOscuro(), sRecursos.getFontPequeña(), null, "c"
+            "Edad", 30, 300, 180, 30, sRecursos.getFontPequeña(), colorGris, 
+            sRecursos.getColorGrisOscuro(), sRecursos.getColorGrisOscuro(),  null, "c"
         );
         tEdad.addFocusListener(amigosComponent);
         pDatos.add(tEdad);
         
         // LABEL OFICIO ----------------------------------------------------------------
         lOficio = sObjGraficos.construirJLabel(
-            "Oficio Contacto:", 20, 350, 160, 30, null, null,
-            sRecursos.getColorAzulOscuro(), null, sRecursos.getFontPequeña(), null, "l"
+            "Oficio Contacto:", 20, 350, 160, 30, null, null, sRecursos.getFontPequeña(),
+            null, sRecursos.getColorAzulOscuro(), null, "l"
         );
         pDatos.add(lOficio);
 
         // TEXTFIELD OFICIO ----------------------------------------------------------------
         tOficio = sObjGraficos.construirJTextField(
-            "Oficio", 30, 385, 180, 30, colorGris, sRecursos.getColorGrisOscuro(),
-            sRecursos.getColorGrisOscuro(), sRecursos.getFontPequeña(), null, "c"
+            "Oficio", 30, 385, 180, 30, sRecursos.getFontPequeña(), colorGris, 
+            sRecursos.getColorGrisOscuro(), sRecursos.getColorGrisOscuro(), null, "c"
         );
         tOficio.addFocusListener(amigosComponent);
         pDatos.add(tOficio);
         
         // LABEL TELEFONO ----------------------------------------------------------------
         lTelefono = sObjGraficos.construirJLabel(
-            "Telefono Contacto:", 20, 425, 160, 30, null, null,
-            sRecursos.getColorAzulOscuro(), null, sRecursos.getFontPequeña(), null, "l"
+            "Telefono Contacto:", 20, 425, 160, 30, null, null, sRecursos.getFontPequeña(),
+            null, sRecursos.getColorAzulOscuro(), null, "l"
         );
         pDatos.add(lTelefono);
 
         // TEXTFIELD TELEFONO ----------------------------------------------------------------
         tTelefono = sObjGraficos.construirJTextField(
-            "Telefono", 30, 460, 180, 30, colorGris, sRecursos.getColorGrisOscuro(),
-            sRecursos.getColorGrisOscuro(), sRecursos.getFontPequeña(), null, "c"
+            "Telefono", 30, 460, 180, 30, sRecursos.getFontPequeña(), colorGris, 
+            sRecursos.getColorGrisOscuro(), sRecursos.getColorGrisOscuro(), null, "c"
         );
         tTelefono.addFocusListener(amigosComponent);
         pDatos.add(tTelefono);
 
         // LABEL EMAIL ----------------------------------------------------------------
         lEmail = sObjGraficos.construirJLabel(
-            "Email Contacto:", 20, 510, 160, 30, null, null,
-            sRecursos.getColorAzulOscuro(), null, sRecursos.getFontPequeña(), null,"l"
+            "Email Contacto:", 20, 510, 160, 30, null, null, sRecursos.getFontPequeña(),
+            null, sRecursos.getColorAzulOscuro(), null, "l"
         );
         pDatos.add(lEmail);
 
         // TEXTFIELD EMAIL ----------------------------------------------------------------
         tEmail = sObjGraficos.construirJTextField(
-            "Email", 30, 545, 180, 30, colorGris, sRecursos.getColorGrisOscuro(),
-            sRecursos.getColorGrisOscuro(), sRecursos.getFontPequeña(), null, "c"
+            "Email", 30, 545, 180, 30, sRecursos.getFontPequeña(), colorGris,
+            sRecursos.getColorGrisOscuro(), sRecursos.getColorGrisOscuro(),  null, "c"
         );
         tEmail.addFocusListener(amigosComponent);
         pDatos.add(tEmail);

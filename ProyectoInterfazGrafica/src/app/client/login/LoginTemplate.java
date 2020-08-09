@@ -29,7 +29,7 @@ public class LoginTemplate extends JFrame {
     private JTextField tNombreUsuario;
     private JPasswordField tClaveUsuario;
     private JComboBox<String> cbTipoUsuario;
-    private JButton bEntrar, bCerrar, bRegistrarse, bOpcion1, bOpcion2, bOpcion3;
+    private JButton bEntrar, bCerrar, bRegistrarse, bOpcion1, bOpcion2, bOpcion3, bComboBox;
     private JCheckBox checkSi, checkNo;
     private ButtonGroup grupo;
 
@@ -107,8 +107,8 @@ public class LoginTemplate extends JFrame {
     public void crearJTextFields(){
         tNombreUsuario = sObjGraficos.construirJTextField(
             "Nombre Usuario", (pDerecha.getWidth() - 260) / 2, 130, 260, 40, 
-            Color.WHITE, sRecursos.getColorGrisOscuro(), sRecursos.getColorGrisOscuro(), 
-            null, sRecursos.getBorderInferiorGris(), "c"
+            null, Color.WHITE, sRecursos.getColorGrisOscuro(),
+            sRecursos.getColorGrisOscuro(), sRecursos.getBorderInferiorGris(), "c"
         );
         tNombreUsuario.addMouseListener(loginComponent);
         pDerecha.add(tNombreUsuario);
@@ -187,8 +187,7 @@ public class LoginTemplate extends JFrame {
 
         //LABEL TITULO APP-----------------------------------------------------------------------------
         lTituloApp = sObjGraficos.construirJLabel(
-            "Login de Usuario", 100, 20, 220, 30, null, null, Color.WHITE,
-            null, sRecursos.getFontTPrincipal(), null, "c"
+            "Login de Usuario", 100, 20, 220, 30, null, null, sRecursos.getFontTPrincipal(), null, Color.WHITE, null, "c"
         );
         pIzquierda.add(lTituloApp);
 
@@ -225,21 +224,21 @@ public class LoginTemplate extends JFrame {
         //LABEL ESLOGAN-----------------------------------------------------------------------------
         lEslogan = sObjGraficos.construirJLabel(
             "Te ayudamos en todo", (pDerecha.getWidth() - 130) / 2, 60, 130, 20, null, null,
-            sRecursos.getColorGrisOscuro(), null, sRecursos.getFontSubtitulo(), null, "c"
+            sRecursos.getFontSubtitulo(), null, sRecursos.getColorGrisOscuro(), null, "c"
         );
         pDerecha.add(lEslogan);
 
         //LABEL TITULO LOGIN-----------------------------------------------------------------------------
         lTituloLogin = sObjGraficos.construirJLabel(
             "Registra tus Datos", (pDerecha.getWidth() - 150) / 2, 80, 150, 30, null, null,
-            sRecursos.getColorGrisOscuro(), null, sRecursos.getFontTitulo(), null, "c"
+            sRecursos.getFontTitulo(), null, sRecursos.getColorGrisOscuro(), null, "c"
         );
         pDerecha.add(lTituloLogin);
 
         //LABEL NOTIFICACIONES-----------------------------------------------------------------------------
         lNotificaciones = sObjGraficos.construirJLabel(
             "¿Recibir Notificaciones?", (pDerecha.getWidth() - 140) / 2, 400, 140, 20, null, null,
-            sRecursos.getColorGrisOscuro(), null, sRecursos.getFontSubtitulo(), null, "c"
+            sRecursos.getFontSubtitulo(), null, sRecursos.getColorGrisOscuro(), null, "c"
         );
         pDerecha.add(lNotificaciones);
 
@@ -310,8 +309,8 @@ public class LoginTemplate extends JFrame {
     public void crearJPasswordFields(){
         tClaveUsuario = sObjGraficos.construirJPasswordField(
             "Clave Usuario", (pDerecha.getWidth() - 260) / 2, 260, 260, 40,
-            null, sRecursos.getColorGrisOscuro(), sRecursos.getColorGrisOscuro(), 
-            null, sRecursos.getBorderInferiorGris(), "c"
+            null, null, sRecursos.getColorGrisOscuro(), sRecursos.getColorGrisOscuro(), 
+            sRecursos.getBorderInferiorGris(), "c"
         );
         tClaveUsuario.addMouseListener(loginComponent);
         pDerecha.add(tClaveUsuario);
@@ -320,11 +319,17 @@ public class LoginTemplate extends JFrame {
     public void crearJComboBoxes(){
         cbTipoUsuario = sObjGraficos.construirJComboBox(
             "Cliente_Cajero_Administrador", (pDerecha.getWidth() - 220) / 2, 210, 220, 30, 
-            Color.WHITE, Color.WHITE, "c"
+            null, Color.WHITE, Color.WHITE, "c"
+        );
+        ImageIcon iDimAux = new ImageIcon(iAbajo.getImage().getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING));
+        bComboBox = ObjGraficosService.getService().construirJButton(
+            null, 0, 0, 0, 0, RecursosService.getService().getCMano(), iDimAux,
+            null, null, null, RecursosService.getService().getBordeLateralAzul(), "c", true
         );
         cbTipoUsuario.setUI(
             GraficosAvanzadosService.getService().devolverJComboBoxPersonalizado(
-                sRecursos.getColorAzul(), sRecursos.getColorAzul(), iAbajo, false
+                bComboBox, null, sRecursos.getColorAzul(), 
+                sRecursos.getColorAzul(), sRecursos.getColorAzul(), false
             )
         );
         pDerecha.add(cbTipoUsuario);

@@ -43,14 +43,14 @@ public class TarjetaTemplate extends JPanel{
         this.add(lImagen);
 
         this.lTitulo = sObjGraficos.construirJLabel(
-            titulo, 15, 120, 180, 30, null, null, sRecursos.getColorAzul(), 
-            null, sRecursos.getFontTitulo(), null, "l"
+            titulo, 15, 120, 180, 30, null, null, sRecursos.getFontTitulo(), 
+            null, sRecursos.getColorAzul(), null, "l"
         );
         this.add(lTitulo);
 
         lParrafo = sObjGraficos.construirJLabel(
             "<html><div align='justify'>"+parrafo+"</div></html>", 20, 120, 206, 120, null, 
-            null, sRecursos.getColorGrisOscuro(), null, sRecursos.getFontPequeña(), null, "c"
+            null, sRecursos.getFontPequeña(), null, sRecursos.getColorGrisOscuro(), null, "c"
         );
         this.add(lParrafo);
 

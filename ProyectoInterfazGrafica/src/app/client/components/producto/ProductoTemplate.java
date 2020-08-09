@@ -56,8 +56,8 @@ public class ProductoTemplate extends JPanel{
     public void crearJLabels(){
         
         lTitulo = sObjGraficos.construirJLabel(
-            producto.getNombreProducto(), 0, 0, 0, 0, null, null, sRecursos.getColorAzul(),
-            null, sRecursos.getFontTitulo(), null, "l"
+            producto.getNombreProducto(), 0, 0, 0, 0, null, null, 
+            sRecursos.getFontTitulo(), null, sRecursos.getColorAzul(), null, "l"
         );
         modificarGbc(0, 0, 3, 1, 0, 10, 10, 0, 0, 0, 0, 0, 0, 0);
         this.add(lTitulo, gbc);
@@ -74,14 +74,14 @@ public class ProductoTemplate extends JPanel{
 
         lParrafo = sObjGraficos.construirJLabel(
             "<html><div align='justify'>" + producto.getDescripcion() + "</div></html>", 0, 0, 0, 0, 
-            null, null, sRecursos.getColorGrisOscuro(), null, sRecursos.getFontPequeña(), null, "l"
+            null, null, sRecursos.getFontPequeña(), null, sRecursos.getColorGrisOscuro(), null, "l"
         );
         modificarGbc(0, 2, 3, 1, 2, 10, 10, 15, 10, 15, 0, 0, 0, 0);
         this.add(lParrafo, gbc);
 
         lCampo = sObjGraficos.construirJLabel(
-            producto.getCampo(), 0, 0, 0, 0, null, null, sRecursos.getColorAzulMarino(), 
-            sRecursos.getColorAzulClaro(), sRecursos.getFontBotones(), null, "c"
+            producto.getCampo(), 0, 0, 0, 0, null, null, sRecursos.getFontBotones(), 
+            sRecursos.getColorAzulClaro(), sRecursos.getColorAzulMarino(), null, "c"
         );
         modificarGbc(0, 3, 1, 1, 0, 10, 10, 5, 15, 5, 10, 10, 0, 0);
         this.add(lCampo, gbc);
@@ -99,7 +99,7 @@ public class ProductoTemplate extends JPanel{
 
         lPuntuacion = sObjGraficos.construirJLabel(
             producto.getPuntuacion() + "/ 5", 0, 0, 0, 0, null, null, 
-            sRecursos.getColorAzulMarino(), null, sRecursos.getFontBotones(), null, "l"
+            sRecursos.getFontBotones(), null, sRecursos.getColorAzulMarino(), null, "l"
         );
         modificarGbc(2, 3, 1, 1, 0, 16, 10, 10, 15, 0, 0, 0, 0, 0);
         this.add(lPuntuacion, gbc);

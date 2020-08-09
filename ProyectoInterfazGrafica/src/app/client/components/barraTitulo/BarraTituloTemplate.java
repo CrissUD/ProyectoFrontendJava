@@ -84,8 +84,8 @@ public class BarraTituloTemplate extends JPanel{
         this.add(lLogoApp);
 
         lTituloApp = sObjGraficos.construirJLabel(
-            "ProductList", 40, 5, 200, 40, null, null, sRecursos.getColorAzul(), 
-            null, fontTituloBarra, null, "c"
+            "ProductList", 40, 5, 200, 40, null, null, fontTituloBarra,
+            null, sRecursos.getColorAzul(), null, "c"
         );
         this.add(lTituloApp);
     }
