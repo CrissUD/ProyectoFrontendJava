@@ -72,7 +72,6 @@ public class RecursosService {
             System.out.println(e);
         }
     }
-    
 
     public void personalizarJOptionPane(){
         UIManager.put("OptionPane.background", Color.WHITE);
