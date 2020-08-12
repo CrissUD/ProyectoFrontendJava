@@ -323,13 +323,13 @@ public class LoginTemplate extends JFrame {
         );
         ImageIcon iDimAux = new ImageIcon(iAbajo.getImage().getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING));
         bComboBox = ObjGraficosService.getService().construirJButton(
-            null, 0, 0, 0, 0, RecursosService.getService().getCMano(), iDimAux,
-            null, null, null, RecursosService.getService().getBordeLateralAzul(), "c", true
+            null, 0, 0, 0, 0, sRecursos.getCMano(), iDimAux,
+            null, null, null, sRecursos.getBordeLateralAzul(), "c", true
         );
         cbTipoUsuario.setUI(
             GraficosAvanzadosService.getService().devolverJComboBoxPersonalizado(
                 bComboBox, null, sRecursos.getColorAzul(), 
-                sRecursos.getColorAzul(), sRecursos.getColorAzul(), false
+                sRecursos.getColorAzul(), sRecursos.getColorAzul(), true
             )
         );
         pDerecha.add(cbTipoUsuario);
