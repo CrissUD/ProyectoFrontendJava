@@ -32,7 +32,7 @@ import javax.swing.plaf.basic.BasicComboBoxUI;
 import javax.swing.plaf.basic.BasicScrollBarUI;
 import javax.swing.table.DefaultTableCellRenderer;
 
-/** @author Cristian Felipe Patiño Cáceres */
+/** @author Cristian Felipe Patiño Cáceres Github: CrissUD*/
 
 public class GraficosAvanzadosService {
     
