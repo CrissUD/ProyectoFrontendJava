@@ -80,7 +80,7 @@ public class NavegacionUsuarioTemplate extends JPanel {
     );
     this.bInicio = sObjGraficos.construirJButton(
       "      Inicio",
-      30,0,00,0,
+      30, 30, 200, 40,
       sRecursos.getCMano(),
       iDimAux,
       sRecursos.getFontBotones(),

@@ -103,7 +103,7 @@ public class AmigosComponent extends MouseAdapter implements ActionListener, Foc
     amigosTemplate.getTOficio().setText(placeholdes[2]);
     amigosTemplate.getTTelefono().setText(placeholdes[3]);
     amigosTemplate.getTEmail().setText(placeholdes[4]);
-    amigosTemplate.getTabla().setSelectionMode(-1);
+    amigosTemplate.getTabla().setSelectionMode(0);
   }
 
   public void mostrarRegistrosTabla() {
