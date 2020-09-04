@@ -3,14 +3,13 @@ package app.client.components.producto;
 import models.Producto;
 
 public class ProductoComponent {
-    
-    private ProductoTemplate productoTemplate;
+  private ProductoTemplate productoTemplate;
 
-    public ProductoComponent(Producto producto){
-        productoTemplate = new ProductoTemplate(this, producto);
-    }
+  public ProductoComponent(Producto producto) {
+    productoTemplate = new ProductoTemplate(this, producto);
+  }
 
-    public ProductoTemplate getProductoTemplate(){
-        return productoTemplate;
-    }
+  public ProductoTemplate getProductoTemplate() {
+    return productoTemplate;
+  }
 }

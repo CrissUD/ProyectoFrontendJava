@@ -1,79 +1,88 @@
 package app.client.components.productos;
 
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-
 import app.client.components.producto.ProductoComponent;
 import app.client.components.producto.ProductoTemplate;
+
 import app.services.graphicServices.ObjGraficosService;
 import app.services.graphicServices.RecursosService;
-import models.Producto;
 
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 
-public class ProductosTemplate extends JPanel{
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 
-    private static final long serialVersionUID = 1652828222229841161L;
+import models.Producto;
 
-    private ProductosComponent productosComponent;
-    private ObjGraficosService sObjGraficos;
-    private RecursosService sRecursos;
+public class ProductosTemplate extends JPanel {
+  private static final long serialVersionUID = 1652828222229841161L;
 
-    private GridBagLayout lGrid;
-    private GridBagConstraints gbc;
+  //Declaración servicios y objetos
+  private ProductosComponent productosComponent;
+  private ObjGraficosService sObjGraficos;
+  private RecursosService sRecursos;
 
-    private JLabel lTitulo;
+  //Declaración Layout
+  private GridBagLayout lGrid;
+  private GridBagConstraints gbc;
 
-    public ProductosTemplate(ProductosComponent productosComponent) {
+  //Declaración Objetos Gráficos
+  private JLabel lTitulo;
 
-        this.productosComponent = productosComponent;
-        this.productosComponent.getClass();
-        this.sRecursos = RecursosService.getService();
-        this.sObjGraficos = ObjGraficosService.getService();
+  public ProductosTemplate(ProductosComponent productosComponent) {
+    this.productosComponent = productosComponent;
+    this.productosComponent.getClass();
+    this.sRecursos = RecursosService.getService();
+    this.sObjGraficos = ObjGraficosService.getService();
 
-        lGrid = new GridBagLayout();
-        gbc = new GridBagConstraints();
+    lGrid = new GridBagLayout();
+    gbc = new GridBagConstraints();
 
-        lTitulo = sObjGraficos.construirJLabel(
-            "Cursos en Linea", 0, 0, 0, 0, null, null, sRecursos.getFontTProducto(), null, 
-            sRecursos.getColorAzul(), sRecursos.getBorderInferiorAzul(), "c"
-        );
-        
-        gbc.gridx = 0;
-        gbc.gridy = 0;
-        gbc.insets.top = 15;
-        gbc.insets.bottom = 15;
-        gbc.insets.left = 15;
-        gbc.insets.right = 15;
-        gbc.gridwidth = 3;
-        gbc.fill = GridBagConstraints.HORIZONTAL;
-        lGrid.setConstraints(lTitulo, gbc);
-        this.add(lTitulo);
+    lTitulo = sObjGraficos.construirJLabel(
+      "Cursos en Linea",
+      0, 0, 0, 0,
+      null,
+      null,
+      sRecursos.getFontTProducto(),
+      null,
+      sRecursos.getColorAzul(),
+      sRecursos.getBorderInferiorAzul(),
+      "c"
+    );
 
-        this.crearProductos();
+    gbc.gridx = 0;
+    gbc.gridy = 0;
+    gbc.insets.top = 15;
+    gbc.insets.bottom = 15;
+    gbc.insets.left = 15;
+    gbc.insets.right = 15;
+    gbc.gridwidth = 3;
+    gbc.fill = GridBagConstraints.HORIZONTAL;
+    lGrid.setConstraints(lTitulo, gbc);
+    this.add(lTitulo);
 
-        this.setLayout(lGrid);
-        this.setBackground(sRecursos.getColorGrisClaro());
-        this.setVisible(true);
+    this.crearProductos();
+
+    this.setLayout(lGrid);
+    this.setBackground(sRecursos.getColorGrisClaro());
+    this.setVisible(true);
+  }
+
+  public void crearProductos() {
+    int numProducto = 0, fila = 1;
+    Producto producto = productosComponent.devolverProducto(numProducto);
+    gbc.fill = GridBagConstraints.NONE;
+    gbc.gridwidth = 1;
+    gbc.insets.right = 0;
+    while (producto != null) {
+      ProductoTemplate pProducto = new ProductoComponent(producto).getProductoTemplate();
+      gbc.gridx = numProducto % 3;
+      gbc.gridy = fila;
+      lGrid.setConstraints(pProducto, gbc);
+      this.add(pProducto);
+      if (numProducto % 3 == 2) fila++;
+      numProducto++;
+      producto = productosComponent.devolverProducto(numProducto);
     }
-
-    public void crearProductos(){
-        int numProducto = 0, fila = 1;
-        Producto producto = productosComponent.devolverProducto(numProducto);
-        gbc.fill = GridBagConstraints.NONE;
-        gbc.gridwidth = 1;
-        gbc.insets.right = 0;
-        while(producto != null){
-            ProductoTemplate pProducto = new ProductoComponent(producto).getProductoTemplate();
-            gbc.gridx = numProducto % 3;
-            gbc.gridy = fila;
-            lGrid.setConstraints(pProducto, gbc);
-            this.add(pProducto);
-            if(numProducto % 3 == 2)
-                fila ++;
-            numProducto ++;
-            producto = productosComponent.devolverProducto(numProducto);
-        }
-    }
+  }
 }
