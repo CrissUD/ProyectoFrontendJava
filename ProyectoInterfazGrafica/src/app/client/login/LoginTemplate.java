@@ -94,9 +94,7 @@ public class LoginTemplate extends JFrame {
     this.add(pDerecha);
 
     pSvg = sObjGraficos.construirJPanel(
-      100, 100, 1700, 345,
-      sRecursos.getColorTransparente(),
-      null
+      100, 100, 1700, 345, sRecursos.getColorTransparente(), null
     );
   }
 
@@ -121,8 +119,7 @@ public class LoginTemplate extends JFrame {
       "Entrar",
       (pDerecha.getWidth() - 250) / 2, 330, 250, 45,
       sRecursos.getCMano(),
-      null,
-      null,
+      null, null,
       sRecursos.getColorAzul(),
       Color.WHITE,
       sRecursos.getBordeRedondeado(),
@@ -137,8 +134,7 @@ public class LoginTemplate extends JFrame {
       "Registrarse",
       240, 460, 145, 35,
       sRecursos.getCMano(),
-      null,
-      null,
+      null, null,
       sRecursos.getColorAzul(),
       Color.WHITE,
       sRecursos.getBordeRedondeado(),
@@ -158,10 +154,7 @@ public class LoginTemplate extends JFrame {
       350, 10, 45, 30,
       sRecursos.getCMano(),
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c",
       false
     );
@@ -177,10 +170,7 @@ public class LoginTemplate extends JFrame {
       10, 220, 30, 20,
       sRecursos.getCMano(),
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c",
       false
     );
@@ -197,10 +187,7 @@ public class LoginTemplate extends JFrame {
       10, 250, 30, 20,
       sRecursos.getCMano(),
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c",
       false
     );
@@ -213,10 +200,7 @@ public class LoginTemplate extends JFrame {
       10, 280, 30, 20,
       sRecursos.getCMano(),
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c",
       false
     );
@@ -234,10 +218,7 @@ public class LoginTemplate extends JFrame {
       50, 20, 40, 40,
       sRecursos.getCMano(),
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c"
     );
     pIzquierda.add(lLogo);
@@ -246,8 +227,7 @@ public class LoginTemplate extends JFrame {
     lTituloApp = sObjGraficos.construirJLabel(
       "Login de Usuario",
       100, 20, 220, 30,
-      null,
-      null,
+      null, null,
       sRecursos.getFontTPrincipal(),
       null,
       Color.WHITE,
@@ -265,10 +245,7 @@ public class LoginTemplate extends JFrame {
       0, 0, 500, 345,
       null,
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c"
     );
     pSvg.add(lSvg1);
@@ -282,10 +259,7 @@ public class LoginTemplate extends JFrame {
       600, 0, 500, 345, 
       null,
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c"
     );
     pSvg.add(lSvg2);
@@ -299,10 +273,7 @@ public class LoginTemplate extends JFrame {
       1200, 0, 500, 345,
       null,
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c"
     );
     pSvg.add(lSvg3);
@@ -311,8 +282,7 @@ public class LoginTemplate extends JFrame {
     lEslogan = sObjGraficos.construirJLabel(
       "Te ayudamos en todo",
       (pDerecha.getWidth() - 130) / 2, 60, 130, 20,
-      null,
-      null,
+      null, null,
       sRecursos.getFontSubtitulo(),
       null,
       sRecursos.getColorGrisOscuro(),
@@ -325,8 +295,7 @@ public class LoginTemplate extends JFrame {
     lTituloLogin = sObjGraficos.construirJLabel(
       "Registra tus Datos",
       (pDerecha.getWidth() - 150) / 2, 80, 150, 30,
-      null,
-      null,
+      null, null,
       sRecursos.getFontTitulo(),
       null,
       sRecursos.getColorGrisOscuro(),
@@ -339,8 +308,7 @@ public class LoginTemplate extends JFrame {
     lNotificaciones = sObjGraficos.construirJLabel(
       "¿Recibir Notificaciones?",
       (pDerecha.getWidth() - 140) / 2, 400, 140, 20,
-      null,
-      null,
+      null, null,
       sRecursos.getFontSubtitulo(),
       null,
       sRecursos.getColorGrisOscuro(),
@@ -358,10 +326,7 @@ public class LoginTemplate extends JFrame {
       40, 140, 30, 30,
       null,
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c"
     );
     pDerecha.add(lUsuario);
@@ -375,10 +340,7 @@ public class LoginTemplate extends JFrame {
       40, 270, 30, 30,
       null,
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c"
     );
     pDerecha.add(lClave);
@@ -392,10 +354,7 @@ public class LoginTemplate extends JFrame {
       20, 460, 30, 30,
       sRecursos.getCMano(),
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c"
     );
     lFacebook.addMouseListener(this.loginComponent);
@@ -410,10 +369,7 @@ public class LoginTemplate extends JFrame {
       60, 460, 30, 30,
       sRecursos.getCMano(),
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c"
     );
     lTwitter.addMouseListener(this.loginComponent);
@@ -428,10 +384,7 @@ public class LoginTemplate extends JFrame {
       100, 460, 30, 30,
       sRecursos.getCMano(),
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c"
     );
     lYoutube.addMouseListener(this.loginComponent);
@@ -446,10 +399,7 @@ public class LoginTemplate extends JFrame {
       0, 0, 600, 600,
       null,
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c"
     );
     pIzquierda.add(lFondo);
@@ -459,8 +409,7 @@ public class LoginTemplate extends JFrame {
     tClaveUsuario = sObjGraficos.construirJPasswordField(
       "Clave Usuario",
       (pDerecha.getWidth() - 260) / 2, 260, 260, 40,
-      null,
-      null,
+      null, null,
       sRecursos.getColorGrisOscuro(),
       sRecursos.getColorGrisOscuro(),
       sRecursos.getBorderInferiorGris(),
@@ -487,9 +436,7 @@ public class LoginTemplate extends JFrame {
       0, 0, 0, 0,
       sRecursos.getCMano(),
       iDimAux,
-      null,
-      null,
-      null,
+      null, null, null,
       sRecursos.getBordeLateralAzul(),
       "c",
       true
@@ -513,8 +460,7 @@ public class LoginTemplate extends JFrame {
       "Si",
       (pDerecha.getWidth() - 45) / 2 - 15, 375, 45, 25,
       sRecursos.getCMano(),
-      null,
-      null
+      null, null
     );
     pDerecha.add(checkSi);
 
@@ -522,8 +468,7 @@ public class LoginTemplate extends JFrame {
       "No",
       (pDerecha.getWidth() + 45) / 2 - 15, 375, 45, 25,
       sRecursos.getCMano(),
-      null,
-      null
+      null, null
     );
     pDerecha.add(checkNo);
 

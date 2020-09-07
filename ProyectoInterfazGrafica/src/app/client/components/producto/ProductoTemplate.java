@@ -57,8 +57,7 @@ public class ProductoTemplate extends JPanel {
     lTitulo = sObjGraficos.construirJLabel(
       producto.getNombreProducto(),
       0, 0, 0, 0,
-      null,
-      null,
+      null, null,
       sRecursos.getFontTitulo(),
       null,
       sRecursos.getColorAzul(),
@@ -77,10 +76,7 @@ public class ProductoTemplate extends JPanel {
       0, 0, 0, 0,
       sRecursos.getCMano(),
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c"
     );
     lImagen.setBorder(sRecursos.getBordeRedondeado());
@@ -90,8 +86,7 @@ public class ProductoTemplate extends JPanel {
     lParrafo = sObjGraficos.construirJLabel(
       "<html><div align='justify'>" + producto.getDescripcion() + "</div></html>",
       0, 0, 0, 0,
-      null,
-      null,
+      null, null,
       sRecursos.getFontPequeña(),
       null,
       sRecursos.getColorGrisOscuro(),
@@ -104,8 +99,7 @@ public class ProductoTemplate extends JPanel {
     lCampo = sObjGraficos.construirJLabel(
       producto.getCampo(),
       0, 0, 0, 0,
-      null,
-      null,
+      null, null,
       sRecursos.getFontBotones(),
       sRecursos.getColorAzulClaro(),
       sRecursos.getColorAzulMarino(),
@@ -124,10 +118,7 @@ public class ProductoTemplate extends JPanel {
       0, 0, 0, 0,
       null,
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c"
     );
     modificarGbc(1, 3, 1, 1, 0, 13, 10, 5, 15, 5, 0, 0, 1, 0);
@@ -136,8 +127,7 @@ public class ProductoTemplate extends JPanel {
     lPuntuacion = sObjGraficos.construirJLabel(
       producto.getPuntuacion() + "/ 5",
       0, 0, 0, 0,
-      null,
-      null,
+      null, null,
       sRecursos.getFontBotones(),
       null,
       sRecursos.getColorAzulMarino(),

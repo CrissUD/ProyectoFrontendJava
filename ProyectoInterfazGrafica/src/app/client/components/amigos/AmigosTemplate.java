@@ -88,10 +88,7 @@ public class AmigosTemplate extends JPanel {
 
     pTabla = sObjGraficos.construirPanelBarra(
       tabla,
-      10,
-      220,
-      580,
-      370,
+      10, 220, 580, 370,
       Color.WHITE,
       null
     );
@@ -99,8 +96,7 @@ public class AmigosTemplate extends JPanel {
     header.setDefaultRenderer(
       sGraficosAvanzados.devolverTablaPersonalizada(
         sRecursos.getColorAzul(),
-        null,
-        null,
+        null, null,
         Color.WHITE,
         sRecursos.getFontPequeña()
       )
@@ -137,8 +133,7 @@ public class AmigosTemplate extends JPanel {
     lTitulo = sObjGraficos.construirJLabel(
       "Edición de Contactos",
       20, 10, 200, 30,
-      null, 
-      null,
+      null, null,
       sRecursos.getFontTitulo(),
       null,
       sRecursos.getColorGrisOscuro(),
@@ -252,8 +247,7 @@ public class AmigosTemplate extends JPanel {
     lInstrucciones = sObjGraficos.construirJLabel(
       "<html>Datos de los contactos<html>",
       20, 10, 120, 50,
-      null,
-      null,
+      null, null,
       sRecursos.getFontTitulo(),
       null,
       sRecursos.getColorGrisOscuro(),
@@ -266,8 +260,7 @@ public class AmigosTemplate extends JPanel {
     lEslogan = sObjGraficos.construirJLabel(
       "<html>A continuación puede ver y editar la información del Contacto<html>",
       20, 50, 180, 90,
-      null,
-      null,
+      null, null,
       sRecursos.getFontPequeña(),
       null,
       sRecursos.getColorGrisOscuro(),
@@ -280,8 +273,7 @@ public class AmigosTemplate extends JPanel {
     lId = sObjGraficos.construirJLabel(
       "Id Contacto:",
       20, 140, 160, 30,
-      null,
-      null,
+      null, null,
       sRecursos.getFontPequeña(),
       null,
       sRecursos.getColorAzulOscuro(),
@@ -294,8 +286,7 @@ public class AmigosTemplate extends JPanel {
     lIdValor = sObjGraficos.construirJLabel(
       "0",
       120, 140, 160, 30,
-      null,
-      null,
+      null, null,
       sRecursos.getFontPequeña(),
       null,
       sRecursos.getColorAzulOscuro(),
@@ -308,8 +299,7 @@ public class AmigosTemplate extends JPanel {
     lNombre = sObjGraficos.construirJLabel(
       "Nombre Contacto:",
       20, 180, 160, 30,
-      null,
-      null,
+      null, null,
       sRecursos.getFontPequeña(),
       null,
       sRecursos.getColorAzulOscuro(),
@@ -336,8 +326,7 @@ public class AmigosTemplate extends JPanel {
     lEdad = sObjGraficos.construirJLabel(
       "Edad Contacto:",
       20, 265, 160, 30,
-      null,
-      null,
+      null, null,
       sRecursos.getFontPequeña(),
       null,
       sRecursos.getColorAzulOscuro(),
@@ -364,8 +353,7 @@ public class AmigosTemplate extends JPanel {
     lOficio = sObjGraficos.construirJLabel(
       "Oficio Contacto:",
       20, 350, 160, 30,
-      null,
-      null,
+      null, null,
       sRecursos.getFontPequeña(),
       null,
       sRecursos.getColorAzulOscuro(),
@@ -392,8 +380,7 @@ public class AmigosTemplate extends JPanel {
     lTelefono = sObjGraficos.construirJLabel(
       "Telefono Contacto:",
       20, 425, 160, 30,
-      null,
-      null,
+      null, null,
       sRecursos.getFontPequeña(),
       null,
       sRecursos.getColorAzulOscuro(),
@@ -420,8 +407,7 @@ public class AmigosTemplate extends JPanel {
     lEmail = sObjGraficos.construirJLabel(
       "Email Contacto:",
       20, 510, 160, 30,
-      null,
-      null,
+      null, null,
       sRecursos.getFontPequeña(),
       null,
       sRecursos.getColorAzulOscuro(),

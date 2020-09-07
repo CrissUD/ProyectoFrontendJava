@@ -42,16 +42,10 @@ public class AccionTemplate extends JPanel {
     this.lImagen =
       sObjGraficos.construirJLabel(
         null,
-        (250 - 45) / 2,
-        15,
-        45,
-        45,
+        (250 - 45) / 2, 15, 45, 45,
         null,
         iDimAux,
-        null,
-        null,
-        null,
-        null,
+        null, null, null, null,
         "c"
       );
     this.add(lImagen);
@@ -59,12 +53,8 @@ public class AccionTemplate extends JPanel {
     this.lTitulo =
       sObjGraficos.construirJLabel(
         titulo,
-        (250 - 220) / 2,
-        60,
-        220,
-        30,
-        null,
-        null,
+        (250 - 220) / 2, 60, 220, 30,
+        null, null,
         sRecursos.getFontTitulo(),
         null,
         sRecursos.getColorGrisOscuro(),
@@ -76,12 +66,8 @@ public class AccionTemplate extends JPanel {
     this.lParrafo =
       sObjGraficos.construirJLabel(
         "<html><div align='center'>" + parrafo + "</div></html>",
-        (250 - 230) / 2,
-        85,
-        230,
-        50,
-        null,
-        null,
+        (250 - 230) / 2, 85, 230, 50,
+        null, null,
         sRecursos.getFontPequeña(),
         null,
         sRecursos.getColorGrisOscuro(),

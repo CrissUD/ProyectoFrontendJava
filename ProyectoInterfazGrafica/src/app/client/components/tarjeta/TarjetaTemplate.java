@@ -43,10 +43,7 @@ public class TarjetaTemplate extends JPanel {
       5, 5, 246, 110,
       sRecursos.getCMano(),
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c"
     );
     this.add(lImagen);
@@ -54,8 +51,7 @@ public class TarjetaTemplate extends JPanel {
     this.lTitulo = sObjGraficos.construirJLabel(
       titulo,
       15, 120, 180, 30,
-      null,
-      null,
+      null, null,
       sRecursos.getFontTitulo(),
       null,
       sRecursos.getColorAzul(),
@@ -67,8 +63,7 @@ public class TarjetaTemplate extends JPanel {
     lParrafo = sObjGraficos.construirJLabel(
       "<html><div align='justify'>" + parrafo + "</div></html>",
       20, 120, 206, 120,
-      null,
-      null,
+      null, null,
       sRecursos.getFontPequeña(),
       null,
       sRecursos.getColorGrisOscuro(),

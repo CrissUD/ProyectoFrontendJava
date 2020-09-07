@@ -82,8 +82,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lTitulo = sObjGraficos.construirJLabel(
       "Datos de Eventos",
       (this.pDatos.getWidth() - 200) / 2, 15, 200, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontTitulo(),
       null,
       sRecursosService.getColorAzul(),
@@ -96,8 +95,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lTituloPosicion = sObjGraficos.construirJLabel(
       "Datos de Posiciones",
       20, 60, 180, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontTitulo(),
       null,
       sRecursosService.getColorMorado(),
@@ -110,8 +108,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lTituloEstado = sObjGraficos.construirJLabel(
       "Datos de Estado",
       20, 440, 180, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontTitulo(),
       null,
       sRecursosService.getColorMorado(),
@@ -124,8 +121,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lPOnClickX = sObjGraficos.construirJLabel(
       "Posición en X al dar click: ",
       40, 100, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -138,8 +134,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lPOnClickY = sObjGraficos.construirJLabel(
       "Posición en Y al dar click: ",
       40, 120, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -152,8 +147,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lPInicialX = sObjGraficos.construirJLabel(
       "Posición en X inicial: ",
       40, 160, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -166,8 +160,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lPInicialY = sObjGraficos.construirJLabel(
       "Posición en Y inicial: ",
       40, 180, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -180,8 +173,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lPFinalX = sObjGraficos.construirJLabel(
       "Posición en X final: ",
       40, 220, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -194,8 +186,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lPFinalY = sObjGraficos.construirJLabel(
       "Posición en Y final: ",
       40, 240, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -208,8 +199,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lPActualX = sObjGraficos.construirJLabel(
       "Posición en X actual: ",
       40, 280, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -222,8 +212,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lPActualY = sObjGraficos.construirJLabel(
       "Posición en Y actual: ",
       40, 300, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -236,8 +225,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lLadoX = sObjGraficos.construirJLabel(
       "Valor lado X: ",
       40, 340, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -250,8 +238,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lLadoY = sObjGraficos.construirJLabel(
       "Valor lado Y: ",
       40, 360, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -264,8 +251,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lZoom = sObjGraficos.construirJLabel(
       "Zoom en el panel: ",
       40, 400, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -278,8 +264,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lEstado = sObjGraficos.construirJLabel(
       "Estado: ",
       40, 480, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -294,8 +279,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lPOnClickXValor = sObjGraficos.construirJLabel(
       "0",
       200, 100, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -308,8 +292,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lPOnClickYValor = sObjGraficos.construirJLabel(
       "0",
       200, 120, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -322,8 +305,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lPInicialXValor = sObjGraficos.construirJLabel(
       "0",
       200, 160, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -336,8 +318,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lPInicialYValor = sObjGraficos.construirJLabel(
       "0",
       200, 180, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -350,8 +331,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lPFinalXValor = sObjGraficos.construirJLabel(
       "0",
       200, 220, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -364,8 +344,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lPFinalYValor = sObjGraficos.construirJLabel(
       "0",
       200, 240, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -378,8 +357,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lPActualXValor = sObjGraficos.construirJLabel(
       "0",
       200, 280, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -392,8 +370,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lPActualYValor = sObjGraficos.construirJLabel(
       "0",
       200, 300, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -406,8 +383,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lLadoXValor = sObjGraficos.construirJLabel(
       "0",
       200, 340, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -420,8 +396,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lLadoYValor = sObjGraficos.construirJLabel(
       "0",
       200, 360, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -434,8 +409,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lZoomValor = sObjGraficos.construirJLabel(
       "0",
       200, 400, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontPequeña(),
       null,
       sRecursosService.getColorAzul(),
@@ -448,8 +422,7 @@ public class ConfiguracionesTemplate extends JPanel {
     lEstadoValor = sObjGraficos.construirJLabel(
       "NINGUNO",
       80, 520, 160, 40,
-      null,
-      null,
+      null, null,
       sRecursosService.getFontTitulo(),
       null,
       sRecursosService.getColorAzul(),

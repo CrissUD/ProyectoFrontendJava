@@ -60,10 +60,7 @@ public class BarraTituloTemplate extends JPanel {
       800, 10, 45, 30,
       sRecursos.getCMano(),
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c",
       false
     );
@@ -79,10 +76,7 @@ public class BarraTituloTemplate extends JPanel {
       750, 10, 45, 30,
       sRecursos.getCMano(),
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c",
       false
     );
@@ -100,10 +94,7 @@ public class BarraTituloTemplate extends JPanel {
       20, 0, 50, 50,
       null,
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c"
     );
     this.add(lLogoApp);
@@ -111,8 +102,7 @@ public class BarraTituloTemplate extends JPanel {
     lTituloApp = sObjGraficos.construirJLabel(
       "ProductList",
       40, 5, 200, 40,
-      null,
-      null,
+      null, null,
       fontTituloBarra,
       null,
       sRecursos.getColorAzul(),

@@ -41,8 +41,7 @@ public class ProductosTemplate extends JPanel {
     lTitulo = sObjGraficos.construirJLabel(
       "Cursos en Linea",
       0, 0, 0, 0,
-      null,
-      null,
+      null, null,
       sRecursos.getFontTProducto(),
       null,
       sRecursos.getColorAzul(),

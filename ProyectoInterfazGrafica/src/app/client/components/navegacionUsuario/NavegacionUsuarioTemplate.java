@@ -63,12 +63,16 @@ public class NavegacionUsuarioTemplate extends JPanel {
   }
 
   public void crearObjetosDecoradores() {
-    this.iIconoUsuario = new ImageIcon("ProyectoInterfazGrafica/resources/images/usuario_navegacion.png");
+    this.iIconoUsuario = new ImageIcon(
+      "ProyectoInterfazGrafica/resources/images/usuario_navegacion.png"
+    );
     this.iInicio = new ImageIcon("ProyectoInterfazGrafica/resources/images/inicio.png");
     this.iPerfil = new ImageIcon("ProyectoInterfazGrafica/resources/images/perfil.png");
     this.iAmigos = new ImageIcon("ProyectoInterfazGrafica/resources/images/amigos.png");
     this.iProductos = new ImageIcon("ProyectoInterfazGrafica/resources/images/productos.png");
-    this.iConfiguracion = new ImageIcon("ProyectoInterfazGrafica/resources/images/configuracion.png");
+    this.iConfiguracion = new ImageIcon(
+      "ProyectoInterfazGrafica/resources/images/configuracion.png"
+    );
     this.iCerrarSesion = new ImageIcon("ProyectoInterfazGrafica/resources/images/salir.png");
     this.borderVacio = new EmptyBorder(2, 20, 2, 2);
   }
@@ -205,10 +209,7 @@ public class NavegacionUsuarioTemplate extends JPanel {
       10, 20, 40, 40,
       null,
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c"
     );
     this.pSuperior.add(lIconoUsuario);
@@ -217,8 +218,7 @@ public class NavegacionUsuarioTemplate extends JPanel {
     this.lNombreUsuario = sObjGraficos.construirJLabel(
       navegacionUsuarioComponent.getUsuario().getNombreUsuario(),
       (this.pSuperior.getWidth() - 200) / 2, 20, 200, 40,
-      null,
-      null,
+      null, null,
       sRecursos.getFontTitulo(),
       null,
       Color.WHITE,
@@ -240,10 +240,7 @@ public class NavegacionUsuarioTemplate extends JPanel {
       (this.pSuperior.getWidth() - 180) / 2, 75, 180, 180,
       null,
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c"
     );
     lImagenUsuario.setBorder(sRecursos.getBordeCircular());
@@ -253,8 +250,7 @@ public class NavegacionUsuarioTemplate extends JPanel {
     this.lEslogan = sObjGraficos.construirJLabel(
       "<html><div align='center'> Nuestros clientes son <br/>lo mas importante</div></html>",
       (this.pSuperior.getWidth() - 180) / 2, 265, 180, 40,
-      null,
-      null,
+      null, null,
       sRecursos.getFontPequeña(),
       null,
       Color.WHITE,

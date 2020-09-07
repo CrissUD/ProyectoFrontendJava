@@ -59,9 +59,7 @@ public class InicioTemplate extends JPanel {
 
   public void crearJPanels() {
     this.pTarjetas = sObjGraficos.construirJPanel(
-      0, 0, 2000, 245,
-      sRecursos.getColorTransparente(),
-      null
+      0, 0, 2000, 245, sRecursos.getColorTransparente(), null
     );
     this.add(pTarjetas);
 
@@ -125,10 +123,7 @@ public class InicioTemplate extends JPanel {
       0, 125, 20, 20,
       sRecursos.getCMano(),
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c",
       false
     );
@@ -144,10 +139,7 @@ public class InicioTemplate extends JPanel {
       830, 125, 20, 20,
       sRecursos.getCMano(),
       iDimAux,
-      null,
-      null,
-      null,
-      null,
+      null, null, null, null,
       "c",
       false
     );
@@ -219,8 +211,7 @@ public class InicioTemplate extends JPanel {
     this.lAcciones = sObjGraficos.construirJLabel(
       "Nuestros Servicios",
       10, 10, 160, 30,
-      null,
-      null,
+      null, null,
       sRecursos.getFontTitulo(),
       null,
       sRecursos.getColorAzul(),
