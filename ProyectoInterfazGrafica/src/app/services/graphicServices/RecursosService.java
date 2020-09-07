@@ -41,7 +41,7 @@ public class RecursosService {
     this.crearImagenes();
   }
 
-  public void crearColores() {
+  private void crearColores() {
     colorMorado = new Color(151, 0, 158);
     colorAzul = new Color(60, 78, 120);
     colorAzulOscuro = new Color(30, 48, 90);
@@ -52,7 +52,7 @@ public class RecursosService {
     colorTransparente = new Color(0, 0, 0, 0);
   }
 
-  public void crearFuentes() {
+  private void crearFuentes() {
     fontTPrincipal = new Font("Rockwell Extra Bold", Font.PLAIN, 20);
     fontTProducto = new Font("LuzSans-Book", Font.BOLD, 28);
     fontTitulo = new Font("LuzSans-Books", Font.BOLD, 17);
@@ -61,25 +61,25 @@ public class RecursosService {
     fontPequeña = new Font("LuzSans-Book", Font.PLAIN, 12);
   }
 
-  public void crearCursores() { cMano = new Cursor(Cursor.HAND_CURSOR); }
+  private void crearCursores() { cMano = new Cursor(Cursor.HAND_CURSOR); }
 
-  public void crearBordes() {
+  private void crearBordes() {
     borderInferiorAzul = BorderFactory.createMatteBorder(0, 0, 2, 0, colorAzul);
     bordeLateralAzul = BorderFactory.createMatteBorder(2, 0, 2, 2, colorAzul);
     borderInferiorGris = BorderFactory.createMatteBorder(0, 0, 1, 0, Color.LIGHT_GRAY);
     borderGris = BorderFactory.createLineBorder(Color.LIGHT_GRAY, 2, true);
     borderAzul = BorderFactory.createLineBorder(colorAzul, 2, true);
-    bordeCircular = sGraficosAvanzados.DibujarBordeCircular(null, false, null);
-    bordeRedondeado = sGraficosAvanzados.DibujarBordeRedondeado(null, 40, false, null);
+    bordeCircular = sGraficosAvanzados.DibujarBordeCircular(null, false, false, null);
+    bordeRedondeado = sGraficosAvanzados.DibujarBordeRedondeado(null, 40, false, false, null);
     bordeDifuminado = sGraficosAvanzados.devolverBordeDifuminado(new Color(215, 215, 215), 8);
   }
 
-  public void crearImagenes() {
+  private void crearImagenes() {
     iCerrar = new ImageIcon("ProyectoInterfazGrafica/resources/images/cerrar.png");
     iMinimizar = new ImageIcon("ProyectoInterfazGrafica/resources/images/minimizar.png");
   }
 
-  public void generarFuentes() {
+  private void generarFuentes() {
     try {
       GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
       ge.registerFont( Font.createFont(
@@ -91,7 +91,7 @@ public class RecursosService {
     }
   }
 
-  public void personalizarJOptionPane() {
+  private void personalizarJOptionPane() {
     UIManager.put("OptionPane.background", Color.WHITE);
     UIManager.put("OptionPane.messageForeground", this.colorAzulOscuro);
     UIManager.put("Button.background", this.colorAzul);

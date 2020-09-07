@@ -239,12 +239,13 @@ public class GraficosAvanzadosService {
    * @param colorBorde (Color): Color del contonro del borde en caso de crear el borde lineal.
    * @param radio (int): Valor del arco en las esquinas del borde siendo 0 un arco nulo y con valores mayores se crean bordes redonreados.
    * @param esLineal (boolean): Si quiere crear un borde con contorno o borde lineal se envia el valor (true), en caso de solo crear la forma del borde sin contorno se envia el valor (false).
+   * @param esSolido (boolean): Si quiere crear un borde con contorno o borde lineal y ademas quiere que el contenido tenga un color diferente al del fondo, se envia el valor (true) si lo quiere igual al fondo o transparente se envia un (false).
    * @param imagenFondo (ImageIcon): En caso de que el objeto Gráfico que obtenga el borde este situado encima de una imágen de fondo se debe enviar la imágen con las mismas dimensiones para crear el efecto de transparencia en las esquinas redondeadas.
    * @return Border: Objeto decorador tipo Border.
    * @throws null : Si no necesita enviar colorBorde o imagenFondo envíe un [null] como parámetro.
   */
   public Border DibujarBordeRedondeado(
-    Color colorBorde, int radio, boolean esLineal, Image imagenFondo
+    Color colorBorde, int radio, boolean esLineal, boolean esSolido, Image imagenFondo
   ) {
     Border bordeRedondeado = new Border() {
 
@@ -264,6 +265,10 @@ public class GraficosAvanzadosService {
         );
         if (esLineal) {
           dibujarFondo(c, padreContenedor, imagenFondo, g2, ancho, alto);
+          if(esSolido) {
+            g2.setColor(c.getBackground());
+            g2.fill(rectanguloBordeado);
+          }
           area = dibujarBorde(c, g2, colorBorde, x, y, ancho, alto, rectanguloBordeado);
         } else {
           area = dibujarBorde(c, g2, colorBorde, x, y, ancho, alto, rectanguloBordeado);
@@ -291,12 +296,13 @@ public class GraficosAvanzadosService {
    * Para invocarlo se debe llamar al método: setBorder() de cualquier objeto Gráfico.
    * @param colorBorde (Color): Color del contonro del borde en caso de crear el borde lineal.
    * @param esLineal (boolean): Si quiere crear un borde con contorno o borde lineal se envia el valor (true), en caso de solo crear la forma del borde sin contorno se envia el valor (false).
+   * @param esSolido (boolean): Si quiere crear un borde con contorno o borde lineal y ademas quiere que el contenido tenga un color diferente al del fondo, se envia el valor (true) si lo quiere igual al fondo o transparente se envia un (false).
    * @param imagenFondo (ImageIcon): En caso de que el objeto Gráfico que obtenga el borde este situado encima de una imágen de fondo se debe enviar la imágen con las mismas dimensiones para crear el efecto de transparencia en las esquinas sobrantes de la circunferencia.
    * @return AbstractBorder: Objeto decorador tipo AbstractBorder, compatible con Border.
    * @throws null : Si no necesita enviar colorBorde o imagenFondo envíe un [null] como parámetro.
   */
   public AbstractBorder DibujarBordeCircular(
-    Color colorBorde, boolean esLineal, Image imagenFondo
+    Color colorBorde, boolean esLineal, boolean esSolido, Image imagenFondo
   ) {
     AbstractBorder bordeCircular = new AbstractBorder() {
       private static final long serialVersionUID = 2009875951859777681L;
@@ -318,6 +324,10 @@ public class GraficosAvanzadosService {
         );
         if (esLineal) {
           dibujarFondo(c, padreContenedor, imagenFondo, g2, ancho, alto);
+          if(esSolido) {
+            g2.setColor(c.getBackground());
+            g2.fill(circulo);
+          }
           area = dibujarBorde(c, g2, colorBorde, x, y, ancho, alto, circulo);
         } else {
           area = dibujarBorde(c, g2, colorBorde, x, y, ancho, alto, circulo);

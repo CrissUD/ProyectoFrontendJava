@@ -58,7 +58,7 @@ public class LienzoTemplate extends Canvas {
     // this.pintarOvalos(g2d);
     // this.pintarPoligonos(g2d);
     // this.pintarImagenes(g2d);
-    // this.pintarAreas(g2d);
+    this.pintarAreas(g2d);
   }
 
   public void pintarStrings(Graphics2D g2d) {
