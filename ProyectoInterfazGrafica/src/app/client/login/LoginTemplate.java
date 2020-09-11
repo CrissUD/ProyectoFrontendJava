@@ -106,7 +106,7 @@ public class LoginTemplate extends JFrame {
       Color.WHITE,
       sRecursos.getColorGrisOscuro(),
       sRecursos.getColorGrisOscuro(),
-      sRecursos.getBorderInferiorGris(),
+      sRecursos.getBInferiorGris(),
       "c"
     );
     tNombreUsuario.addMouseListener(loginComponent);
@@ -122,7 +122,7 @@ public class LoginTemplate extends JFrame {
       null, null,
       sRecursos.getColorAzul(),
       Color.WHITE,
-      sRecursos.getBordeRedondeado(),
+      sRecursos.getBRedondeado(),
       "c",
       true
     );
@@ -137,7 +137,7 @@ public class LoginTemplate extends JFrame {
       null, null,
       sRecursos.getColorAzul(),
       Color.WHITE,
-      sRecursos.getBordeRedondeado(),
+      sRecursos.getBRedondeado(),
       "c",
       true
     );
@@ -412,7 +412,7 @@ public class LoginTemplate extends JFrame {
       null, null,
       sRecursos.getColorGrisOscuro(),
       sRecursos.getColorGrisOscuro(),
-      sRecursos.getBorderInferiorGris(),
+      sRecursos.getBInferiorGris(),
       "c"
     );
     tClaveUsuario.addMouseListener(loginComponent);
@@ -437,7 +437,7 @@ public class LoginTemplate extends JFrame {
       sRecursos.getCMano(),
       iDimAux,
       null, null, null,
-      sRecursos.getBordeLateralAzul(),
+      sRecursos.getBLateralAzul(),
       "c",
       true
     );

@@ -98,7 +98,7 @@ public class AmigosTemplate extends JPanel {
         sRecursos.getColorAzul(),
         null, null,
         Color.WHITE,
-        sRecursos.getFontPequeña()
+        sRecursos.getFontLigera()
       )
     );
 
@@ -109,7 +109,7 @@ public class AmigosTemplate extends JPanel {
         sRecursos.getColorGrisClaro(),
         sRecursos.getColorAzulOscuro(),
         sRecursos.getColorGrisOscuro(),
-        sRecursos.getFontPequeña()
+        sRecursos.getFontLigera()
       )
     );
 
@@ -146,7 +146,7 @@ public class AmigosTemplate extends JPanel {
     tConsulta = sObjGraficos.construirJTextField(
       "Filtrar...",
       30, 60, 380, 40,
-      sRecursos.getFontBotones(),
+      sRecursos.getFontMediana(),
       colorGris,
       sRecursos.getColorGrisOscuro(),
       sRecursos.getColorGrisOscuro(),
@@ -162,7 +162,7 @@ public class AmigosTemplate extends JPanel {
       430, 65, 120, 35,
       sRecursos.getCMano(),
       null,
-      sRecursos.getFontBotones(),
+      sRecursos.getFontMediana(),
       sRecursos.getColorAzul(),
       Color.WHITE,
       null,
@@ -179,7 +179,7 @@ public class AmigosTemplate extends JPanel {
       20, 145, 120, 35,
       sRecursos.getCMano(),
       null,
-      sRecursos.getFontBotones(),
+      sRecursos.getFontMediana(),
       sRecursos.getColorAzul(),
       Color.WHITE,
       null,
@@ -196,7 +196,7 @@ public class AmigosTemplate extends JPanel {
       160, 145, 120, 35,
       sRecursos.getCMano(),
       null,
-      sRecursos.getFontBotones(),
+      sRecursos.getFontMediana(),
       sRecursos.getColorAzul(),
       Color.WHITE,
       null,
@@ -213,7 +213,7 @@ public class AmigosTemplate extends JPanel {
       300, 145, 120, 35,
       sRecursos.getCMano(),
       null,
-      sRecursos.getFontBotones(),
+      sRecursos.getFontMediana(),
       sRecursos.getColorAzul(),
       Color.WHITE,
       null,
@@ -230,7 +230,7 @@ public class AmigosTemplate extends JPanel {
       440, 145, 120, 35,
       sRecursos.getCMano(),
       null,
-      sRecursos.getFontBotones(),
+      sRecursos.getFontMediana(),
       sRecursos.getColorAzul(),
       Color.WHITE,
       null,
@@ -261,7 +261,7 @@ public class AmigosTemplate extends JPanel {
       "<html>A continuación puede ver y editar la información del Contacto<html>",
       20, 50, 180, 90,
       null, null,
-      sRecursos.getFontPequeña(),
+      sRecursos.getFontLigera(),
       null,
       sRecursos.getColorGrisOscuro(),
       null,
@@ -274,7 +274,7 @@ public class AmigosTemplate extends JPanel {
       "Id Contacto:",
       20, 140, 160, 30,
       null, null,
-      sRecursos.getFontPequeña(),
+      sRecursos.getFontLigera(),
       null,
       sRecursos.getColorAzulOscuro(),
       null,
@@ -287,7 +287,7 @@ public class AmigosTemplate extends JPanel {
       "0",
       120, 140, 160, 30,
       null, null,
-      sRecursos.getFontPequeña(),
+      sRecursos.getFontLigera(),
       null,
       sRecursos.getColorAzulOscuro(),
       null,
@@ -300,7 +300,7 @@ public class AmigosTemplate extends JPanel {
       "Nombre Contacto:",
       20, 180, 160, 30,
       null, null,
-      sRecursos.getFontPequeña(),
+      sRecursos.getFontLigera(),
       null,
       sRecursos.getColorAzulOscuro(),
       null,
@@ -312,7 +312,7 @@ public class AmigosTemplate extends JPanel {
     tNombre = sObjGraficos.construirJTextField(
       "Nombre",
       30, 215, 180, 30,
-      sRecursos.getFontPequeña(),
+      sRecursos.getFontLigera(),
       colorGris,
       sRecursos.getColorGrisOscuro(),
       sRecursos.getColorGrisOscuro(),
@@ -327,7 +327,7 @@ public class AmigosTemplate extends JPanel {
       "Edad Contacto:",
       20, 265, 160, 30,
       null, null,
-      sRecursos.getFontPequeña(),
+      sRecursos.getFontLigera(),
       null,
       sRecursos.getColorAzulOscuro(),
       null,
@@ -339,7 +339,7 @@ public class AmigosTemplate extends JPanel {
     tEdad = sObjGraficos.construirJTextField(
       "Edad",
       30, 300, 180, 30,
-      sRecursos.getFontPequeña(),
+      sRecursos.getFontLigera(),
       colorGris,
       sRecursos.getColorGrisOscuro(),
       sRecursos.getColorGrisOscuro(),
@@ -354,7 +354,7 @@ public class AmigosTemplate extends JPanel {
       "Oficio Contacto:",
       20, 350, 160, 30,
       null, null,
-      sRecursos.getFontPequeña(),
+      sRecursos.getFontLigera(),
       null,
       sRecursos.getColorAzulOscuro(),
       null,
@@ -366,7 +366,7 @@ public class AmigosTemplate extends JPanel {
     tOficio = sObjGraficos.construirJTextField(
       "Oficio",
       30, 385, 180, 30,
-      sRecursos.getFontPequeña(),
+      sRecursos.getFontLigera(),
       colorGris,
       sRecursos.getColorGrisOscuro(),
       sRecursos.getColorGrisOscuro(),
@@ -381,7 +381,7 @@ public class AmigosTemplate extends JPanel {
       "Telefono Contacto:",
       20, 425, 160, 30,
       null, null,
-      sRecursos.getFontPequeña(),
+      sRecursos.getFontLigera(),
       null,
       sRecursos.getColorAzulOscuro(),
       null,
@@ -393,7 +393,7 @@ public class AmigosTemplate extends JPanel {
     tTelefono = sObjGraficos.construirJTextField(
       "Telefono",
       30, 460, 180, 30,
-      sRecursos.getFontPequeña(),
+      sRecursos.getFontLigera(),
       colorGris,
       sRecursos.getColorGrisOscuro(),
       sRecursos.getColorGrisOscuro(),
@@ -408,7 +408,7 @@ public class AmigosTemplate extends JPanel {
       "Email Contacto:",
       20, 510, 160, 30,
       null, null,
-      sRecursos.getFontPequeña(),
+      sRecursos.getFontLigera(),
       null,
       sRecursos.getColorAzulOscuro(),
       null,
@@ -420,7 +420,7 @@ public class AmigosTemplate extends JPanel {
     tEmail = sObjGraficos.construirJTextField(
       "Email",
       30, 545, 180, 30,
-      sRecursos.getFontPequeña(),
+      sRecursos.getFontLigera(),
       colorGris,
       sRecursos.getColorGrisOscuro(),
       sRecursos.getColorGrisOscuro(),

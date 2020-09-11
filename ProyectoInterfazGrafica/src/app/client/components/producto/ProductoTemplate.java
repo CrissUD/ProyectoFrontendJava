@@ -34,7 +34,7 @@ public class ProductoTemplate extends JPanel {
   // Declaración Objetos Decoradores
   private ImageIcon iEstrella, iDimAux;
 
-  public ProductoTemplate( ProductoComponent productoComponent,Producto producto) {
+  public ProductoTemplate(ProductoComponent productoComponent, Producto producto) {
     this.productoComponent = productoComponent;
     this.productoComponent.getClass();
     this.sObjGraficos = ObjGraficosService.getService();
@@ -48,7 +48,7 @@ public class ProductoTemplate extends JPanel {
     this.crearJLabels();
 
     this.setPreferredSize(new Dimension(262, 330));
-    this.setBorder(sRecursos.getBordeRedondeado());
+    this.setBorder(sRecursos.getBRedondeado());
     this.setBackground(Color.WHITE);
     this.setVisible(true);
   }
@@ -79,7 +79,7 @@ public class ProductoTemplate extends JPanel {
       null, null, null, null,
       "c"
     );
-    lImagen.setBorder(sRecursos.getBordeRedondeado());
+    lImagen.setBorder(sRecursos.getBRedondeado());
     modificarGbc(0, 1, 3, 1, 2, 10, 10, 3, 10, 3, 0, 0, 0, 0);
     this.add(lImagen, gbc);
 
@@ -87,7 +87,7 @@ public class ProductoTemplate extends JPanel {
       "<html><div align='justify'>" + producto.getDescripcion() + "</div></html>",
       0, 0, 0, 0,
       null, null,
-      sRecursos.getFontPequeña(),
+      sRecursos.getFontLigera(),
       null,
       sRecursos.getColorGrisOscuro(),
       null,
@@ -100,7 +100,7 @@ public class ProductoTemplate extends JPanel {
       producto.getCampo(),
       0, 0, 0, 0,
       null, null,
-      sRecursos.getFontBotones(),
+      sRecursos.getFontMediana(),
       sRecursos.getColorAzulClaro(),
       sRecursos.getColorAzulMarino(),
       null,
@@ -128,7 +128,7 @@ public class ProductoTemplate extends JPanel {
       producto.getPuntuacion() + "/ 5",
       0, 0, 0, 0,
       null, null,
-      sRecursos.getFontBotones(),
+      sRecursos.getFontMediana(),
       null,
       sRecursos.getColorAzulMarino(),
       null,

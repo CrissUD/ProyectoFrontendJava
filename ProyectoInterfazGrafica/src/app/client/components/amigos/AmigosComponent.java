@@ -49,7 +49,7 @@ public class AmigosComponent extends MouseAdapter implements ActionListener, Foc
   @Override
   public void focusGained(FocusEvent e) {
     JTextField textField = ((JTextField) e.getSource());
-    textField.setBorder(RecursosService.getService().getBorderAzul());
+    textField.setBorder(RecursosService.getService().getBAzul());
     if (
       textField.getText().equals(placeholdes[0]) ||
       textField.getText().equals(placeholdes[1]) ||

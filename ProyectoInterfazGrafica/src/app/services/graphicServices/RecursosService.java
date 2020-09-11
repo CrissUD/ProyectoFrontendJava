@@ -21,10 +21,10 @@ public class RecursosService {
   private Color colorAzul, colorAzulOscuro, colorAzulClaro, colorAzulMarino, colorMorado;
   private Color colorGrisOscuro, colorGrisClaro, colorTransparente;
   private Font fontTPrincipal, fontTitulo, fontSubtitulo;
-  private Font fontBotones, fontPequeña, fontTProducto;
+  private Font fontMediana, fontLigera, fontTProducto;
   private Cursor cMano;
-  private Border borderInferiorAzul, borderInferiorGris, bordeLateralAzul, borderGris, borderAzul;
-  private Border bordeCircular, bordeRedondeado, bordeDifuminado;
+  private Border bInferiorAzul, bInferiorGris, bLateralAzul, bGris, bAzul;
+  private Border bCircular, bRedondeado, bDifuminado;
   private ImageIcon iCerrar, iMinimizar;
 
   private static RecursosService servicio;
@@ -55,23 +55,23 @@ public class RecursosService {
   private void crearFuentes() {
     fontTPrincipal = new Font("Rockwell Extra Bold", Font.PLAIN, 20);
     fontTProducto = new Font("LuzSans-Book", Font.BOLD, 28);
-    fontTitulo = new Font("LuzSans-Books", Font.BOLD, 17);
+    fontTitulo = new Font("Calibri (Cuerpo)", Font.BOLD, 17);
     fontSubtitulo = new Font("Forte", Font.PLAIN, 13);
-    fontBotones = new Font("LuzSans-Book", Font.PLAIN, 15);
-    fontPequeña = new Font("LuzSans-Book", Font.PLAIN, 12);
+    fontMediana = new Font("LuzSans-Book", Font.PLAIN, 15);
+    fontLigera = new Font("LuzSans-Book", Font.PLAIN, 12);
   }
 
   private void crearCursores() { cMano = new Cursor(Cursor.HAND_CURSOR); }
 
   private void crearBordes() {
-    borderInferiorAzul = BorderFactory.createMatteBorder(0, 0, 2, 0, colorAzul);
-    bordeLateralAzul = BorderFactory.createMatteBorder(2, 0, 2, 2, colorAzul);
-    borderInferiorGris = BorderFactory.createMatteBorder(0, 0, 1, 0, Color.LIGHT_GRAY);
-    borderGris = BorderFactory.createLineBorder(Color.LIGHT_GRAY, 2, true);
-    borderAzul = BorderFactory.createLineBorder(colorAzul, 2, true);
-    bordeCircular = sGraficosAvanzados.DibujarBordeCircular(null, false, false, null);
-    bordeRedondeado = sGraficosAvanzados.DibujarBordeRedondeado(null, 40, false, false, null);
-    bordeDifuminado = sGraficosAvanzados.devolverBordeDifuminado(new Color(215, 215, 215), 8);
+    bInferiorAzul = BorderFactory.createMatteBorder(0, 0, 2, 0, colorAzul);
+    bLateralAzul = BorderFactory.createMatteBorder(2, 0, 2, 2, colorAzul);
+    bInferiorGris = BorderFactory.createMatteBorder(0, 0, 1, 0, Color.LIGHT_GRAY);
+    bGris = BorderFactory.createLineBorder(Color.LIGHT_GRAY, 2, true);
+    bAzul = BorderFactory.createLineBorder(colorAzul, 2, true);
+    bCircular = sGraficosAvanzados.DibujarBordeCircular(null, false, false, null);
+    bRedondeado = sGraficosAvanzados.DibujarBordeRedondeado(null, 40, false, false, null);
+    bDifuminado = sGraficosAvanzados.devolverBordeDifuminado(new Color(215, 215, 215), 8);
   }
 
   private void crearImagenes() {
@@ -123,27 +123,27 @@ public class RecursosService {
 
   public Font getFontSubtitulo() { return fontSubtitulo; }
 
-  public Font getFontBotones() { return fontBotones; }
+  public Font getFontMediana() { return fontMediana; }
 
-  public Font getFontPequeña() { return fontPequeña; }
+  public Font getFontLigera() { return fontLigera; }
 
   public Cursor getCMano() { return cMano; }
 
-  public Border getBorderInferiorAzul() { return borderInferiorAzul; }
+  public Border getBInferiorAzul() { return bInferiorAzul; }
 
-  public Border getBordeLateralAzul() { return bordeLateralAzul; }
+  public Border getBLateralAzul() { return bLateralAzul; }
 
-  public Border getBorderInferiorGris() { return borderInferiorGris; }
+  public Border getBInferiorGris() { return bInferiorGris; }
 
-  public Border getBorderGris() { return borderGris; }
+  public Border getBGris() { return bGris; }
 
-  public Border getBorderAzul() { return borderAzul; }
+  public Border getBAzul() { return bAzul; }
 
-  public Border getBordeCircular() { return bordeCircular; }
+  public Border getBCircular() { return bCircular; }
 
-  public Border getBordeRedondeado() { return bordeRedondeado; }
+  public Border getBRedondeado() { return bRedondeado; }
 
-  public Border getBordeDifuminado() { return bordeDifuminado; }
+  public Border getBDifuminado() { return bDifuminado; }
 
   public ImageIcon getICerrar() { return iCerrar; }
 

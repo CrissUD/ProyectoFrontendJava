@@ -64,7 +64,7 @@ public class TarjetaTemplate extends JPanel {
       "<html><div align='justify'>" + parrafo + "</div></html>",
       20, 120, 206, 120,
       null, null,
-      sRecursos.getFontPequeña(),
+      sRecursos.getFontLigera(),
       null,
       sRecursos.getColorGrisOscuro(),
       null,

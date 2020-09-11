@@ -45,7 +45,7 @@ public class ProductosTemplate extends JPanel {
       sRecursos.getFontTProducto(),
       null,
       sRecursos.getColorAzul(),
-      sRecursos.getBorderInferiorAzul(),
+      sRecursos.getBInferiorAzul(),
       "c"
     );
 

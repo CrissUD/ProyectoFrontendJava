@@ -87,7 +87,7 @@ public class NavegacionUsuarioTemplate extends JPanel {
       30, 30, 200, 40,
       sRecursos.getCMano(),
       iDimAux,
-      sRecursos.getFontBotones(),
+      sRecursos.getFontMediana(),
       null,
       Color.WHITE,
       borderVacio,
@@ -107,7 +107,7 @@ public class NavegacionUsuarioTemplate extends JPanel {
       30, 80, 200, 40,
       sRecursos.getCMano(),
       iDimAux,
-      sRecursos.getFontBotones(),
+      sRecursos.getFontMediana(),
       null,
       Color.WHITE,
       borderVacio,
@@ -127,7 +127,7 @@ public class NavegacionUsuarioTemplate extends JPanel {
       30, 130, 200, 40,
       sRecursos.getCMano(),
       iDimAux,
-      sRecursos.getFontBotones(),
+      sRecursos.getFontMediana(),
       null,
       Color.WHITE,
       borderVacio,
@@ -147,7 +147,7 @@ public class NavegacionUsuarioTemplate extends JPanel {
       30, 180, 200, 40,
       sRecursos.getCMano(),
       iDimAux,
-      sRecursos.getFontBotones(),
+      sRecursos.getFontMediana(),
       null,
       Color.WHITE,
       borderVacio,
@@ -167,7 +167,7 @@ public class NavegacionUsuarioTemplate extends JPanel {
       30, 230, 200, 40,
       sRecursos.getCMano(),
       iDimAux,
-      sRecursos.getFontBotones(),
+      sRecursos.getFontMediana(),
       null,
       Color.WHITE,
       borderVacio,
@@ -187,7 +187,7 @@ public class NavegacionUsuarioTemplate extends JPanel {
       30, 280, 200, 40,
       sRecursos.getCMano(),
       iDimAux,
-      sRecursos.getFontBotones(),
+      sRecursos.getFontMediana(),
       null,
       Color.WHITE,
       borderVacio,
@@ -243,7 +243,7 @@ public class NavegacionUsuarioTemplate extends JPanel {
       null, null, null, null,
       "c"
     );
-    lImagenUsuario.setBorder(sRecursos.getBordeCircular());
+    lImagenUsuario.setBorder(sRecursos.getBCircular());
     this.pSuperior.add(lImagenUsuario);
 
     // LABEL ESLOGAN--------------------------------------------------------------------
@@ -251,7 +251,7 @@ public class NavegacionUsuarioTemplate extends JPanel {
       "<html><div align='center'> Nuestros clientes son <br/>lo mas importante</div></html>",
       (this.pSuperior.getWidth() - 180) / 2, 265, 180, 40,
       null, null,
-      sRecursos.getFontPequeña(),
+      sRecursos.getFontLigera(),
       null,
       Color.WHITE,
       null,

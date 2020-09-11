@@ -68,7 +68,7 @@ public class AccionTemplate extends JPanel {
         "<html><div align='center'>" + parrafo + "</div></html>",
         (250 - 230) / 2, 85, 230, 50,
         null, null,
-        sRecursos.getFontPequeña(),
+        sRecursos.getFontLigera(),
         null,
         sRecursos.getColorGrisOscuro(),
         null,
@@ -78,7 +78,7 @@ public class AccionTemplate extends JPanel {
 
     this.setSize(250, 135);
     this.setBackground(Color.WHITE);
-    this.setBorder(sRecursos.getBordeDifuminado());
+    this.setBorder(sRecursos.getBDifuminado());
     this.setLayout(null);
     this.setVisible(true);
   }

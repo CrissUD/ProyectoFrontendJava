@@ -63,7 +63,7 @@ public class LoginComponent extends MouseAdapter implements ActionListener {
       label = loginTemplate.getLabels(text);
       label.setIcon(loginTemplate.getIBlue(label));
       text.setForeground(loginTemplate.getRecursosService().getColorAzul());
-      text.setBorder(loginTemplate.getRecursosService().getBorderInferiorAzul());
+      text.setBorder(loginTemplate.getRecursosService().getBInferiorAzul());
       if (
         text.getText().equals(placeholdes[0]) || text.getText().equals(placeholdes[1])
       ) 
@@ -125,7 +125,7 @@ public class LoginComponent extends MouseAdapter implements ActionListener {
     this.getLoginTemplate().getTNombreUsuario().setText("Nombre Usuario");
     this.getLoginTemplate().getTNombreUsuario()
       .setBorder(
-        this.getLoginTemplate().getRecursosService().getBorderInferiorGris()
+        this.getLoginTemplate().getRecursosService().getBInferiorGris()
       );
     this.getLoginTemplate().getTNombreUsuario()
       .setForeground(
@@ -134,7 +134,7 @@ public class LoginComponent extends MouseAdapter implements ActionListener {
     this.getLoginTemplate().getTClaveUsuario().setText("Clave Usuario");
     this.getLoginTemplate().getTClaveUsuario()
       .setBorder(
-        this.getLoginTemplate().getRecursosService().getBorderInferiorGris()
+        this.getLoginTemplate().getRecursosService().getBInferiorGris()
       );
     this.getLoginTemplate().getTClaveUsuario()
       .setForeground(

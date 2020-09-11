@@ -416,6 +416,7 @@ public class ObjGraficosService {
     for (String item : cadena.split("_")) {
       comboBox.addItem(item);
     }
+    comboBox.setFont(fuente);
     comboBox.setBackground(colorFondo);
     comboBox.setForeground(colorFuente);
     switch (direccion) {
