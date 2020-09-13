@@ -162,7 +162,8 @@ public class LoginTemplate extends JFrame {
     pDerecha.add(bCerrar);
 
     iDimAux = new ImageIcon(
-      iPunto2.getImage().getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
+      iPunto2.getImage()
+        .getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
     );
     //BOTÓN OPCIÓN 1-----------------------------------------------------------------------------
     bOpcion1 = sObjGraficos.construirJButton(
@@ -179,7 +180,8 @@ public class LoginTemplate extends JFrame {
 
     iDimAux =
       new ImageIcon(
-        iPunto1.getImage().getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
+        iPunto1.getImage()
+          .getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
       );
     //BOTÓN OPCIÓN 2-----------------------------------------------------------------------------
     bOpcion2 = sObjGraficos.construirJButton(
@@ -211,7 +213,8 @@ public class LoginTemplate extends JFrame {
   public void crearJLabels() {
     //LABEL LOGO-----------------------------------------------------------------------------
     iDimAux = new ImageIcon(
-      iLogo.getImage().getScaledInstance(40, 40, Image.SCALE_AREA_AVERAGING)
+      iLogo.getImage()
+        .getScaledInstance(40, 40, Image.SCALE_AREA_AVERAGING)
     );
     lLogo = sObjGraficos.construirJLabel(
       null,
@@ -238,7 +241,8 @@ public class LoginTemplate extends JFrame {
 
     //LABEL SVG-----------------------------------------------------------------------------
     iDimAux = new ImageIcon(
-      iSvg1.getImage().getScaledInstance(500, 345, Image.SCALE_AREA_AVERAGING)
+      iSvg1.getImage()
+        .getScaledInstance(500, 345, Image.SCALE_AREA_AVERAGING)
     );
     lSvg1 = sObjGraficos.construirJLabel(
       null,
@@ -252,7 +256,8 @@ public class LoginTemplate extends JFrame {
 
     //LABEL SVG 2-----------------------------------------------------------------------------
     iDimAux = new ImageIcon(
-      iSvg2.getImage().getScaledInstance(500, 345, Image.SCALE_AREA_AVERAGING)
+      iSvg2.getImage()
+        .getScaledInstance(500, 345, Image.SCALE_AREA_AVERAGING)
     );
     lSvg2 = sObjGraficos.construirJLabel(
       null,
@@ -266,7 +271,8 @@ public class LoginTemplate extends JFrame {
 
     //LABEL SVG 3-----------------------------------------------------------------------------
     iDimAux = new ImageIcon(
-      iSvg3.getImage().getScaledInstance(500, 345, Image.SCALE_AREA_AVERAGING)
+      iSvg3.getImage()
+        .getScaledInstance(500, 345, Image.SCALE_AREA_AVERAGING)
     );
     lSvg3 = sObjGraficos.construirJLabel(
       null,
@@ -319,7 +325,8 @@ public class LoginTemplate extends JFrame {
 
     //LABEL USUARIO-----------------------------------------------------------------------------
     iDimAux = new ImageIcon(
-      iUsuario1.getImage().getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
+      iUsuario1.getImage()
+        .getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
     );
     lUsuario = sObjGraficos.construirJLabel(
       null,
@@ -333,7 +340,8 @@ public class LoginTemplate extends JFrame {
 
     //LABEL CLAVE-----------------------------------------------------------------------------
     iDimAux = new ImageIcon(
-      iClave1.getImage().getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
+      iClave1.getImage()
+        .getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
     );
     lClave = sObjGraficos.construirJLabel(
       null,
@@ -347,7 +355,8 @@ public class LoginTemplate extends JFrame {
 
     //LABEL FACEBOOK-----------------------------------------------------------------------------
     iDimAux = new ImageIcon(
-      iFacebook1.getImage().getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
+      iFacebook1.getImage()
+        .getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
     );
     lFacebook = sObjGraficos.construirJLabel(
       null,
@@ -362,7 +371,8 @@ public class LoginTemplate extends JFrame {
 
     //LABEL TWITTER-----------------------------------------------------------------------------
     iDimAux = new ImageIcon(
-      iTwitter1.getImage().getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
+      iTwitter1.getImage()
+        .getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
     );
     lTwitter = sObjGraficos.construirJLabel(
       null,
@@ -377,7 +387,8 @@ public class LoginTemplate extends JFrame {
 
     //LABEL YOUTUBE-----------------------------------------------------------------------------
     iDimAux = new ImageIcon(
-      iYoutube1.getImage().getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
+      iYoutube1.getImage()
+        .getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
     );
     lYoutube = sObjGraficos.construirJLabel(
       null,
@@ -392,7 +403,8 @@ public class LoginTemplate extends JFrame {
 
     //LABEL FONDO-----------------------------------------------------------------------------
     iDimAux = new ImageIcon(
-      iFondo.getImage().getScaledInstance(600, 600, Image.SCALE_AREA_AVERAGING)
+      iFondo.getImage()
+        .getScaledInstance(600, 600, Image.SCALE_AREA_AVERAGING)
     );
     lFondo = sObjGraficos.construirJLabel(
       null,
@@ -429,7 +441,8 @@ public class LoginTemplate extends JFrame {
       "c"
     );
     ImageIcon iDimAux = new ImageIcon(
-      iAbajo.getImage().getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
+      iAbajo.getImage()
+        .getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
     );
     bComboBox = ObjGraficosService.getService().construirJButton(
       null,
@@ -504,11 +517,13 @@ public class LoginTemplate extends JFrame {
   public ImageIcon getIBlue(JLabel label) {
     if (label == lUsuario) 
       iDimAux = new ImageIcon(
-        iUsuario2.getImage().getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
+        iUsuario2.getImage()
+          .getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
       );
     if (label == lClave) 
       iDimAux = new ImageIcon(
-        iClave2.getImage().getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
+        iClave2.getImage()
+          .getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
       );
     return iDimAux;
   }
@@ -516,15 +531,18 @@ public class LoginTemplate extends JFrame {
   public ImageIcon getIWhite(JLabel label) {
     if (label == lFacebook) 
       iDimAux = new ImageIcon(
-        iFacebook1.getImage().getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
+        iFacebook1.getImage()
+          .getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
       );
     if (label == lTwitter) 
       iDimAux = new ImageIcon(
-        iTwitter1.getImage().getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
+        iTwitter1.getImage()
+          .getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
       );
     if (label == lYoutube) 
       iDimAux = new ImageIcon(
-        iYoutube1.getImage().getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
+        iYoutube1.getImage()
+          .getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
       );
     return iDimAux;
   }
@@ -532,15 +550,18 @@ public class LoginTemplate extends JFrame {
   public ImageIcon getIOrange(JLabel label) {
     if (label == lFacebook) 
       iDimAux = new ImageIcon(
-        iFacebook2.getImage().getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
+        iFacebook2.getImage()
+          .getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
       );
     if (label == lTwitter) 
       iDimAux = new ImageIcon(
-        iTwitter2.getImage().getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
+        iTwitter2.getImage()
+          .getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
       );
     if (label == lYoutube) 
       iDimAux = new ImageIcon(
-        iYoutube2.getImage().getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
+        iYoutube2.getImage()
+          .getScaledInstance(30, 30, Image.SCALE_AREA_AVERAGING)
       );
     return iDimAux;
   }
@@ -554,14 +575,16 @@ public class LoginTemplate extends JFrame {
 
   public ImageIcon getIPunto1() {
     iDimAux = new ImageIcon(
-      iPunto1.getImage().getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
+      iPunto1.getImage()
+        .getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
     );
     return iDimAux;
   }
 
   public ImageIcon getIPunto2() {
     iDimAux = new ImageIcon(
-      iPunto2.getImage().getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
+      iPunto2.getImage()
+        .getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
     );
     return iDimAux;
   }

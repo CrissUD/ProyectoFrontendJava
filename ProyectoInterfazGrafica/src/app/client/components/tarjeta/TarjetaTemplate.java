@@ -36,7 +36,8 @@ public class TarjetaTemplate extends JPanel {
     sRecursos = RecursosService.getService();
 
     iDimAux = new ImageIcon(
-      iImagen.getImage().getScaledInstance(246, 110, Image.SCALE_AREA_AVERAGING)
+      iImagen.getImage()
+        .getScaledInstance(246, 110, Image.SCALE_AREA_AVERAGING)
     );
     lImagen = sObjGraficos.construirJLabel(
       null,

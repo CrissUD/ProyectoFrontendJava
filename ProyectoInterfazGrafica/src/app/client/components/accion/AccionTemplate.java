@@ -37,7 +37,8 @@ public class AccionTemplate extends JPanel {
 
     iDimAux =
       new ImageIcon(
-        imagen.getImage().getScaledInstance(45, 45, Image.SCALE_AREA_AVERAGING)
+        imagen.getImage()
+          .getScaledInstance(45, 45, Image.SCALE_AREA_AVERAGING)
       );
     this.lImagen =
       sObjGraficos.construirJLabel(

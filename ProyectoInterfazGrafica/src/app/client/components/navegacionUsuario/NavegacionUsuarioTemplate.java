@@ -80,7 +80,8 @@ public class NavegacionUsuarioTemplate extends JPanel {
   public void crearJButtons() {
     // BOTÓN INICIO--------------------------------------------------------------------
     iDimAux = new ImageIcon(
-      iInicio.getImage().getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
+      iInicio.getImage()
+        .getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
     );
     this.bInicio = sObjGraficos.construirJButton(
       "      Inicio",
@@ -100,7 +101,8 @@ public class NavegacionUsuarioTemplate extends JPanel {
 
     // BOTÓN PERFIL--------------------------------------------------------------------
     iDimAux = new ImageIcon(
-      iPerfil.getImage().getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
+      iPerfil.getImage()
+        .getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
     );
     this.bPerfil = sObjGraficos.construirJButton(
       "      Perfil",
@@ -120,7 +122,8 @@ public class NavegacionUsuarioTemplate extends JPanel {
 
     // BOTÓN AMIGOS--------------------------------------------------------------------
     iDimAux = new ImageIcon(
-      iAmigos.getImage().getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
+      iAmigos.getImage()
+        .getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
     );
     this.bAmigos = sObjGraficos.construirJButton(
       "      Amigos",
@@ -140,7 +143,8 @@ public class NavegacionUsuarioTemplate extends JPanel {
 
     // BOTÓN PRODUCTOS--------------------------------------------------------------------
     iDimAux = new ImageIcon(
-      iProductos.getImage().getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
+      iProductos.getImage()
+        .getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
     );
     this.bProductos = sObjGraficos.construirJButton(
       "      Productos",
@@ -160,7 +164,8 @@ public class NavegacionUsuarioTemplate extends JPanel {
 
     // BOTÓN CONFIGURACIÓN--------------------------------------------------------------------
     iDimAux = new ImageIcon(
-      iConfiguracion.getImage().getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
+      iConfiguracion.getImage()
+        .getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
     );
     this.bConfiguracion = sObjGraficos.construirJButton(
       "      Configuraciones",
@@ -180,7 +185,8 @@ public class NavegacionUsuarioTemplate extends JPanel {
 
     // BOTÓN CERRAR SESIÓN--------------------------------------------------------------------
     iDimAux = new ImageIcon(
-      iCerrarSesion.getImage().getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
+      iCerrarSesion.getImage()
+        .getScaledInstance(20, 20, Image.SCALE_AREA_AVERAGING)
     );
     this.bCerrarSesion = sObjGraficos.construirJButton(
       "      Cerrar Sesión",
@@ -202,7 +208,8 @@ public class NavegacionUsuarioTemplate extends JPanel {
   public void crearJLabels() {
     // LABEL ICONO USUARIO--------------------------------------------------------------------
     iDimAux = new ImageIcon(
-      iIconoUsuario.getImage().getScaledInstance(40, 40, Image.SCALE_AREA_AVERAGING)
+      iIconoUsuario.getImage()
+        .getScaledInstance(40, 40, Image.SCALE_AREA_AVERAGING)
     );
     this.lIconoUsuario = sObjGraficos.construirJLabel(
       null,
