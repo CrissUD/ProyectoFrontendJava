@@ -11,8 +11,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class ConfiguracionesTemplate extends JPanel {
-  private static final long serialVersionUID = -4187150474671099409L;
-
+  private static final long serialVersionUID = 1L;
+  
   // Declaración de servicios e inyección
   private ConfiguracionesComponent configuracionesComponent;
   private ObjGraficosService sObjGraficos;

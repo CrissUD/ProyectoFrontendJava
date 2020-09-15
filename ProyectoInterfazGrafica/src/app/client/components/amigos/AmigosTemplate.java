@@ -17,8 +17,8 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 
 public class AmigosTemplate extends JPanel {
-  private static final long serialVersionUID = 767443757219592088L;
-
+  private static final long serialVersionUID = 1L;
+  
   // Declaración servicios y objetos
   private AmigosComponent amigosComponent;
   private ObjGraficosService sObjGraficos;

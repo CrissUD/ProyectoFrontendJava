@@ -11,8 +11,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class AccionTemplate extends JPanel {
-  private static final long serialVersionUID = -988664250754837512L;
-
+  private static final long serialVersionUID = 1L;
+  
   // Declaración de servicios y objetos
   private ObjGraficosService sObjGraficos;
   private RecursosService sRecursos;

@@ -16,8 +16,8 @@ import javax.swing.JPanel;
 import models.Producto;
 
 public class ProductoTemplate extends JPanel {
-  private static final long serialVersionUID = -3449657086056085279L;
-
+  private static final long serialVersionUID = 1L;
+  
   // Declaración Servicios y dependencias
   private ProductoComponent productoComponent;
   private ObjGraficosService sObjGraficos;

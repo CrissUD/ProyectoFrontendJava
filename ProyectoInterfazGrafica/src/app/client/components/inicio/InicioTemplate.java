@@ -18,8 +18,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class InicioTemplate extends JPanel {
-  private static final long serialVersionUID = -1137494554115287686L;
-
+  private static final long serialVersionUID = 1L;
+  
   // Declaración Servicios y dependencias
   private InicioComponent inicioComponent;
   private ObjGraficosService sObjGraficos;

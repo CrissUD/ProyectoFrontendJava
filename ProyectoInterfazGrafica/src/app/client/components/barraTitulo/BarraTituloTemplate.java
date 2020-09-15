@@ -13,8 +13,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class BarraTituloTemplate extends JPanel {
-  private static final long serialVersionUID = 71481211598678676L;
-
+  private static final long serialVersionUID = 1L;
+  
   // Declaración Servicios y dependencias
   private BarraTituloComponent barraTituloComponent;
   private ObjGraficosService sObjGraficos;

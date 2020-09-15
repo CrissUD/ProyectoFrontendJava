@@ -5,8 +5,8 @@ import java.awt.Color;
 import javax.swing.JPanel;
 
 public class PerfilTemplate extends JPanel {
-  private static final long serialVersionUID = 7007624666793242889L;
-
+  private static final long serialVersionUID = 1L;
+  
   private PerfilComponent perfilComponent;
 
   public PerfilTemplate(PerfilComponent perfilComponent) {

@@ -9,8 +9,8 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
 public class VistaPrincipalTemplate extends JFrame {
-  private static final long serialVersionUID = 8914150529633029064L;
-
+  private static final long serialVersionUID = 1L;
+  
   // Declaración Servicios y Objetos
   private ObjGraficosService sObjGraficos;
   private GraficosAvanzadosService sGraficosAvanzados;

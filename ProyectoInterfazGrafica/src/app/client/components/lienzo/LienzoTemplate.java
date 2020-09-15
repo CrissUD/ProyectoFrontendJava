@@ -18,8 +18,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 
 public class LienzoTemplate extends Canvas {
-  private static final long serialVersionUID = -4098908948790165726L;
-
+  private static final long serialVersionUID = 1L;
+  
   private LienzoComponent lienzoComponent;
   private RecursosService sRecursos;
   private Graphics2D g2d;

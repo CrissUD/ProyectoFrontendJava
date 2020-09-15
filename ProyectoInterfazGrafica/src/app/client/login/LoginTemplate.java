@@ -19,8 +19,8 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 public class LoginTemplate extends JFrame {
-  private static final long serialVersionUID = 7215779126893195799L;
-
+  private static final long serialVersionUID = 1L;
+  
   // Declaración Objetos Gráficos
   private JPanel pDerecha, pIzquierda, pSvg;
   private JLabel lTituloApp, lEslogan, lTituloLogin, lNotificaciones;

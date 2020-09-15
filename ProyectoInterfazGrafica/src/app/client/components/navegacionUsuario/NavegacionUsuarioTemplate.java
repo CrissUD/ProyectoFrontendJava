@@ -14,9 +14,9 @@ import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 
 public class NavegacionUsuarioTemplate extends JPanel {
-  private static final long serialVersionUID = 8914150529633029065L;
-
-  //Declaración Servicios y dependencias
+  private static final long serialVersionUID = 1L;
+  
+  // Declaración Servicios y dependencias
   private NavegacionUsuarioComponent navegacionUsuarioComponent;
   private ObjGraficosService sObjGraficos;
   private RecursosService sRecursos;

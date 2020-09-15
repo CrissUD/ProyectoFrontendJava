@@ -11,8 +11,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class TarjetaTemplate extends JPanel {
-  private static final long serialVersionUID = 8871354807207537138L;
-
+  private static final long serialVersionUID = 1L;
+  
   // Declaración Servicios y dependencias
   private TarjetaComponent tarjetaComponent;
   private ObjGraficosService sObjGraficos;
