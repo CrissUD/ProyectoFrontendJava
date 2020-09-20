@@ -29,7 +29,7 @@ public class NavegacionUsuarioTemplate extends JPanel {
   //Declaración Objetos Decoradores
   private ImageIcon iIconoUsuario, iInicio, iPerfil, iAmigos, iProductos;
   private ImageIcon iConfiguracion, iCerrarSesion, iDimAux;
-  private Border borderVacio;
+  private Border bVacio;
 
   public NavegacionUsuarioTemplate(NavegacionUsuarioComponent navegacionUsuarioComponent) {
     this.navegacionUsuarioComponent = navegacionUsuarioComponent;
@@ -74,7 +74,7 @@ public class NavegacionUsuarioTemplate extends JPanel {
       "ProyectoInterfazGrafica/resources/images/configuracion.png"
     );
     this.iCerrarSesion = new ImageIcon("ProyectoInterfazGrafica/resources/images/salir.png");
-    this.borderVacio = new EmptyBorder(2, 20, 2, 2);
+    this.bVacio = new EmptyBorder(2, 20, 2, 2);
   }
 
   public void crearJButtons() {
@@ -91,7 +91,7 @@ public class NavegacionUsuarioTemplate extends JPanel {
       sRecursos.getFontMediana(),
       null,
       Color.WHITE,
-      borderVacio,
+      bVacio,
       "l",
       false
     );
@@ -112,7 +112,7 @@ public class NavegacionUsuarioTemplate extends JPanel {
       sRecursos.getFontMediana(),
       null,
       Color.WHITE,
-      borderVacio,
+      bVacio,
       "l",
       false
     );
@@ -133,7 +133,7 @@ public class NavegacionUsuarioTemplate extends JPanel {
       sRecursos.getFontMediana(),
       null,
       Color.WHITE,
-      borderVacio,
+      bVacio,
       "l",
       false
     );
@@ -154,7 +154,7 @@ public class NavegacionUsuarioTemplate extends JPanel {
       sRecursos.getFontMediana(),
       null,
       Color.WHITE,
-      borderVacio,
+      bVacio,
       "l",
       false
     );
@@ -175,7 +175,7 @@ public class NavegacionUsuarioTemplate extends JPanel {
       sRecursos.getFontMediana(),
       null,
       Color.WHITE,
-      borderVacio,
+      bVacio,
       "l",
       false
     );
@@ -196,7 +196,7 @@ public class NavegacionUsuarioTemplate extends JPanel {
       sRecursos.getFontMediana(),
       null,
       Color.WHITE,
-      borderVacio,
+      bVacio,
       "l",
       false
     );

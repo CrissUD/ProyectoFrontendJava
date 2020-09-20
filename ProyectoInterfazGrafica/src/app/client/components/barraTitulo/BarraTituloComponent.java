@@ -22,7 +22,7 @@ public class BarraTituloComponent extends MouseAdapter implements ActionListener
     if ( e.getSource() == barraTituloTemplate.getBMinimizar()) 
       vistaPrincipalComponent.minimizar();
     if (e.getSource() == barraTituloTemplate.getBCerrar()) 
-      System.exit(0);
+      vistaPrincipalComponent.cerrar();
   }
 
   @Override

@@ -47,20 +47,24 @@ public class VistaPrincipalComponent {
     vistaPrincipalTemplate.getPPrincipal().removeAll();
     switch (comando) {
       case "Inicio":
-        vistaPrincipalTemplate.getPPrincipal().add(inicioComponent.getInicioTemplate());
+        vistaPrincipalTemplate.getPPrincipal()
+          .add(inicioComponent.getInicioTemplate());
         break;
       case "Perfil":
-        if (this.perfilComponent == null) this.perfilComponent = new PerfilComponent();
+        if (this.perfilComponent == null) 
+          this.perfilComponent = new PerfilComponent();
         vistaPrincipalTemplate  .getPPrincipal()
           .add(perfilComponent.getPerfilTemplate());
         break;
       case "Amigos":
-        if (this.amigosComponent == null) this.amigosComponent = new AmigosComponent();
+        if (this.amigosComponent == null) 
+          this.amigosComponent = new AmigosComponent();
         vistaPrincipalTemplate.getPPrincipal()
           .add(amigosComponent.getAmigosTemplate());
         break;
       case "Productos":
-        if (this.productosComponent == null) this.productosComponent = new ProductosComponent();
+        if (this.productosComponent == null) 
+          this.productosComponent = new ProductosComponent();
         vistaPrincipalTemplate.crearContenidoProductos(
           productosComponent.getProductosTemplate()
         );
@@ -86,9 +90,13 @@ public class VistaPrincipalComponent {
       .add(inicioComponent.getInicioTemplate());
     this.navegacionUsuarioComponent.actualizarValores();
   }
-
+  
   public void moverVentana(int posicionX, int posicionY) {
     this.vistaPrincipalTemplate.setLocation(posicionX, posicionY);
+  }
+  
+  public void cerrar() {
+    System.exit(0);
   }
 
   public void minimizar() {
