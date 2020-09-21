@@ -35,46 +35,42 @@ public class AccionTemplate extends JPanel {
     this.accionComponent = accionComponent;
     this.accionComponent.getClass();
 
-    iDimAux =
-      new ImageIcon(
-        imagen.getImage()
-          .getScaledInstance(45, 45, Image.SCALE_AREA_AVERAGING)
-      );
-    this.lImagen =
-      sObjGraficos.construirJLabel(
-        null,
-        (250 - 45) / 2, 15, 45, 45,
-        null,
-        iDimAux,
-        null, null, null, null,
-        "c"
-      );
+    iDimAux = new ImageIcon(
+      imagen.getImage()
+        .getScaledInstance(45, 45, Image.SCALE_AREA_AVERAGING)
+    );
+    this.lImagen = sObjGraficos.construirJLabel(
+      null,
+      (250 - 45) / 2, 15, 45, 45,
+      null,
+      iDimAux,
+      null, null, null, null,
+      "c"
+    );
     this.add(lImagen);
 
-    this.lTitulo =
-      sObjGraficos.construirJLabel(
-        titulo,
-        (250 - 220) / 2, 60, 220, 30,
-        null, null,
-        sRecursos.getFontTitulo(),
-        null,
-        sRecursos.getColorGrisOscuro(),
-        null,
-        "c"
-      );
+    this.lTitulo = sObjGraficos.construirJLabel(
+      titulo,
+      (250 - 220) / 2, 60, 220, 30,
+      null, null,
+      sRecursos.getFontTitulo(),
+      null,
+      sRecursos.getColorGrisOscuro(),
+      null,
+      "c"
+    );
     this.add(lTitulo);
 
-    this.lParrafo =
-      sObjGraficos.construirJLabel(
-        "<html><div align='center'>" + parrafo + "</div></html>",
-        (250 - 230) / 2, 85, 230, 50,
-        null, null,
-        sRecursos.getFontLigera(),
-        null,
-        sRecursos.getColorGrisOscuro(),
-        null,
-        "c"
-      );
+    this.lParrafo = sObjGraficos.construirJLabel(
+      "<html><div align='center'>" + parrafo + "</div></html>",
+      (250 - 230) / 2, 85, 230, 50,
+      null, null,
+      sRecursos.getFontLigera(),
+      null,
+      sRecursos.getColorGrisOscuro(),
+      null,
+      "c"
+    );
     this.add(lParrafo);
 
     this.setSize(250, 135);
