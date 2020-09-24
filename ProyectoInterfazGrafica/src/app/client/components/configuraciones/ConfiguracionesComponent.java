@@ -70,11 +70,7 @@ public class ConfiguracionesComponent implements MouseListener, MouseMotionListe
     if (e.getWheelRotation() == -1) 
       this.configuracionesTemplate.getLZoomValor()
         .setText(valorZoomActual + 1 + "");
-    if (e.getWheelRotation() == 1 &&
-      Integer.parseInt(
-        this.configuracionesTemplate.getLZoomValor().getText()
-      ) > 0
-    ) 
+    if (e.getWheelRotation() == 1 && valorZoomActual > 0) 
       this.configuracionesTemplate.getLZoomValor()
         .setText(valorZoomActual - 1 + "");
   }
