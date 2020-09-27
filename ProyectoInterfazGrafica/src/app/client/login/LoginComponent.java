@@ -61,7 +61,7 @@ public class LoginComponent extends MouseAdapter implements ActionListener {
     if (e.getSource() instanceof JTextField) {
       text = ((JTextField) e.getSource());
       label = loginTemplate.getLabels(text);
-      label.setIcon(loginTemplate.getIBlue(label));
+      label.setIcon(loginTemplate.getIAzul(label));
       text.setForeground(loginTemplate.getRecursosService().getColorAzul());
       text.setBorder(loginTemplate.getRecursosService().getBInferiorAzul());
       if (
@@ -79,7 +79,7 @@ public class LoginComponent extends MouseAdapter implements ActionListener {
     }
     if (e.getSource() instanceof JLabel) {
       label = ((JLabel) e.getSource());
-      label.setIcon(loginTemplate.getIOrange(label));
+      label.setIcon(loginTemplate.getINaranja(label));
     }
   }
 
@@ -91,7 +91,7 @@ public class LoginComponent extends MouseAdapter implements ActionListener {
     }
     if (e.getSource() instanceof JLabel) {
       label = ((JLabel) e.getSource());
-      label.setIcon(loginTemplate.getIWhite(label));
+      label.setIcon(loginTemplate.getIBlanca(label));
     }
   }
 
