@@ -19,7 +19,7 @@ public class BarraTituloComponent extends MouseAdapter implements ActionListener
 
   @Override
   public void actionPerformed(ActionEvent e) {
-    if ( e.getSource() == barraTituloTemplate.getBMinimizar()) 
+    if (e.getSource() == barraTituloTemplate.getBMinimizar()) 
       vistaPrincipalComponent.minimizar();
     if (e.getSource() == barraTituloTemplate.getBCerrar()) 
       vistaPrincipalComponent.cerrar();
@@ -34,9 +34,9 @@ public class BarraTituloComponent extends MouseAdapter implements ActionListener
   @Override
   public void mouseDragged(MouseEvent e) {
     this.vistaPrincipalComponent.moverVentana(
-        e.getXOnScreen() - posicionInicialX,
-        e.getYOnScreen() - posicionInicialY
-      );
+      e.getXOnScreen() - posicionInicialX,
+      e.getYOnScreen() - posicionInicialY
+    );
   }
 
   public BarraTituloTemplate getBarraTituloTemplate() {

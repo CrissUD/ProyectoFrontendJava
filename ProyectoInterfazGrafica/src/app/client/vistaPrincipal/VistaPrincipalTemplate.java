@@ -22,7 +22,6 @@ public class VistaPrincipalTemplate extends JFrame {
   private JScrollPane psProductos;
 
   public VistaPrincipalTemplate(VistaPrincipalComponent vistaPrincipalComponent) {
-    super("Vista Principal");
     this.vistaPrincipalComponent = vistaPrincipalComponent;
     this.vistaPrincipalComponent.getClass();
     sObjGraficos = ObjGraficosService.getService();
