@@ -62,7 +62,7 @@ public class LienzoTemplate extends Canvas {
   }
 
   public void pintarStrings(Graphics2D g2d) {
-    g2d.setColor(sRecursos.getColorAzul());
+    g2d.setColor(sRecursos.getColorPrincipal());
     g2d.setFont(sRecursos.getFontTitulo());
     g2d.drawString("Rectangulos", (this.getWidth() / 2) - 50, 15);
     g2d.drawString("Arcos", (this.getWidth() / 2) - 23, 165);
@@ -71,7 +71,7 @@ public class LienzoTemplate extends Canvas {
   }
 
   public void pintarRectangulos(Graphics2D g2d) {
-    g2d.setColor(sRecursos.getColorAzul());
+    g2d.setColor(sRecursos.getColorPrincipal());
     g2d.fillRect(15, 65, 100, 50);
     g2d.drawRect(135, 40, 100, 100);
     g2d.fillRoundRect(255, 40, 100, 100, 20, 20);
@@ -79,14 +79,14 @@ public class LienzoTemplate extends Canvas {
   }
 
   public void pintarLineas(Graphics2D g2d) {
-    g2d.setColor(sRecursos.getColorMorado());
+    g2d.setColor(sRecursos.getColorSecundario());
     g2d.drawLine(0, 150, 496, 150);
     g2d.drawLine(0, 300, 496, 300);
     g2d.drawLine(0, 450, 496, 450);
   }
 
   public void pintarArcos(Graphics2D g2d) {
-    g2d.setColor(sRecursos.getColorAzul());
+    g2d.setColor(sRecursos.getColorPrincipal());
 
     g2d.fillArc(15, 190, 100, 100, 0, 90);
     g2d.fillArc(15, 190, 100, 100, 180, 90);
@@ -94,25 +94,25 @@ public class LienzoTemplate extends Canvas {
     g2d.fillArc(15, 190, 100, 100, 90, 90);
     g2d.fillArc(15, 190, 100, 100, 270, 90);
 
-    g2d.setColor(sRecursos.getColorAzul());
+    g2d.setColor(sRecursos.getColorPrincipal());
     g2d.drawArc(135, 190, 100, 100, 0, 90);
     g2d.drawArc(135, 190, 100, 100, 180, 90);
     g2d.setColor(Color.ORANGE);
     g2d.drawArc(135, 190, 100, 100, 90, 90);
     g2d.drawArc(135, 190, 100, 100, 270, 90);
 
-    g2d.setColor(sRecursos.getColorAzul());
+    g2d.setColor(sRecursos.getColorPrincipal());
     g2d.fillArc(255, 190, 100, 100, 0, 180);
 
     g2d.drawArc(375, 190, 100, 100, -15, 90);
     g2d.setColor(Color.ORANGE);
     g2d.drawArc(375, 190, 100, 100, 105, 90);
-    g2d.setColor(sRecursos.getColorMorado());
+    g2d.setColor(sRecursos.getColorSecundario());
     g2d.drawArc(375, 190, 100, 100, 225, 90);
   }
 
   public void pintarOvalos(Graphics2D g2d) {
-    g2d.setColor(sRecursos.getColorAzul());
+    g2d.setColor(sRecursos.getColorPrincipal());
     g2d.fillOval(15, 340, 100, 100);
 
     g2d.drawOval(160, 340, 50, 100);
@@ -120,7 +120,7 @@ public class LienzoTemplate extends Canvas {
   }
 
   public void pintarPoligonos(Graphics2D g2d) {
-    g2d.setColor(sRecursos.getColorAzul());
+    g2d.setColor(sRecursos.getColorPrincipal());
     g2d.fillPolygon(
       new int[] { 305, 255, 355 },
       new int[] { 340, 440, 440 },
@@ -148,7 +148,7 @@ public class LienzoTemplate extends Canvas {
   }
 
   public void pintarAreas(Graphics2D g2d) {
-    g2d.setColor(sRecursos.getColorAzul());
+    g2d.setColor(sRecursos.getColorPrincipal());
     g2d.fillRect(80, 30, 340, 340);
 
     g2d.setColor(Color.WHITE);
@@ -182,7 +182,7 @@ public class LienzoTemplate extends Canvas {
   public void pintarRectanguloTiempoReal(int x, int y, MouseEvent e) {
     g2d.setColor(Color.WHITE);
     g2d.fillRect(0, 0, this.getWidth(), this.getHeight());
-    g2d.setColor(sRecursos.getColorAzul());
+    g2d.setColor(sRecursos.getColorPrincipal());
 
     // Dirección Inferior Izquierda
     if (e.getX() - x < 0 && e.getY() - y > 0) 

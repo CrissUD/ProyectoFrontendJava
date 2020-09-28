@@ -60,7 +60,7 @@ public class ProductoTemplate extends JPanel {
       null, null,
       sRecursos.getFontTitulo(),
       null,
-      sRecursos.getColorAzul(),
+      sRecursos.getColorPrincipal(),
       null,
       "l"
     );
@@ -101,8 +101,8 @@ public class ProductoTemplate extends JPanel {
       0, 0, 0, 0,
       null, null,
       sRecursos.getFontMediana(),
-      sRecursos.getColorAzulClaro(),
-      sRecursos.getColorAzulMarino(),
+      sRecursos.getColorPrincipalClaro(),
+      sRecursos.getColorPrincipalMarino(),
       null,
       "c"
     );
@@ -131,7 +131,7 @@ public class ProductoTemplate extends JPanel {
       null, null,
       sRecursos.getFontMediana(),
       null,
-      sRecursos.getColorAzulMarino(),
+      sRecursos.getColorPrincipalMarino(),
       null,
       "l"
     );

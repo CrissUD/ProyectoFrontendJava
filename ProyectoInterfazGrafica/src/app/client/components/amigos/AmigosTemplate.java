@@ -95,7 +95,7 @@ public class AmigosTemplate extends JPanel {
 
     header.setDefaultRenderer(
       sGraficosAvanzados.devolverTablaPersonalizada(
-        sRecursos.getColorAzul(),
+        sRecursos.getColorPrincipal(),
         null, null,
         Color.WHITE,
         sRecursos.getFontLigera()
@@ -107,7 +107,7 @@ public class AmigosTemplate extends JPanel {
       sGraficosAvanzados.devolverTablaPersonalizada(
         Color.WHITE,
         sRecursos.getColorGrisClaro(),
-        sRecursos.getColorAzulOscuro(),
+        sRecursos.getColorPrincipalOscuro(),
         sRecursos.getColorGrisOscuro(),
         sRecursos.getFontLigera()
       )
@@ -123,7 +123,7 @@ public class AmigosTemplate extends JPanel {
     );
 
     pCorner = new JPanel();
-    pCorner.setBackground(sRecursos.getColorAzul());
+    pCorner.setBackground(sRecursos.getColorPrincipal());
     pTabla.setCorner(JScrollPane.UPPER_RIGHT_CORNER, pCorner);
     this.add(pTabla);
   }
@@ -163,7 +163,7 @@ public class AmigosTemplate extends JPanel {
       sRecursos.getCMano(),
       null,
       sRecursos.getFontMediana(),
-      sRecursos.getColorAzul(),
+      sRecursos.getColorPrincipal(),
       Color.WHITE,
       null,
       "c",
@@ -180,7 +180,7 @@ public class AmigosTemplate extends JPanel {
       sRecursos.getCMano(),
       null,
       sRecursos.getFontMediana(),
-      sRecursos.getColorAzul(),
+      sRecursos.getColorPrincipal(),
       Color.WHITE,
       null,
       "c",
@@ -197,7 +197,7 @@ public class AmigosTemplate extends JPanel {
       sRecursos.getCMano(),
       null,
       sRecursos.getFontMediana(),
-      sRecursos.getColorAzul(),
+      sRecursos.getColorPrincipal(),
       Color.WHITE,
       null,
       "c",
@@ -214,7 +214,7 @@ public class AmigosTemplate extends JPanel {
       sRecursos.getCMano(),
       null,
       sRecursos.getFontMediana(),
-      sRecursos.getColorAzul(),
+      sRecursos.getColorPrincipal(),
       Color.WHITE,
       null,
       "c",
@@ -231,7 +231,7 @@ public class AmigosTemplate extends JPanel {
       sRecursos.getCMano(),
       null,
       sRecursos.getFontMediana(),
-      sRecursos.getColorAzul(),
+      sRecursos.getColorPrincipal(),
       Color.WHITE,
       null,
       "c",
@@ -276,7 +276,7 @@ public class AmigosTemplate extends JPanel {
       null, null,
       sRecursos.getFontLigera(),
       null,
-      sRecursos.getColorAzulOscuro(),
+      sRecursos.getColorPrincipalOscuro(),
       null,
       "l"
     );
@@ -289,7 +289,7 @@ public class AmigosTemplate extends JPanel {
       null, null,
       sRecursos.getFontLigera(),
       null,
-      sRecursos.getColorAzulOscuro(),
+      sRecursos.getColorPrincipalOscuro(),
       null,
       "l"
     );
@@ -302,7 +302,7 @@ public class AmigosTemplate extends JPanel {
       null, null,
       sRecursos.getFontLigera(),
       null,
-      sRecursos.getColorAzulOscuro(),
+      sRecursos.getColorPrincipalOscuro(),
       null,
       "l"
     );
@@ -329,7 +329,7 @@ public class AmigosTemplate extends JPanel {
       null, null,
       sRecursos.getFontLigera(),
       null,
-      sRecursos.getColorAzulOscuro(),
+      sRecursos.getColorPrincipalOscuro(),
       null,
       "l"
     );
@@ -356,7 +356,7 @@ public class AmigosTemplate extends JPanel {
       null, null,
       sRecursos.getFontLigera(),
       null,
-      sRecursos.getColorAzulOscuro(),
+      sRecursos.getColorPrincipalOscuro(),
       null,
       "l"
     );
@@ -383,7 +383,7 @@ public class AmigosTemplate extends JPanel {
       null, null,
       sRecursos.getFontLigera(),
       null,
-      sRecursos.getColorAzulOscuro(),
+      sRecursos.getColorPrincipalOscuro(),
       null,
       "l"
     );
@@ -410,7 +410,7 @@ public class AmigosTemplate extends JPanel {
       null, null,
       sRecursos.getFontLigera(),
       null,
-      sRecursos.getColorAzulOscuro(),
+      sRecursos.getColorPrincipalOscuro(),
       null,
       "l"
     );

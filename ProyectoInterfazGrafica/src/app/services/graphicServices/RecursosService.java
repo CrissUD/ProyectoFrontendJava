@@ -18,8 +18,8 @@ import javax.swing.border.Border;
 
 public class RecursosService {
   private GraficosAvanzadosService sGraficosAvanzados;
-  private Color colorAzul, colorAzulOscuro, colorAzulClaro, colorAzulMarino, colorMorado;
-  private Color colorGrisOscuro, colorGrisClaro, colorTransparente;
+  private Color colorPrincipal, colorPrincipalOscuro, colorPrincipalClaro, colorSecundario;
+  private Color colorAzulMarino, colorGrisOscuro, colorGrisClaro, colorTransparente;
   private Font fontTPrincipal, fontTitulo, fontSubtitulo;
   private Font fontMediana, fontLigera, fontTProducto;
   private Cursor cMano;
@@ -42,10 +42,10 @@ public class RecursosService {
   }
 
   private void crearColores() {
-    colorMorado = new Color(151, 0, 158);
-    colorAzul = new Color(60, 78, 120);
-    colorAzulOscuro = new Color(30, 48, 90);
-    colorAzulClaro = new Color(231, 244, 253);
+    colorSecundario = new Color(151, 0, 158);
+    colorPrincipal = new Color(60, 78, 120);
+    colorPrincipalOscuro = new Color(30, 48, 90);
+    colorPrincipalClaro = new Color(231, 244, 253);
     colorAzulMarino = new Color(17, 146, 238);
     colorGrisOscuro = new Color(80, 80, 80);
     colorGrisClaro = new Color(247, 247, 247);
@@ -64,11 +64,11 @@ public class RecursosService {
   private void crearCursores() { cMano = new Cursor(Cursor.HAND_CURSOR); }
 
   private void crearBordes() {
-    bInferiorAzul = BorderFactory.createMatteBorder(0, 0, 2, 0, colorAzul);
-    bLateralAzul = BorderFactory.createMatteBorder(2, 0, 2, 2, colorAzul);
+    bInferiorAzul = BorderFactory.createMatteBorder(0, 0, 2, 0, colorPrincipal);
+    bLateralAzul = BorderFactory.createMatteBorder(2, 0, 2, 2, colorPrincipal);
     bInferiorGris = BorderFactory.createMatteBorder(0, 0, 1, 0, Color.LIGHT_GRAY);
     bGris = BorderFactory.createLineBorder(Color.LIGHT_GRAY, 2, true);
-    bAzul = BorderFactory.createLineBorder(colorAzul, 2, true);
+    bAzul = BorderFactory.createLineBorder(colorPrincipal, 2, true);
     bCircular = sGraficosAvanzados.DibujarBordeCircular(null, false, false, null);
     bRedondeado = sGraficosAvanzados.DibujarBordeRedondeado(null, 40, false, false, null);
     bDifuminado = sGraficosAvanzados.devolverBordeDifuminado(new Color(215, 215, 215), 8);
@@ -93,21 +93,21 @@ public class RecursosService {
 
   private void personalizarJOptionPane() {
     UIManager.put("OptionPane.background", Color.WHITE);
-    UIManager.put("OptionPane.messageForeground", this.colorAzulOscuro);
-    UIManager.put("Button.background", this.colorAzul);
+    UIManager.put("OptionPane.messageForeground", this.colorPrincipalOscuro);
+    UIManager.put("Button.background", this.colorPrincipal);
     UIManager.put("Button.foreground", Color.WHITE);
     UIManager.put("Panel.background", Color.WHITE);
   }
 
-  public Color getColorMorado() { return colorMorado; }
+  public Color getColorSecundario() { return colorSecundario; }
 
-  public Color getColorAzul() { return colorAzul; }
+  public Color getColorPrincipal() { return colorPrincipal; }
 
-  public Color getColorAzulOscuro() { return colorAzulOscuro; }
+  public Color getColorPrincipalOscuro() { return colorPrincipalOscuro; }
 
-  public Color getColorAzulClaro() { return colorAzulClaro; }
+  public Color getColorPrincipalClaro() { return colorPrincipalClaro; }
 
-  public Color getColorAzulMarino() { return colorAzulMarino; }
+  public Color getColorPrincipalMarino() { return colorAzulMarino; }
 
   public Color getColorGrisOscuro() { return colorGrisOscuro; }
 

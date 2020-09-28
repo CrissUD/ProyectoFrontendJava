@@ -120,7 +120,7 @@ public class LoginTemplate extends JFrame {
       (pDerecha.getWidth() - 250) / 2, 330, 250, 45,
       sRecursos.getCMano(),
       null, null,
-      sRecursos.getColorAzul(),
+      sRecursos.getColorPrincipal(),
       Color.WHITE,
       sRecursos.getBRedondeado(),
       "c",
@@ -135,7 +135,7 @@ public class LoginTemplate extends JFrame {
       240, 460, 145, 35,
       sRecursos.getCMano(),
       null, null,
-      sRecursos.getColorAzul(),
+      sRecursos.getColorPrincipal(),
       Color.WHITE,
       sRecursos.getBRedondeado(),
       "c",
@@ -459,9 +459,9 @@ public class LoginTemplate extends JFrame {
         .devolverJComboBoxPersonalizado(
           bComboBox,
           null,
-          sRecursos.getColorAzul(),
-          sRecursos.getColorAzul(),
-          sRecursos.getColorAzul(),
+          sRecursos.getColorPrincipal(),
+          sRecursos.getColorPrincipal(),
+          sRecursos.getColorPrincipal(),
           true
         )
     );

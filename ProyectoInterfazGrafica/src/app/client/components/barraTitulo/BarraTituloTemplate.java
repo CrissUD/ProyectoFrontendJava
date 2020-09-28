@@ -105,7 +105,7 @@ public class BarraTituloTemplate extends JPanel {
       null, null,
       fontTituloBarra,
       null,
-      sRecursos.getColorAzul(),
+      sRecursos.getColorPrincipal(),
       null,
       "c"
     );

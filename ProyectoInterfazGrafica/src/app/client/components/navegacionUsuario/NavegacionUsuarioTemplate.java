@@ -49,14 +49,14 @@ public class NavegacionUsuarioTemplate extends JPanel {
   public void crearJPanels() {
     this.pSuperior = sObjGraficos.construirJPanel(
       0, 0, 250, 300,
-      sRecursos.getColorAzul(),
+      sRecursos.getColorPrincipal(),
       null
     );
     this.add(pSuperior);
 
     this.pInferior = sObjGraficos.construirJPanel(
       0, 300, 250, 400,
-      sRecursos.getColorAzul(),
+      sRecursos.getColorPrincipal(),
       null
     );
     this.add(pInferior);

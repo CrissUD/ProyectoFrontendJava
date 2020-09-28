@@ -36,7 +36,7 @@ public class NavegacionUsuarioComponent extends MouseAdapter implements ActionLi
   public void mouseEntered(MouseEvent e) {
     JButton boton = ((JButton) e.getSource());
     boton.setContentAreaFilled(true);
-    boton.setBackground(RecursosService.getService().getColorAzulOscuro());
+    boton.setBackground(RecursosService.getService().getColorPrincipalOscuro());
   }
 
   @Override

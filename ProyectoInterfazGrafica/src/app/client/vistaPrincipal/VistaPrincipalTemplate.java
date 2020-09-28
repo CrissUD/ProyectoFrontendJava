@@ -57,8 +57,8 @@ public class VistaPrincipalTemplate extends JFrame {
       sGraficosAvanzados.devolverScrollPersonalizado(
         7, 10,
         sRecursos.getColorGrisClaro(),
-        sRecursos.getColorAzul(),
-        sRecursos.getColorAzulOscuro()
+        sRecursos.getColorPrincipal(),
+        sRecursos.getColorPrincipalOscuro()
       )
     );
     this.pPrincipal.add(psProductos);

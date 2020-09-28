@@ -85,7 +85,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontTitulo(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "c"
     );
@@ -98,7 +98,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontTitulo(),
       null,
-      sRecursosService.getColorMorado(),
+      sRecursosService.getColorSecundario(),
       null,
       "l"
     );
@@ -111,7 +111,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontTitulo(),
       null,
-      sRecursosService.getColorMorado(),
+      sRecursosService.getColorSecundario(),
       null,
       "l"
     );
@@ -124,7 +124,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -137,7 +137,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -150,7 +150,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -163,7 +163,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -176,7 +176,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -189,7 +189,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -202,7 +202,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -215,7 +215,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -228,7 +228,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -241,7 +241,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -254,7 +254,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -267,7 +267,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -282,7 +282,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -295,7 +295,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -308,7 +308,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -321,7 +321,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -334,7 +334,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -347,7 +347,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -360,7 +360,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -373,7 +373,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -386,7 +386,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -399,7 +399,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -412,7 +412,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontLigera(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );
@@ -425,7 +425,7 @@ public class ConfiguracionesTemplate extends JPanel {
       null, null,
       sRecursosService.getFontTitulo(),
       null,
-      sRecursosService.getColorAzul(),
+      sRecursosService.getColorPrincipal(),
       null,
       "l"
     );

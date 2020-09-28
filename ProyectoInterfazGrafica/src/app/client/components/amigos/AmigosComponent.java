@@ -84,7 +84,7 @@ public class AmigosComponent extends MouseAdapter implements ActionListener, Foc
   public void mouseEntered(MouseEvent e) {
     if (e.getSource() instanceof JButton) {
       JButton boton = ((JButton) e.getSource());
-      boton.setBackground(RecursosService.getService().getColorAzulOscuro());
+      boton.setBackground(RecursosService.getService().getColorPrincipalOscuro());
     }
   }
 
@@ -92,7 +92,7 @@ public class AmigosComponent extends MouseAdapter implements ActionListener, Foc
   public void mouseExited(MouseEvent e) {
     if (e.getSource() instanceof JButton) {
       JButton boton = ((JButton) e.getSource());
-      boton.setBackground(RecursosService.getService().getColorAzul());
+      boton.setBackground(RecursosService.getService().getColorPrincipal());
     }
   }
 
