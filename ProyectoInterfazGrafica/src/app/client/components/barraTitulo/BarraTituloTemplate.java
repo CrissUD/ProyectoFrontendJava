@@ -40,8 +40,8 @@ public class BarraTituloTemplate extends JPanel {
     this.setSize(850, 50);
     this.setBackground(Color.WHITE);
     this.setLayout(null);
-    this.addMouseListener(this.barraTituloComponent);
-    this.addMouseMotionListener(this.barraTituloComponent);
+    this.addMouseListener(barraTituloComponent);
+    this.addMouseMotionListener(barraTituloComponent);
     this.setVisible(true);
   }
 

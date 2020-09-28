@@ -21,7 +21,7 @@ public class LoginComponent extends MouseAdapter implements ActionListener {
   private JButton boton;
   private JTextField text;
   private JLabel label;
-  private String[] placeholdes = { "Nombre Usuario", "Clave Usuario" };
+  private String[] placeholders = { "Nombre Usuario", "Clave Usuario" };
   private int estado = 1, estadoAnterior = 0, direccion = -1;
   private Timer timer;
 
@@ -65,7 +65,8 @@ public class LoginComponent extends MouseAdapter implements ActionListener {
       text.setForeground(loginTemplate.getRecursosService().getColorAzul());
       text.setBorder(loginTemplate.getRecursosService().getBInferiorAzul());
       if (
-        text.getText().equals(placeholdes[0]) || text.getText().equals(placeholdes[1])
+        text.getText().equals(placeholders[0]) || 
+        text.getText().equals(placeholders[1])
       ) 
         text.setText("");
     }

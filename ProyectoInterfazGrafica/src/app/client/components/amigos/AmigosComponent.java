@@ -23,7 +23,7 @@ import models.Amigo;
 public class AmigosComponent extends MouseAdapter implements ActionListener, FocusListener {
   private AmigosTemplate amigosTemplate;
   private AmigoService sAmigos;
-  private String[] placeholdes = {
+  private String[] placeholders = {
     "Nombre", "Edad", "Oficio", "Telefono", "Email", "Filtrar...",
   };
   private Amigo amigo;
@@ -51,12 +51,12 @@ public class AmigosComponent extends MouseAdapter implements ActionListener, Foc
     JTextField textField = ((JTextField) e.getSource());
     textField.setBorder(RecursosService.getService().getBAzul());
     if (
-      textField.getText().equals(placeholdes[0]) ||
-      textField.getText().equals(placeholdes[1]) ||
-      textField.getText().equals(placeholdes[2]) ||
-      textField.getText().equals(placeholdes[3]) ||
-      textField.getText().equals(placeholdes[4]) ||
-      textField.getText().equals(placeholdes[5])
+      textField.getText().equals(placeholders[0]) ||
+      textField.getText().equals(placeholders[1]) ||
+      textField.getText().equals(placeholders[2]) ||
+      textField.getText().equals(placeholders[3]) ||
+      textField.getText().equals(placeholders[4]) ||
+      textField.getText().equals(placeholders[5])
     ) textField.setText("");
   }
 
@@ -98,11 +98,11 @@ public class AmigosComponent extends MouseAdapter implements ActionListener, Foc
 
   public void restaurarValores() {
     amigosTemplate.getLIdValor().setText(sAmigos.devolverCantidadAmigos() + "");
-    amigosTemplate.getTNombre().setText(placeholdes[0]);
-    amigosTemplate.getTEdad().setText(placeholdes[1]);
-    amigosTemplate.getTOficio().setText(placeholdes[2]);
-    amigosTemplate.getTTelefono().setText(placeholdes[3]);
-    amigosTemplate.getTEmail().setText(placeholdes[4]);
+    amigosTemplate.getTNombre().setText(placeholders[0]);
+    amigosTemplate.getTEdad().setText(placeholders[1]);
+    amigosTemplate.getTOficio().setText(placeholders[2]);
+    amigosTemplate.getTTelefono().setText(placeholders[3]);
+    amigosTemplate.getTEmail().setText(placeholders[4]);
     amigosTemplate.getTabla().setSelectionMode(0);
   }
 
