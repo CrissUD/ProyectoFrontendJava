@@ -21,7 +21,7 @@ public class Accion {
     this.descripcionAccion = descripcionAccion;
   }
 
-  public void setImagenAccion(ImageIcon imagenAcciIcon) {
-    this.imagenAccion = imagenAcciIcon;
+  public void setImagenAccion(ImageIcon imagenAccion) {
+    this.imagenAccion = imagenAccion;
   }
 }

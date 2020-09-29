@@ -229,8 +229,8 @@ public class InicioTemplate extends JPanel {
       AccionTemplate pAccion = 
         new AccionComponent(accion).getAccionTemplate();
       pAccion.setLocation(
-        15 + (numeroAccion % 3) * pAccion.getWidth() + (numeroAccion % 3) * 15,
-        50 + (140 * fila)
+        15 + ((pAccion.getWidth() + 15) * (numeroAccion % 3)),
+        50 + ((pAccion.getHeight() + 15) * fila)
       );
       if (numeroAccion % 3 == 2) fila++;
       this.pAcciones.add(pAccion);
