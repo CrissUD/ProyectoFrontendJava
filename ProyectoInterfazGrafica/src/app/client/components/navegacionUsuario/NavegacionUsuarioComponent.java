@@ -5,14 +5,14 @@ import app.client.vistaPrincipal.VistaPrincipalComponent;
 import app.services.graphicServices.RecursosService;
 import app.services.logicServices.UsuarioService;
 
+import models.Usuario;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 import javax.swing.JButton;
-
-import models.Usuario;
 
 public class NavegacionUsuarioComponent extends MouseAdapter implements ActionListener {
   private NavegacionUsuarioTemplate navegacionUsuarioTemplate;

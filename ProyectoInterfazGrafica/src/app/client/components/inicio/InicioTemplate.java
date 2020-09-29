@@ -227,11 +227,7 @@ public class InicioTemplate extends JPanel {
     Accion accion = inicioComponent.obtenerAccion(numeroAccion);
     while (accion != null) {
       AccionTemplate pAccion = 
-        new AccionComponent(
-          accion.getImagenAccion(), 
-          accion.getNombreAccion(),
-          accion.getDescripcionAccion()
-        ).getAccionTemplate();
+        new AccionComponent(accion).getAccionTemplate();
       pAccion.setLocation(
         15 + (numeroAccion % 3) * pAccion.getWidth() + (numeroAccion % 3) * 15,
         50 + (140 * fila)

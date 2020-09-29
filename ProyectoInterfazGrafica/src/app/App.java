@@ -1,19 +1,17 @@
 package app;
 
-import app.client.login.LoginComponent;
 import javax.swing.SwingUtilities;
 
-public class App {
+import app.client.login.LoginComponent;
 
-  public static void main(String[] args) throws Exception {
-    SwingUtilities.invokeLater(
-      new Runnable() {
-        
-        public void run() {
-          LoginComponent vista = new LoginComponent();
-          vista.getClass();
-        }
+public class App {
+  public static void main(String[] args) {
+    Runnable runApplication = new Runnable() {
+      public void run() {
+        LoginComponent logn = new LoginComponent();
+        logn.getClass();
       }
-    );
+    };
+    SwingUtilities.invokeLater(runApplication);
   }
 }

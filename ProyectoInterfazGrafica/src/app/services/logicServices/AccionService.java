@@ -11,7 +11,6 @@ import java.io.FileReader;
 import java.util.ArrayList;
 
 public class AccionService {
-
   private static AccionService servicio;
   private ArrayList<Accion> acciones;
 

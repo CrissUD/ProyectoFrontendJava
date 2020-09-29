@@ -2,6 +2,7 @@ package app.client.components.accion;
 
 import app.services.graphicServices.ObjGraficosService;
 import app.services.graphicServices.RecursosService;
+import models.Accion;
 
 import java.awt.Color;
 import java.awt.Image;
@@ -24,19 +25,14 @@ public class AccionTemplate extends JPanel {
   // Declaración Objetos Decoradores
   private ImageIcon iDimAux;
 
-  public AccionTemplate(
-    AccionComponent accionComponent,
-    ImageIcon imagen,
-    String titulo,
-    String parrafo
-  ) {
+  public AccionTemplate(AccionComponent accionComponent, Accion accion) {
     this.sObjGraficos = ObjGraficosService.getService();
     this.sRecursos = RecursosService.getService();
     this.accionComponent = accionComponent;
     this.accionComponent.getClass();
 
     iDimAux = new ImageIcon(
-      imagen.getImage()
+      accion.getImagenAccion().getImage()
         .getScaledInstance(45, 45, Image.SCALE_AREA_AVERAGING)
     );
     this.lImagen = sObjGraficos.construirJLabel(
@@ -50,7 +46,7 @@ public class AccionTemplate extends JPanel {
     this.add(lImagen);
 
     this.lTitulo = sObjGraficos.construirJLabel(
-      titulo,
+      accion.getNombreAccion(),
       (250 - 220) / 2, 60, 220, 30,
       null, null,
       sRecursos.getFontTitulo(),
@@ -62,7 +58,7 @@ public class AccionTemplate extends JPanel {
     this.add(lTitulo);
 
     this.lParrafo = sObjGraficos.construirJLabel(
-      "<html><div align='center'>" + parrafo + "</div></html>",
+      "<html><div align='center'>" + accion.getDescripcionAccion() + "</div></html>",
       (250 - 230) / 2, 85, 230, 50,
       null, null,
       sRecursos.getFontLigera(),

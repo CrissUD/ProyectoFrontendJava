@@ -70,9 +70,8 @@ public class VistaPrincipalComponent {
         );
         break;
       case "Configuraciones":
-        if (
-          this.configuracionesComponent == null
-        ) this.configuracionesComponent = new ConfiguracionesComponent();
+        if (this.configuracionesComponent == null) 
+          this.configuracionesComponent = new ConfiguracionesComponent();
         vistaPrincipalTemplate.getPPrincipal()
           .add(configuracionesComponent.getConfiguracionesTemplate());
         break;

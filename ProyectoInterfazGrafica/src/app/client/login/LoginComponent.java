@@ -104,12 +104,7 @@ public class LoginComponent extends MouseAdapter implements ActionListener {
       JOptionPane.showMessageDialog(null, "Ingreso Exitoso", "Advertencia", 1);
       entrar();
     } else 
-      JOptionPane.showMessageDialog(
-        null,
-        "Algo quedo mal",
-        "Advertencia",
-        2
-      );
+      JOptionPane.showMessageDialog(null, "Algo quedo mal", "Advertencia", 2);
   }
 
   public void entrar() {
@@ -125,22 +120,14 @@ public class LoginComponent extends MouseAdapter implements ActionListener {
   public void restaurarValores() {
     this.getLoginTemplate().getTNombreUsuario().setText("Nombre Usuario");
     this.getLoginTemplate().getTNombreUsuario()
-      .setBorder(
-        this.getLoginTemplate().getRecursosService().getBInferiorGris()
-      );
+      .setBorder(this.getLoginTemplate().getRecursosService().getBInferiorGris());
     this.getLoginTemplate().getTNombreUsuario()
-      .setForeground(
-        this.getLoginTemplate().getRecursosService().getColorGrisOscuro()
-      );
+      .setForeground(this.getLoginTemplate().getRecursosService().getColorGrisOscuro());
     this.getLoginTemplate().getTClaveUsuario().setText("Clave Usuario");
     this.getLoginTemplate().getTClaveUsuario()
-      .setBorder(
-        this.getLoginTemplate().getRecursosService().getBInferiorGris()
-      );
+      .setBorder(this.getLoginTemplate().getRecursosService().getBInferiorGris());
     this.getLoginTemplate().getTClaveUsuario()
-      .setForeground(
-        this.getLoginTemplate().getRecursosService().getColorGrisOscuro()
-      );
+      .setForeground(this.getLoginTemplate().getRecursosService().getColorGrisOscuro());
     this.getLoginTemplate().getCbTipoUsuario().setSelectedIndex(0);
   }
 
