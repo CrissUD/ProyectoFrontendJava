@@ -18,12 +18,12 @@ public class NavegacionUsuarioComponent extends MouseAdapter implements ActionLi
   private NavegacionUsuarioTemplate navegacionUsuarioTemplate;
   private VistaPrincipalComponent vistaPrincipalComponent;
   private UsuarioService sUsuario;
-  private Usuario usuarioLogeado;
+  private Usuario usuarioConectado;
 
   public NavegacionUsuarioComponent(VistaPrincipalComponent vistaPrincipalComponent) {
     this.vistaPrincipalComponent = vistaPrincipalComponent;
     this.sUsuario = UsuarioService.getService();
-    this.usuarioLogeado = sUsuario.getUsuarioLogeado();
+    this.usuarioConectado = sUsuario.getUsuarioConectado();
     this.navegacionUsuarioTemplate = new NavegacionUsuarioTemplate(this);
   }
 
@@ -46,14 +46,14 @@ public class NavegacionUsuarioComponent extends MouseAdapter implements ActionLi
   }
 
   public void actualizarValores() {
-    this.usuarioLogeado = sUsuario.getUsuarioLogeado();
+    this.usuarioConectado = sUsuario.getUsuarioConectado();
     this.navegacionUsuarioTemplate.getPSuperior().removeAll();
     this.navegacionUsuarioTemplate.crearJLabels();
     this.navegacionUsuarioTemplate.repaint();
   }
 
   public Usuario getUsuario() {
-    return this.usuarioLogeado;
+    return this.usuarioConectado;
   }
 
   public NavegacionUsuarioTemplate getNavegacionUsuarioTemplate() {

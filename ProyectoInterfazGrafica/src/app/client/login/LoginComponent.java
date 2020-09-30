@@ -100,11 +100,14 @@ public class LoginComponent extends MouseAdapter implements ActionListener {
     String nombreUsuario = loginTemplate.getTNombreUsuario().getText();
     String claveUsuario = new String(loginTemplate.getTClaveUsuario().getPassword());
     String tipoUsuario = ((String) loginTemplate.getCbTipoUsuario().getSelectedItem());
-    if (sUsuario.verificarDatosUsuario(nombreUsuario, claveUsuario, tipoUsuario)) {
-      JOptionPane.showMessageDialog(null, "Ingreso Exitoso", "Advertencia", 1);
-      entrar();
-    } else 
-      JOptionPane.showMessageDialog(null, "Algo quedo mal", "Advertencia", 2);
+    if(!nombreUsuario.isBlank() && !claveUsuario.isBlank()) {
+      if (sUsuario.verificarDatosUsuario(nombreUsuario, claveUsuario, tipoUsuario)) {
+        JOptionPane.showMessageDialog(null, "Ingreso Exitoso", "Advertencia", 1);
+        entrar();
+      } else
+        JOptionPane.showMessageDialog(null, "Algo quedo mal", "Advertencia", 2);
+    } else
+      JOptionPane.showMessageDialog(null, "No puede dejar un campo vacio", "Advertencia", 2);
   }
 
   public void entrar() {
